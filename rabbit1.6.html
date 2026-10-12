@@ -1,0 +1,4996 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>兔子先生回家记</title>
+<style>
+  html {
+    --c0a0a10: #0a0a10;
+    --c141418: #1e1a17;
+    --c14141a: #1f1b18;
+    --c17171f: #231e1b;
+    --c1a1a1e: #241f1b;
+    --c1a1a22: #26211d;
+    --c1a6a4a: #186c4a;
+    --c1a9a6a: #169e6b;
+    --c1e1a1a: #241f1b;
+    --c1e1e26: #2a2420;
+    --c23232d: #302925;
+    --c24242e: #312a26;
+    --c26262f: #322c27;
+    --c262630: #332c27;
+    --c2a2222: #2e2823;
+    --c2a2a36: #38312b;
+    --c2a2a38: #39312c;
+    --c2aaa7a: #26ae7b;
+    --c2b2b33: #37302a;
+    --c2c2c38: #3a322d;
+    --c2f2f3a: #3c342e;
+    --c2f2f3c: #3d352f;
+    --c2f9fb8: #2ba2bc;
+    --c313142: #413932;
+    --c333344: #433b34;
+    --c35b04a: #31b448;
+    --c3a3a4a: #4a4039;
+    --c3a3f6a: #393e6b;
+    --c3d3d52: #50453d;
+    --c3f6d4a: #3e6e49;
+    --c44445a: #574c43;
+    --c4a2a2a: #4b2929;
+    --c4a3a3a: #4a4039;
+    --c4a4a5e: #5c5047;
+    --c4a4a6a: #62554c;
+    --c4a5ce8: #4558ed;
+    --c4a7a4a: #497b49;
+    --c4a7f57: #488156;
+    --c4ad0a0: #46d4a1;
+    --c5a3a3a: #5b3939;
+    --c5a5a72: #6e6055;
+    --c5a6488: #596389;
+    --c5a6cf8: #5669fc;
+    --c5fd66a: #5bda67;
+    --c6a6a80: #7e6d61;
+    --c6a7498: #697399;
+    --c6a8aff: #6d8cfc;
+    --c6ad0e0: #66d3e4;
+    --c7a7a92: #8f7c6e;
+    --c7d8cff: #808efc;
+    --c7ec87e: #7cca7c;
+    --c8a4a4a: #8c4848;
+    --c8a4ae8: #8945ed;
+    --c8a8a9a: #98877a;
+    --c8a9aff: #8c9cfd;
+    --c8f9bff: #919dfd;
+    --c9a5a5a: #9c5858;
+    --c9a5af8: #9956fc;
+    --c9aa4c8: #99a3c9;
+    --cb8b8c4: #bbafa6;
+    --cc0c0cc: #c1b6ae;
+    --cc88a8a: #ca8888;
+    --cc88aff: #c88cfd;
+    --cc8a8a8: #c9a7a7;
+    --cc8c8d4: #c7beb6;
+    --ccfcfd8: #cbc3bc;
+    --ccfd4ff: #d0d5fe;
+    --cd8d8e2: #d3cbc6;
+    --cd94f4f: #dd4b4b;
+    --cdaffe9: #dbfee9;
+    --ce0e0ea: #e0e0ea;
+    --ce86363: #ec5f5f;
+    --ce86a8a: #ec6688;
+    --ce87a3a: #ed7935;
+    --ce88b2a: #ee8b24;
+    --ce8a830: #eeaa2a;
+    --ce8e8f0: #e8e8f0;
+    --ceaffe9: #eaffe9;
+    --cf88a4a: #fb8947;
+    --cff8a8a: #fd8c8c;
+    --cffb25e: #fcb261;
+    --cffb88a: #fdb88c;
+    --cffd76e: #fcd671;
+    --cfff: #fff;
+    --a035: rgba(0,0,0,0.35);
+    --a04: rgba(0,0,0,0.4);
+    --a05: rgba(0,0,0,0.5);
+    --a06: rgba(0,0,0,0.6);
+    --a065: rgba(0,0,0,0.65);
+    --a07: rgba(0,0,0,0.7);
+    --a08: rgba(0,0,0,0.8);
+    --ic-wechat-a: #ffc078;
+    --ic-wechat-b: #e0813a;
+    --ic-rabbitbook-a: #d98a63;
+    --ic-rabbitbook-b: #a8562f;
+    --ic-shopping-a: #f7cf78;
+    --ic-shopping-b: #d9a02c;
+    --ic-clockin-a: #a8c07a;
+    --ic-clockin-b: #6d8a3f;
+    --ic-yizhan-a: #c79ad6;
+    --ic-yizhan-b: #8a5aa0;
+    --ic-mail-a: #e88878;
+    --ic-mail-b: #bf4a38;
+    --ic-settings-a: #b8a488;
+    --ic-settings-b: #7d6a52;
+    --ic-phone-a: #8ec49a;
+    --ic-phone-b: #4a8060;
+    --ic-home-a: #f5a86e;
+    --ic-home-b: #d9632e;
+    --av-ceo: #8a4a4a;
+    --av-tuzi: #4a5ce8;
+    --av-xiaobai: #e88b2a;
+    --av-a: #3f8a7a;
+    --av-b: #7a4a9a;
+    --av-c: #9a6a3a;
+    --av-mom: #c86a8a;
+    --av-waimai: #c88a4a;
+    --av-dad: #4a7a6a;
+    --bg1: #1b1410;
+    --shell: #2e231b;
+    --bezel: #160f0a;
+    --screen: #241b15;
+    --rail: #2a2019;
+    --panel: #2f251c;
+    --card: #372b21;
+    --line: #4a3828;
+    --line2: #5f4832;
+    --text: #f5e8d6;
+    --text2: #dcc9b1;
+    --text3: #a38c72;
+    --accent: #e8a54c;
+    --on-accent: #2a1a0c;
+    --gold: #ffd27a;
+    --gold2: #dd9734;
+    --ok: #8fb46c;
+    --ok-dim: #4a7a4a;
+    --bad: #d4634a;
+    --bar: #241a14;
+    --bar2: #352819;
+    --hover: #3c2d22;
+    --shadow: rgba(0,0,0,.62);
+    --shadow-sm: rgba(0,0,0,.35);
+    --glow: rgba(232,165,76,.38);
+    --chapterbg: #150f0b;
+    --chaptertitle: #f8ead1;
+    --chaptersub: #ab9277;
+    --coverbg: radial-gradient(circle at 50% 40%, #3d2c1c 0%, #1e1610 55%, #120c08 100%);
+    --moon: radial-gradient(circle at 34% 32%, #fff0c8, #f0c46a 70%);
+    --moonglow: rgba(240,196,106,.45);
+    --covertitle: #f8ead1;
+    --coverglow: 0 0 40px rgba(240,196,106,.35);
+    --coversub: #ab9277;
+    --brand-wx: #5fd66a;
+    --brand-rb: #4a5ce8;
+    --brand-rb-text: #8f9bff;
+    --brand-mail: #d94f4f;
+    --brand-mail-text: #ff8a8a;
+    --brand-yz: #c88aff;
+    --bubble-me-bg: #3f6d4a;
+    --bubble-me-fg: #eaffe9;
+  }
+  html[data-theme="A"] {
+    --c0a0a10: #0a0a10;
+    --c141418: #1e1a17;
+    --c14141a: #1f1b18;
+    --c17171f: #231e1b;
+    --c1a1a1e: #241f1b;
+    --c1a1a22: #26211d;
+    --c1a6a4a: #186c4a;
+    --c1a9a6a: #169e6b;
+    --c1e1a1a: #241f1b;
+    --c1e1e26: #2a2420;
+    --c23232d: #302925;
+    --c24242e: #312a26;
+    --c26262f: #322c27;
+    --c262630: #332c27;
+    --c2a2222: #2e2823;
+    --c2a2a36: #38312b;
+    --c2a2a38: #39312c;
+    --c2aaa7a: #26ae7b;
+    --c2b2b33: #37302a;
+    --c2c2c38: #3a322d;
+    --c2f2f3a: #3c342e;
+    --c2f2f3c: #3d352f;
+    --c2f9fb8: #2ba2bc;
+    --c313142: #413932;
+    --c333344: #433b34;
+    --c35b04a: #31b448;
+    --c3a3a4a: #4a4039;
+    --c3a3f6a: #393e6b;
+    --c3d3d52: #50453d;
+    --c3f6d4a: #3e6e49;
+    --c44445a: #574c43;
+    --c4a2a2a: #4b2929;
+    --c4a3a3a: #4a4039;
+    --c4a4a5e: #5c5047;
+    --c4a4a6a: #62554c;
+    --c4a5ce8: #4558ed;
+    --c4a7a4a: #497b49;
+    --c4a7f57: #488156;
+    --c4ad0a0: #46d4a1;
+    --c5a3a3a: #5b3939;
+    --c5a5a72: #6e6055;
+    --c5a6488: #596389;
+    --c5a6cf8: #5669fc;
+    --c5fd66a: #5bda67;
+    --c6a6a80: #7e6d61;
+    --c6a7498: #697399;
+    --c6a8aff: #6d8cfc;
+    --c6ad0e0: #66d3e4;
+    --c7a7a92: #8f7c6e;
+    --c7d8cff: #808efc;
+    --c7ec87e: #7cca7c;
+    --c8a4a4a: #8c4848;
+    --c8a4ae8: #8945ed;
+    --c8a8a9a: #98877a;
+    --c8a9aff: #8c9cfd;
+    --c8f9bff: #919dfd;
+    --c9a5a5a: #9c5858;
+    --c9a5af8: #9956fc;
+    --c9aa4c8: #99a3c9;
+    --cb8b8c4: #bbafa6;
+    --cc0c0cc: #c1b6ae;
+    --cc88a8a: #ca8888;
+    --cc88aff: #c88cfd;
+    --cc8a8a8: #c9a7a7;
+    --cc8c8d4: #c7beb6;
+    --ccfcfd8: #cbc3bc;
+    --ccfd4ff: #d0d5fe;
+    --cd8d8e2: #d3cbc6;
+    --cd94f4f: #dd4b4b;
+    --cdaffe9: #dbfee9;
+    --ce0e0ea: #e0e0ea;
+    --ce86363: #ec5f5f;
+    --ce86a8a: #ec6688;
+    --ce87a3a: #ed7935;
+    --ce88b2a: #ee8b24;
+    --ce8a830: #eeaa2a;
+    --ce8e8f0: #e8e8f0;
+    --ceaffe9: #eaffe9;
+    --cf88a4a: #fb8947;
+    --cff8a8a: #fd8c8c;
+    --cffb25e: #fcb261;
+    --cffb88a: #fdb88c;
+    --cffd76e: #fcd671;
+    --cfff: #fff;
+    --a035: rgba(0,0,0,0.35);
+    --a04: rgba(0,0,0,0.4);
+    --a05: rgba(0,0,0,0.5);
+    --a06: rgba(0,0,0,0.6);
+    --a065: rgba(0,0,0,0.65);
+    --a07: rgba(0,0,0,0.7);
+    --a08: rgba(0,0,0,0.8);
+    --ic-wechat-a: #ffc078;
+    --ic-wechat-b: #e0813a;
+    --ic-rabbitbook-a: #d98a63;
+    --ic-rabbitbook-b: #a8562f;
+    --ic-shopping-a: #f7cf78;
+    --ic-shopping-b: #d9a02c;
+    --ic-clockin-a: #a8c07a;
+    --ic-clockin-b: #6d8a3f;
+    --ic-yizhan-a: #c79ad6;
+    --ic-yizhan-b: #8a5aa0;
+    --ic-mail-a: #e88878;
+    --ic-mail-b: #bf4a38;
+    --ic-settings-a: #b8a488;
+    --ic-settings-b: #7d6a52;
+    --ic-phone-a: #8ec49a;
+    --ic-phone-b: #4a8060;
+    --ic-home-a: #f5a86e;
+    --ic-home-b: #d9632e;
+    --av-ceo: #8a4a4a;
+    --av-tuzi: #4a5ce8;
+    --av-xiaobai: #e88b2a;
+    --av-a: #3f8a7a;
+    --av-b: #7a4a9a;
+    --av-c: #9a6a3a;
+    --av-mom: #c86a8a;
+    --av-waimai: #c88a4a;
+    --av-dad: #4a7a6a;
+    --bg1: #1b1410;
+    --shell: #2e231b;
+    --bezel: #160f0a;
+    --screen: #241b15;
+    --rail: #2a2019;
+    --panel: #2f251c;
+    --card: #372b21;
+    --line: #4a3828;
+    --line2: #5f4832;
+    --text: #f5e8d6;
+    --text2: #dcc9b1;
+    --text3: #a38c72;
+    --accent: #e8a54c;
+    --on-accent: #2a1a0c;
+    --gold: #ffd27a;
+    --gold2: #dd9734;
+    --ok: #8fb46c;
+    --ok-dim: #4a7a4a;
+    --bad: #d4634a;
+    --bar: #241a14;
+    --bar2: #352819;
+    --hover: #3c2d22;
+    --shadow: rgba(0,0,0,.62);
+    --shadow-sm: rgba(0,0,0,.35);
+    --glow: rgba(232,165,76,.38);
+    --chapterbg: #150f0b;
+    --chaptertitle: #f8ead1;
+    --chaptersub: #ab9277;
+    --coverbg: radial-gradient(circle at 50% 40%, #3d2c1c 0%, #1e1610 55%, #120c08 100%);
+    --moon: radial-gradient(circle at 34% 32%, #fff0c8, #f0c46a 70%);
+    --moonglow: rgba(240,196,106,.45);
+    --covertitle: #f8ead1;
+    --coverglow: 0 0 40px rgba(240,196,106,.35);
+    --coversub: #ab9277;
+    --brand-wx: #5fd66a;
+    --brand-rb: #4a5ce8;
+    --brand-rb-text: #8f9bff;
+    --brand-mail: #d94f4f;
+    --brand-mail-text: #ff8a8a;
+    --brand-yz: #c88aff;
+    --bubble-me-bg: #3f6d4a;
+    --bubble-me-fg: #eaffe9;
+  }
+
+  html[data-theme="B"] {
+    --c0a0a10: #6c6c9d;
+    --c141418: #f0eeeb;
+    --c14141a: #f0edea;
+    --c17171f: #edeae6;
+    --c1a1a1e: #eceae5;
+    --c1a1a22: #ebe8e4;
+    --c1a6a4a: #4f8f78;
+    --c1a9a6a: #57a082;
+    --c1e1a1a: #fffaf7;
+    --c1e1e26: #e9e5e0;
+    --c23232d: #e5e1db;
+    --c24242e: #e4e0da;
+    --c26262f: #e3dfd8;
+    --c262630: #e3ded8;
+    --c2a2222: #f6e6e2;
+    --c2a2a36: #dfdbd3;
+    --c2a2a38: #dfdad2;
+    --c2aaa7a: #6cb494;
+    --c2b2b33: #e0dbd4;
+    --c2c2c38: #ded9d2;
+    --c2f2f3a: #dcd7cf;
+    --c2f2f3c: #dcd6ce;
+    --c2f9fb8: #3491a6;
+    --c313142: #d9d3cb;
+    --c333344: #d8d2c9;
+    --c35b04a: #39a14b;
+    --c3a3a4a: #d4cdc3;
+    --c3a3f6a: #575d93;
+    --c3d3d52: #d0c9be;
+    --c3f6d4a: #5a9a68;
+    --c44445a: #cbc3b7;
+    --c4a2a2a: #ecd2ca;
+    --c4a3a3a: #e0c4bc;
+    --c4a4a5e: #c8bfb3;
+    --c4a4a6a: #c4bbad;
+    --c4a5ce8: #6b86c4;
+    --c4a7a4a: #598959;
+    --c4a7f57: #6aa876;
+    --c4ad0a0: #329c76;
+    --c5a3a3a: #d8b4ac;
+    --c5a5a72: #bcb2a3;
+    --c5a6488: #8e8e98;
+    --c5a6cf8: #7d97d4;
+    --c5fd66a: #5a9a68;
+    --c6a6a80: #b2a795;
+    --c6a7498: #9e9ea8;
+    --c6a8aff: #0b2fb0;
+    --c6ad0e0: #298a99;
+    --c7a7a92: #a79a86;
+    --c7d8cff: #0b1eac;
+    --c7ec87e: #3f843f;
+    --c8a4a4a: #a8705f;
+    --c8a4ae8: #9177be;
+    --c8a8a9a: #9f917b;
+    --c8a9aff: #0b20a9;
+    --c8f9bff: #6b86c4;
+    --c9a5a5a: #c08070;
+    --c9a5af8: #a48cd0;
+    --c9aa4c8: #465177;
+    --cb8b8c4: #7c6e5a;
+    --cc0c0cc: #756854;
+    --cc88a8a: #b07064;
+    --cc88aff: #9177be;
+    --cc8a8a8: #8a4a44;
+    --cc8c8d4: #6d614f;
+    --ccfcfd8: #685d4c;
+    --ccfd4ff: #0a199a;
+    --cd8d8e2: #605545;
+    --cd94f4f: #c9524a;
+    --cdaffe9: #ffffff;
+    --ce0e0ea: #454560;
+    --ce86363: #a12222;
+    --ce86a8a: #9f2242;
+    --ce87a3a: #d1804a;
+    --ce88b2a: #b1691e;
+    --ce8a830: #b07d1f;
+    --ce8e8f0: #424260;
+    --ceaffe9: #ffffff;
+    --cf88a4a: #dd955c;
+    --cff8a8a: #c9524a;
+    --cffb25e: #b3630b;
+    --cffb88a: #a9490b;
+    --cffd76e: #af820b;
+    --cfff: #fff;
+    --a035: rgba(120,96,70,0.16);
+    --a04: rgba(120,96,70,0.18);
+    --a05: rgba(120,96,70,0.23);
+    --a06: rgba(120,96,70,0.27);
+    --a065: rgba(120,96,70,0.29);
+    --a07: rgba(120,96,70,0.32);
+    --a08: rgba(120,96,70,0.36);
+    --ic-wechat-a: #9ecb95;
+    --ic-wechat-b: #6ba06a;
+    --ic-rabbitbook-a: #9db4e2;
+    --ic-rabbitbook-b: #6b86c4;
+    --ic-shopping-a: #f0c487;
+    --ic-shopping-b: #d19a52;
+    --ic-clockin-a: #8fcdd2;
+    --ic-clockin-b: #57a3ab;
+    --ic-yizhan-a: #c0a8dc;
+    --ic-yizhan-b: #9177be;
+    --ic-mail-a: #e79e9e;
+    --ic-mail-b: #c96a6a;
+    --ic-settings-a: #bcbcc4;
+    --ic-settings-b: #8e8e98;
+    --ic-phone-a: #8ecbb0;
+    --ic-phone-b: #57a082;
+    --ic-home-a: #f0b57f;
+    --ic-home-b: #d1804a;
+    --av-ceo: #a8705f;
+    --av-tuzi: #6b86c4;
+    --av-xiaobai: #d19a52;
+    --av-a: #5f9683;
+    --av-b: #9177be;
+    --av-c: #b8904a;
+    --av-mom: #c07a8a;
+    --av-waimai: #c99a6a;
+    --av-dad: #5f8f78;
+    --bg1: #e9dfd0;
+    --shell: #fbf5ea;
+    --bezel: #e3d5c0;
+    --screen: #fdf8ef;
+    --rail: #f6eee1;
+    --panel: #fffdf7;
+    --card: #f8f1e5;
+    --line: #e6d8c2;
+    --line2: #cfbc9f;
+    --text: #463829;
+    --text2: #665544;
+    --text3: #8a7964;
+    --accent: #c9763e;
+    --on-accent: #fff;
+    --gold: #e0a83c;
+    --gold2: #c0811f;
+    --ok: #5f9a63;
+    --ok-dim: #4a7a4a;
+    --bad: #c9524a;
+    --bar: #f4ead9;
+    --bar2: #f1e5d3;
+    --hover: #f2e8d8;
+    --shadow: rgba(120,96,70,.28);
+    --shadow-sm: rgba(120,96,70,.16);
+    --glow: rgba(201,118,62,.30);
+    --chapterbg: #efe4d2;
+    --chaptertitle: #463829;
+    --chaptersub: #8a7964;
+    --coverbg: radial-gradient(circle at 50% 40%, #fdf6ea 0%, #f2e5d1 55%, #e6d5bd 100%);
+    --moon: radial-gradient(circle at 34% 32%, rgba(255,248,230,.95), rgba(240,214,160,.55) 70%);
+    --moonglow: rgba(226,180,110,.35);
+    --covertitle: #463829;
+    --coverglow: 0 2px 18px rgba(180,140,90,.25);
+    --coversub: #8a7964;
+    --brand-wx: #5a9a68;
+    --brand-rb: #6b86c4;
+    --brand-rb-text: #6b86c4;
+    --brand-mail: #c9524a;
+    --brand-mail-text: #c9524a;
+    --brand-yz: #9177be;
+    --bubble-me-bg: #5a9a68;
+    --bubble-me-fg: #ffffff;
+  }
+
+  html[data-theme="C"] {
+    --c0a0a10: #090911;
+    --c141418: #11131f;
+    --c14141a: #111320;
+    --c17171f: #141625;
+    --c1a1a1e: #151726;
+    --c1a1a22: #161829;
+    --c1a6a4a: #10744c;
+    --c1a9a6a: #0aaa6e;
+    --c1e1a1a: #151726;
+    --c1e1e26: #181b2d;
+    --c23232d: #1c2035;
+    --c24242e: #1d2036;
+    --c26262f: #1e2138;
+    --c262630: #1e2238;
+    --c2a2222: #1b1e32;
+    --c2a2a36: #22253e;
+    --c2a2a38: #222640;
+    --c2aaa7a: #1aba7e;
+    --c2b2b33: #21253d;
+    --c2c2c38: #232741;
+    --c2f2f3a: #242944;
+    --c2f2f3c: #252945;
+    --c2f9fb8: #1eaac9;
+    --c313142: #282c4a;
+    --c333344: #292e4c;
+    --c35b04a: #26bf40;
+    --c3a3a4a: #2d3254;
+    --c3a3f6a: #343a70;
+    --c3d3d52: #31365b;
+    --c3f6d4a: #397347;
+    --c44445a: #363c64;
+    --c4a2a2a: #4e2626;
+    --c4a3a3a: #2d3254;
+    --c4a4a5e: #393f6a;
+    --c4a4a6a: #3d4471;
+    --c4a5ce8: #374dfb;
+    --c4a7a4a: #448044;
+    --c4a7f57: #438654;
+    --c4ad0a0: #39e1a5;
+    --c5a3a3a: #5e3636;
+    --c5a5a72: #454c7f;
+    --c5a6488: #54618e;
+    --c5a6cf8: #5669fc;
+    --c5fd66a: #50e55e;
+    --c6a6a80: #4e5791;
+    --c6a7498: #64719e;
+    --c6a8aff: #6d8cfc;
+    --c6ad0e0: #5bdbef;
+    --c7a7a92: #5964a6;
+    --c7d8cff: #808efc;
+    --c7ec87e: #75d175;
+    --c8a4a4a: #924242;
+    --c8a4ae8: #8637fb;
+    --c8a8a9a: #6871ae;
+    --c8a9aff: #8c9cfd;
+    --c8f9bff: #919dfd;
+    --c9a5a5a: #a25252;
+    --c9a5af8: #9956fc;
+    --c9aa4c8: #94a1ce;
+    --cb8b8c4: #9da3ca;
+    --cc0c0cc: #a6accf;
+    --cc88a8a: #d08282;
+    --cc88aff: #c88cfd;
+    --cc8a8a8: #cca4a4;
+    --cc8c8d4: #b0b5d5;
+    --ccfcfd8: #b7bbd8;
+    --ccfd4ff: #d0d5fe;
+    --cd8d8e2: #c2c6de;
+    --cd94f4f: #ea3e3e;
+    --cdaffe9: #dbfee9;
+    --ce0e0ea: #dfdfeb;
+    --ce86363: #f95252;
+    --ce86a8a: #f85a82;
+    --ce87a3a: #fb7527;
+    --ce88b2a: #fa8b18;
+    --ce8a830: #faae1e;
+    --ce8e8f0: #e7e7f1;
+    --ceaffe9: #eaffe9;
+    --cf88a4a: #fb8947;
+    --cff8a8a: #fd8c8c;
+    --cffb25e: #fcb261;
+    --cffb88a: #fdb88c;
+    --cffd76e: #fcd671;
+    --cfff: #fff;
+    --a035: rgba(0,10,40,0.35);
+    --a04: rgba(0,10,40,0.4);
+    --a05: rgba(0,10,40,0.5);
+    --a06: rgba(0,10,40,0.6);
+    --a065: rgba(0,10,40,0.65);
+    --a07: rgba(0,10,40,0.7);
+    --a08: rgba(0,10,40,0.8);
+    --ic-wechat-a: #3dffb0;
+    --ic-wechat-b: #00c07a;
+    --ic-rabbitbook-a: #8b7bff;
+    --ic-rabbitbook-b: #4a3ce8;
+    --ic-shopping-a: #ffd980;
+    --ic-shopping-b: #ff9f1c;
+    --ic-clockin-a: #3ee0f5;
+    --ic-clockin-b: #0891b2;
+    --ic-yizhan-a: #ef8cff;
+    --ic-yizhan-b: #a21caf;
+    --ic-mail-a: #ff7590;
+    --ic-mail-b: #e11d48;
+    --ic-settings-a: #a5b0ff;
+    --ic-settings-b: #5b6bd6;
+    --ic-phone-a: #45e6cf;
+    --ic-phone-b: #0f9488;
+    --ic-home-a: #ffab7d;
+    --ic-home-b: #f97316;
+    --av-ceo: #e11d48;
+    --av-tuzi: #4a3ce8;
+    --av-xiaobai: #ff9f1c;
+    --av-a: #0f9488;
+    --av-b: #a21caf;
+    --av-c: #c2701c;
+    --av-mom: #d91e6a;
+    --av-waimai: #f97316;
+    --av-dad: #00a37a;
+    --bg1: #070a16;
+    --shell: #111736;
+    --bezel: #05070f;
+    --screen: #0d1224;
+    --rail: #121834;
+    --panel: #161e3c;
+    --card: #1c2648;
+    --line: #2b3663;
+    --line2: #414f8a;
+    --text: #e8eeff;
+    --text2: #bcc7ec;
+    --text3: #7f8bbc;
+    --accent: #00e5ff;
+    --on-accent: #04121a;
+    --gold: #ffd76e;
+    --gold2: #ff9f1c;
+    --ok: #34d399;
+    --ok-dim: #1a7a5a;
+    --bad: #fb7185;
+    --bar: #0f1530;
+    --bar2: #1b2349;
+    --hover: #212c56;
+    --shadow: rgba(0,0,0,.68);
+    --shadow-sm: rgba(0,229,255,.10);
+    --glow: rgba(0,229,255,.45);
+    --chapterbg: #05070f;
+    --chaptertitle: #eaf6ff;
+    --chaptersub: #93a6dc;
+    --coverbg: radial-gradient(circle at 50% 40%, #1d2d75 0%, #0b1140 52%, #05070f 100%);
+    --moon: radial-gradient(circle at 34% 32%, #e2faff, #7de3ff 70%);
+    --moonglow: rgba(125,227,255,.55);
+    --covertitle: #eaf6ff;
+    --coverglow: 0 0 40px rgba(0,229,255,.5);
+    --coversub: #93a6dc;
+    --brand-wx: #3dffb0;
+    --brand-rb: #8b7bff;
+    --brand-rb-text: #8b7bff;
+    --brand-mail: #ff7590;
+    --brand-mail-text: #ff7590;
+    --brand-yz: #ef8cff;
+    --bubble-me-bg: #0f6b52;
+    --bubble-me-fg: #d8fff0;
+  }
+
+  html[data-theme="D"] {
+    --c0a0a10: #6a6a9a;
+    --c141418: #eef1f2;
+    --c14141a: #edf0f1;
+    --c17171f: #eaedee;
+    --c1a1a1e: #e9eced;
+    --c1a1a22: #e7ebec;
+    --c1a6a4a: #4f8677;
+    --c1a9a6a: #4f8677;
+    --c1e1a1a: #ffffff;
+    --c1e1e26: #e4e8e9;
+    --c23232d: #dee3e5;
+    --c24242e: #dde2e4;
+    --c26262f: #dce1e3;
+    --c262630: #dce1e3;
+    --c2a2222: #eef2f3;
+    --c2a2a36: #d7dddf;
+    --c2a2a38: #d6dcde;
+    --c2aaa7a: #63a08f;
+    --c2b2b33: #d8dee0;
+    --c2c2c38: #d5dbde;
+    --c2f2f3a: #d3dadc;
+    --c2f2f3c: #d2d9db;
+    --c2f9fb8: #378b9e;
+    --c313142: #cfd6d8;
+    --c333344: #cdd4d7;
+    --c35b04a: #3c994c;
+    --c3a3a4a: #c7cfd2;
+    --c3a3f6a: #575c8d;
+    --c3d3d52: #c2cbce;
+    --c3f6d4a: #4f8f78;
+    --c44445a: #bcc5c9;
+    --c4a2a2a: #dde5e7;
+    --c4a3a3a: #d5dee1;
+    --c4a4a5e: #b7c2c5;
+    --c4a4a6a: #b2bdc1;
+    --c4a5ce8: #5a7ea8;
+    --c4a7a4a: #588458;
+    --c4a7f57: #5fa189;
+    --c4ad0a0: #349572;
+    --c5a3a3a: #c3cfd2;
+    --c5a5a72: #a7b4b9;
+    --c5a6488: #74838c;
+    --c5a6cf8: #6d90ba;
+    --c5fd66a: #4f8f78;
+    --c6a6a80: #9aa9ae;
+    --c6a7498: #86959f;
+    --c6a8aff: #1031a6;
+    --c6ad0e0: #2c8492;
+    --c7a7a92: #8b9ca2;
+    --c7d8cff: #1021a2;
+    --c7ec87e: #407f40;
+    --c8a4a4a: #8a6a66;
+    --c8a4ae8: #856fa8;
+    --c8a8a9a: #809399;
+    --c8a9aff: #10239f;
+    --c8f9bff: #5a7ea8;
+    --c9a5a5a: #a87f78;
+    --c9a5af8: #9a86bd;
+    --c9aa4c8: #464f72;
+    --cb8b8c4: #5e6f75;
+    --cc0c0cc: #58686e;
+    --cc88a8a: #96665f;
+    --cc88aff: #856fa8;
+    --cc8a8a8: #7a5250;
+    --cc8c8d4: #536267;
+    --ccfcfd8: #4f5d62;
+    --ccfd4ff: #0e1c91;
+    --cd8d8e2: #48555a;
+    --cd94f4f: #ab6363;
+    --cdaffe9: #ffffff;
+    --ce0e0ea: #43435d;
+    --ce86363: #982525;
+    --ce86a8a: #962542;
+    --ce87a3a: #b8764a;
+    --ce88b2a: #a86722;
+    --ce8a830: #a77923;
+    --ce8e8f0: #41415c;
+    --ceaffe9: #ffffff;
+    --cf88a4a: #c98c5e;
+    --cff8a8a: #ab6363;
+    --cffb25e: #a96011;
+    --cffb88a: #9f4810;
+    --cffd76e: #a57c10;
+    --cfff: #fff;
+    --a035: rgba(60,82,92,0.16);
+    --a04: rgba(60,82,92,0.18);
+    --a05: rgba(60,82,92,0.23);
+    --a06: rgba(60,82,92,0.27);
+    --a065: rgba(60,82,92,0.29);
+    --a07: rgba(60,82,92,0.32);
+    --a08: rgba(60,82,92,0.36);
+    --ic-wechat-a: #93c6b2;
+    --ic-wechat-b: #5a9683;
+    --ic-rabbitbook-a: #93aecd;
+    --ic-rabbitbook-b: #5a7ea8;
+    --ic-shopping-a: #e0bd84;
+    --ic-shopping-b: #b8904a;
+    --ic-clockin-a: #96c4cf;
+    --ic-clockin-b: #5f93a3;
+    --ic-yizhan-a: #b4a2cd;
+    --ic-yizhan-b: #856fa8;
+    --ic-mail-a: #d29e9e;
+    --ic-mail-b: #ab6363;
+    --ic-settings-a: #a8b6bd;
+    --ic-settings-b: #74838c;
+    --ic-phone-a: #8bb5a8;
+    --ic-phone-b: #4f8677;
+    --ic-home-a: #dfa87e;
+    --ic-home-b: #b8764a;
+    --av-ceo: #8a6a66;
+    --av-tuzi: #5a7ea8;
+    --av-xiaobai: #b8904a;
+    --av-a: #4f8f83;
+    --av-b: #856fa8;
+    --av-c: #a8834a;
+    --av-mom: #ab6363;
+    --av-waimai: #b8905a;
+    --av-dad: #4f8677;
+    --bg1: #e6edf0;
+    --shell: #f7fafb;
+    --bezel: #d2dde0;
+    --screen: #fbfdfd;
+    --rail: #f1f6f7;
+    --panel: #ffffff;
+    --card: #f3f8f9;
+    --line: #dce6e9;
+    --line2: #b9c8cd;
+    --text: #2b393e;
+    --text2: #4f6268;
+    --text3: #75868c;
+    --accent: #4a8a9c;
+    --on-accent: #fff;
+    --gold: #c99a3c;
+    --gold2: #a87b20;
+    --ok: #5a9a86;
+    --ok-dim: #4a7a6a;
+    --bad: #c06060;
+    --bar: #eef4f5;
+    --bar2: #e7eff1;
+    --hover: #eaf2f4;
+    --shadow: rgba(60,80,90,.22);
+    --shadow-sm: rgba(60,80,90,.12);
+    --glow: rgba(74,138,156,.30);
+    --chapterbg: #e8f0f2;
+    --chaptertitle: #2b393e;
+    --chaptersub: #75868c;
+    --coverbg: radial-gradient(circle at 50% 40%, #fbfdfe 0%, #eef5f7 55%, #dde9ec 100%);
+    --moon: radial-gradient(circle at 34% 32%, rgba(255,255,255,.95), rgba(206,228,234,.55) 70%);
+    --moonglow: rgba(160,196,206,.35);
+    --covertitle: #2b393e;
+    --coverglow: 0 2px 18px rgba(120,160,170,.25);
+    --coversub: #75868c;
+    --brand-wx: #4f8f78;
+    --brand-rb: #5a7ea8;
+    --brand-rb-text: #5a7ea8;
+    --brand-mail: #ab6363;
+    --brand-mail-text: #ab6363;
+    --brand-yz: #856fa8;
+    --bubble-me-bg: #4f8f78;
+    --bubble-me-fg: #ffffff;
+  }
+
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; }
+  html, body {
+    width: 100%; height: 100%;
+    background: var(--c1a1a1e);
+    font-family: -apple-system, 'Segoe UI', 'PingFang SC', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scale-wrap {
+    width: 1000px;
+    height: 640px;
+    transform-origin: center center;
+    position: relative;
+  }
+  .computer {
+    width: 1000px;
+    height: 640px;
+    background: var(--c2b2b33);
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 30px 100px var(--a07), 0 0 0 8px var(--c141418);
+  }
+  .screen {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--c1e1e26);
+  }
+
+  /* ============ 状态栏 ============ */
+  .topbar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 34px;
+    background: var(--c17171f);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    z-index: 200;
+    font-size: 12px;
+    color: var(--c6a6a80);
+    letter-spacing: 1px;
+  }
+  .topbar .right { display: flex; gap: 14px; }
+
+  /* ============ 应用栏 ============ */
+  .desktop {
+    position: absolute;
+    top: 34px; left: 0; bottom: 0;
+    width: 190px;
+    padding: 22px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-right: 1px solid var(--c2f2f3a);
+    z-index: 5;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.18s;
+  }
+  .icon:hover { background: var(--c2a2a36); }
+  .icon:active { transform: scale(0.97); }
+  .icon.disabled { opacity: 0.35; }
+  .icon.disabled .icon-img { filter: grayscale(0.7); }
+  .icon-img {
+    width: 42px; height: 42px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px var(--a035);
+    position: relative;
+    overflow: hidden;
+  }
+  .icon-label { font-size: 15px; color: var(--ccfcfd8); letter-spacing: 0.5px; }
+
+  /* 微信 */
+  .ic-wechat { background: linear-gradient(145deg, var(--ic-wechat-a), var(--ic-wechat-b)); }
+  /* Rabbit Book */
+  .ic-rabbitbook { background: linear-gradient(145deg, var(--ic-rabbitbook-a), var(--ic-rabbitbook-b)); }
+  /* 购物 */
+  .ic-shopping { background: linear-gradient(145deg, var(--ic-shopping-a), var(--ic-shopping-b)); }
+  /* 打卡程序 */
+  .ic-clockin { background: linear-gradient(145deg, var(--ic-clockin-a), var(--ic-clockin-b)); }
+  /* 兔兔驿站 */
+  .ic-yizhan { background: linear-gradient(145deg, var(--ic-yizhan-a), var(--ic-yizhan-b)); }
+  /* 邮箱 */
+  .ic-mail { background: linear-gradient(145deg, var(--ic-mail-a), var(--ic-mail-b)); }
+  /* 设置（齿轮） */
+  .ic-settings { background: linear-gradient(145deg, var(--ic-settings-a), var(--ic-settings-b)); }
+  /* 电话（听筒） */
+  .ic-phone { background: linear-gradient(145deg, var(--ic-phone-a), var(--ic-phone-b)); }
+  /* 家（房子） */
+  .ic-home { background: linear-gradient(145deg, var(--ic-home-a), var(--ic-home-b)); }
+
+  /* ============ 任务栏 ============ */
+  .sidebar {
+    position: absolute;
+    top: 34px; right: 0; bottom: 0;
+    width: 250px;
+    background: var(--c23232d);
+    border-left: 1px solid var(--c2f2f3a);
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 5;
+    overflow-y: auto;
+  }
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .side-title { font-size: 11px; color: var(--c6a6a80); letter-spacing: 2px; margin-bottom: 9px; }
+  .achieve-btn {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 11px 14px; background: var(--c2a2a38); border-radius: 10px;
+    cursor: pointer; transition: 0.2s; border: 1px solid var(--c333344);
+  }
+  .achieve-btn:hover { background: var(--c313142); border-color: var(--c44445a); }
+  .achieve-btn .left { display: flex; align-items: center; gap: 9px; font-size: 14px; color: var(--cc8c8d4); }
+  .achieve-btn .trophy {
+    width: 16px; height: 16px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .achieve-btn .trophy svg { width: 16px; height: 16px; display: block; }
+
+  .achieve-btn .count { font-size: 13px; color: var(--c7a7a92); }
+  .divider { height: 1px; background: var(--c2f2f3a); }
+  .goal-list { display: flex; flex-direction: column; gap: 11px; }
+  .goal-item {
+    display: flex; gap: 9px; align-items: flex-start;
+    font-size: 14px; color: var(--cc8c8d4); line-height: 1.5;
+  }
+  .goal-item .dot {
+    width: 13px; height: 13px; border-radius: 50%;
+    border: 2px solid var(--c5a5a72); flex-shrink: 0; margin-top: 3px; transition: 0.3s;
+  }
+  .goal-item .dot.done { background: var(--c7ec87e); border-color: var(--c7ec87e); }
+  .goal-item.done { color: var(--c6a6a80); }
+  .goal-item.done .text { text-decoration: line-through; }
+  .goal-item .text { flex: 1; }
+  .goal-item .sub { display: block; font-size: 12px; color: var(--c6a6a80); margin-top: 3px; line-height: 1.5; }
+  .clock { margin-top: 10px; text-align: center; color: var(--c4a4a5e); font-size: 13px; letter-spacing: 1px; }
+
+  /* ============ 软件窗口 ============ */
+  .win {
+    position: absolute; background: var(--c262630); border-radius: 10px;
+    box-shadow: 0 20px 60px var(--a065); border: 1px solid var(--c3a3a4a);
+    display: none; flex-direction: column; overflow: hidden;
+    z-index: 20; min-width: 340px; min-height: 120px;
+  }
+  .win.show { display: flex; }
+  .win-bar {
+    height: 38px; background: var(--c2f2f3c); display: flex; align-items: center;
+    padding: 0 12px; cursor: move; flex-shrink: 0; gap: 8px;
+  }
+  .win-title { font-size: 14px; color: var(--ccfcfd8); flex: 1; padding-left: 4px; }
+  .win-close {
+    width: 26px; height: 26px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--c8a8a9a); font-size: 17px; cursor: pointer; transition: 0.2s;
+  }
+  .win-close:hover { background: var(--cd94f4f); color: var(--cfff); }
+  .win-body {
+    flex: 1; overflow-y: auto; padding: 16px;
+    color: var(--cb8b8c4); font-size: 14px; line-height: 1.6;
+  }
+  .win-body::-webkit-scrollbar { width: 5px; }
+  .win-body::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+
+  /* ============ 成就面板 ============ */
+  .achieve-panel {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10,10,16,0.75); backdrop-filter: blur(4px);
+    display: none; justify-content: center; align-items: center; z-index: 300;
+  }
+  .achieve-panel.show { display: flex; }
+  .panel-box {
+    background: var(--c23232d); border: 1px solid var(--c333344); border-radius: 16px;
+    width: 460px; max-height: 78%; padding: 24px 22px 22px;
+    position: relative; box-shadow: 0 20px 60px var(--a06);
+    display: flex; flex-direction: column;
+  }
+  .panel-box h2 { font-size: 17px; color: var(--ce0e0ea); font-weight: 500; letter-spacing: 2px; margin-bottom: 4px; }
+  .panel-box .sub { font-size: 12px; color: var(--c6a6a80); margin-bottom: 16px; }
+  .panel-close-x {
+    position: absolute; top: 16px; right: 16px; width: 28px; height: 28px;
+    border-radius: 8px; display: flex; align-items: center; justify-content: center;
+    color: var(--c8a8a9a); font-size: 17px; cursor: pointer; transition: 0.2s;
+  }
+  .panel-close-x:hover { background: var(--c3a3a4a); color: var(--cfff); }
+  .ach-list { display: flex; flex-direction: column; gap: 9px; overflow-y: auto; }
+  .ach-list::-webkit-scrollbar { width: 4px; }
+  .ach-list::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .ach-row {
+    display: flex; gap: 12px; align-items: center;
+    padding: 11px 13px; background: var(--c1e1e26); border-radius: 10px;
+    border: 1px solid var(--c2a2a36);
+  }
+  .ach-row.locked { opacity: 0.42; }
+  .ach-row .badge {
+    width: 36px; height: 36px; border-radius: 9px; background: var(--c3a3a4a);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; flex-shrink: 0;
+  }
+  .ach-row.done .badge { background: linear-gradient(145deg, var(--cffd76e), var(--ce8a830)); }
+  .ach-row .name { font-size: 14px; color: var(--cd8d8e2); }
+  .ach-row .status { font-size: 11px; color: var(--c5a5a72); margin-left: auto; }
+  .ach-row.done .status { color: var(--cffd76e); }
+
+  /* ============ toast ============ */
+  .toast {
+    position: absolute; right: 264px; bottom: 24px;
+    background: var(--c2a2a38); border: 1px solid var(--c3d3d52);
+    border-left: 3px solid var(--cffd76e); border-radius: 10px;
+    padding: 12px 16px; max-width: 290px;
+    transform: translateX(340px); opacity: 0;
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 30px var(--a05); z-index: 250;
+  }
+  .toast.show { transform: translateX(0); opacity: 1; }
+  .toast .t-title { font-size: 11px; color: var(--cffd76e); letter-spacing: 1px; margin-bottom: 4px; }
+  .toast .t-text { font-size: 13px; color: var(--cd8d8e2); line-height: 1.5; }
+
+  /* ============ 章节动画 ============ */
+  .chapter-cover {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--c0a0a10); display: none; flex-direction: column;
+    justify-content: center; align-items: center; z-index: 500;
+    opacity: 0; transition: opacity 0.9s ease;
+  }
+  .chapter-cover.show { display: flex; opacity: 1; }
+  .chapter-cover .c-num { font-size: 15px; color: var(--c8a8a9a); letter-spacing: 6px; margin-bottom: 14px; }
+  .chapter-cover .c-name { font-size: 34px; color: var(--ce8e8f0); letter-spacing: 10px; font-weight: 300; }
+
+  /* ============ 系统弹窗 ============ */
+  .sys-popup {
+    position: absolute;
+    top: 42px;
+    left: 200px;
+    right: 260px;
+    background: var(--c2a2a38);
+    border: 1px solid var(--c4a4a6a);
+    border-left: 3px solid var(--c7d8cff);
+    border-radius: 10px;
+    padding: 12px 16px;
+    box-shadow: 0 10px 30px var(--a05);
+    z-index: 260;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .sys-popup.show { display: block; }
+  .sys-popup .sp-title { font-size: 12px; letter-spacing: 1px; margin-bottom: 4px; }
+  .sys-popup .sp-text { font-size: 13px; color: var(--cd8d8e2); line-height: 1.5; }
+
+  /* ============ 图片放大弹层 ============ */
+  .img-zoom {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(5,5,10,0.9); backdrop-filter: blur(6px);
+    display: none; justify-content: center; align-items: center;
+    z-index: 400; cursor: pointer;
+  }
+  .img-zoom.show { display: flex; }
+  .img-zoom img {
+    max-width: 80%; max-height: 80%;
+    border-radius: 14px;
+    box-shadow: 0 20px 80px var(--a08);
+    background: var(--c2a2a36);
+  }
+  .img-zoom .iz-close {
+    position: absolute; top: 20px; right: 24px;
+    color: var(--cc8c8d4); font-size: 26px; cursor: pointer;
+  }
+  .img-zoom .iz-close:hover { color: var(--cfff); }
+
+  /* ============ 微信 ============ */
+  .wx-wrap { display: flex; flex-direction: column; height: 100%; }
+  .wx-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 12px; border-bottom: 1px solid var(--c2f2f3a); flex-shrink: 0;
+  }
+  .wx-head .wx-name { flex: 1; font-size: 15px; color: var(--ce0e0ea); }
+  .wx-logout {
+    font-size: 12px; color: var(--cfff); background: var(--cd94f4f);
+    padding: 5px 12px; border-radius: 7px; cursor: pointer; transition: 0.2s;
+  }
+  .wx-logout:hover { background: var(--ce86363); }
+  .wx-list { flex: 1; overflow-y: auto; }
+  .wx-list::-webkit-scrollbar { width: 5px; }
+  .wx-list::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .wx-row {
+    display: flex; align-items: center; gap: 11px;
+    padding: 12px 14px; cursor: pointer; transition: 0.15s;
+    border-bottom: 1px solid var(--c24242e);
+  }
+  .wx-row:hover { background: var(--c2c2c38); }
+  .wx-row .wx-avatar {
+    width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; color: var(--cfff); font-weight: 600;
+  }
+  .wx-row .wx-info { flex: 1; overflow: hidden; }
+  .wx-row .wx-row-name { font-size: 14px; color: var(--cd8d8e2); margin-bottom: 3px; }
+  .wx-row .wx-preview {
+    font-size: 12px; color: var(--c6a6a80); white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+  .wx-row .wx-badge { width: 8px; height: 8px; background: var(--cd94f4f); border-radius: 50%; flex-shrink: 0; }
+  .wx-chat { display: flex; flex-direction: column; height: 100%; }
+  .wx-chat-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 12px; border-bottom: 1px solid var(--c2f2f3a); flex-shrink: 0;
+  }
+  .wx-back {
+    width: 26px; height: 26px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--c8a8a9a); font-size: 20px; cursor: pointer; transition: 0.2s;
+  }
+  .wx-back:hover { background: var(--c3a3a4a); color: var(--cfff); }
+  .wx-chat-name { font-size: 15px; color: var(--ce0e0ea); }
+  .wx-msgs {
+    flex: 1; overflow-y: auto; padding: 16px 14px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .wx-msgs::-webkit-scrollbar { width: 5px; }
+  .wx-msgs::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .wx-msg { display: flex; gap: 9px; max-width: 78%; }
+  .wx-msg.me { flex-direction: row-reverse; align-self: flex-end; }
+  .wx-msg .m-avatar {
+    width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; color: var(--cfff); font-weight: 600;
+  }
+  .wx-msg .m-bubble {
+    background: var(--c2f2f3c); padding: 9px 12px;
+    border-radius: 4px 12px 12px 12px;
+    font-size: 13.5px; color: var(--cd8d8e2); line-height: 1.55; word-break: break-word;
+  }
+  .wx-msg.me .m-bubble {
+    background: var(--c3f6d4a); border-radius: 12px 4px 12px 12px; color: var(--ceaffe9);
+  }
+  .wx-msg.sys {
+    align-self: center; max-width: 90%; color: var(--c6a6a80);
+    font-size: 12px; background: var(--c23232d); padding: 4px 10px; border-radius: 6px;
+  }
+  .wx-msg.sys .m-bubble { background: transparent; padding: 0; color: inherit; }
+  .wx-file-card {
+    background: var(--c26262f); border: 1px solid var(--c3a3a4a); border-radius: 10px;
+    padding: 12px 14px; display: flex; align-items: center; gap: 11px;
+    cursor: pointer; transition: 0.2s;
+  }
+  .wx-file-card:hover { border-color: var(--c5a5a72); background: var(--c2c2c38); }
+  .wx-file-card.done { border-color: var(--c7ec87e); }
+  .wx-file-icon {
+    width: 38px; height: 38px; border-radius: 9px; background: var(--c3a3a4a);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; flex-shrink: 0;
+  }
+  .wx-file-card.done .wx-file-icon { background: var(--c4a7a4a); }
+  .wx-file-name { font-size: 13px; color: var(--cd8d8e2); margin-bottom: 3px; }
+  .wx-file-sub { font-size: 11px; color: var(--c6a6a80); }
+  .wx-send-btn {
+    align-self: flex-end;
+    background: var(--c3f6d4a); color: var(--ceaffe9);
+    padding: 8px 18px; border-radius: 9px;
+    font-size: 13px; cursor: pointer; transition: 0.2s;
+    margin-top: 4px;
+  }
+  .wx-send-btn:hover { background: var(--c4a7f57); }
+
+  /* ============ 登录页 ============ */
+  .login-page {
+    display: flex; flex-direction: column; justify-content: flex-start;
+    align-items: center; min-height: 100%; gap: 14px; padding: 24px 30px;
+    overflow-y: auto;
+  }
+  .login-page::-webkit-scrollbar { width: 5px; }
+  .login-page::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .login-page .lg-title { font-size: 17px; color: var(--ce0e0ea); letter-spacing: 3px; margin-bottom: 6px; }
+  .login-field { width: 100%; max-width: 280px; position: relative; }
+  .login-field input {
+    width: 100%; padding: 10px 12px; border-radius: 9px;
+    border: 1px solid var(--c3a3a4a); background: var(--c1e1e26); color: var(--ce0e0ea);
+    font-size: 14px; outline: none; transition: 0.2s;
+  }
+  .login-field input:focus { border-color: var(--c5a5a72); }
+  .login-field input::-ms-reveal,
+  .login-field input::-ms-clear { display: none; }
+  .login-field input::-webkit-credentials-auto-fill-button,
+  .login-field input::-webkit-strong-password-auto-fill-button { display: none; }
+  .pwd-eye {
+    position: absolute; right: 10px; top: 10px; width: 22px; height: 22px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+  }
+  .pwd-eye .eye-shape {
+    width: 16px; height: 10px; border: 1.6px solid var(--c8a8a9a);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; position: relative;
+  }
+  .pwd-eye .eye-shape::after {
+    content: ''; width: 5px; height: 5px; background: var(--c8a8a9a);
+    border-radius: 50%; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pwd-eye.showing .eye-shape { border-color: var(--cc8c8d4); }
+  .pwd-eye.showing .eye-shape::after { background: var(--cc8c8d4); }
+  .pwd-eye .eye-slash {
+    display: none; position: absolute; width: 20px; height: 1.6px;
+    background: var(--c8a8a9a); transform: rotate(-45deg);
+  }
+  .pwd-eye.showing .eye-slash { display: block; }
+  .login-field .lg-hint { font-size: 11px; color: var(--c6a6a80); margin-top: 5px; line-height: 1.5; }
+  .login-btn {
+    width: 100%; max-width: 280px; padding: 10px; border-radius: 9px;
+    background: var(--c3f6d4a); color: var(--ceaffe9); font-size: 14px;
+    text-align: center; cursor: pointer; transition: 0.2s; margin-top: 4px;
+  }
+  .login-btn:hover { background: var(--c4a7f57); }
+  .login-btn.disabled { background: var(--c3a3a4a); color: var(--c6a6a80); cursor: default; }
+  .login-err { font-size: 12px; color: var(--cd94f4f); min-height: 16px; }
+  .forget-link {
+    font-size: 12px; color: var(--c6a8aff); cursor: pointer;
+    text-decoration: underline; margin-top: 2px;
+  }
+  .forget-link:hover { color: var(--c8a9aff); }
+
+  .arrow-puzzle {
+    font-size: 15px; color: var(--cd8d8e2); line-height: 1.9;
+    letter-spacing: 3px; background: var(--c1e1e26); border-radius: 8px;
+    padding: 10px 14px; border: 1px solid var(--c3a3a4a);
+  }
+
+  /* ============ Rabbit Book ============ */
+  .rb-wrap { display: flex; flex-direction: column; height: 100%; }
+  .rb-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-bottom: 1px solid var(--c2f2f3a); flex-shrink: 0;
+  }
+  .rb-logo { font-size: 15px; color: var(--c8f9bff); letter-spacing: 1px; font-weight: 600; }
+  .rb-back {
+    width: 34px; height: 34px; border-radius: 9px; display: none;
+    align-items: center; justify-content: center; color: var(--text2);
+    background: var(--card); border: 1px solid var(--line);
+    font-size: 22px; cursor: pointer;
+    transition: 0.2s; margin-right: 4px;
+  }
+  .rb-back:hover { background: var(--hover); color: var(--text); }
+  .rb-back.show { display: flex; }
+  .rb-cols { flex: 1; display: flex; overflow: hidden; }
+  .rb-left {
+    width: 170px; border-right: 1px solid var(--c2f2f3a); padding: 14px;
+    flex-shrink: 0; overflow-y: auto;
+  }
+  .rb-mid { flex: 1; overflow-y: auto; padding: 14px; }
+  .rb-right {
+    width: 180px; border-left: 1px solid var(--c2f2f3a); padding: 14px;
+    flex-shrink: 0; overflow-y: auto;
+  }
+  .rb-left::-webkit-scrollbar, .rb-mid::-webkit-scrollbar, .rb-right::-webkit-scrollbar { width: 4px; }
+  .rb-left::-webkit-scrollbar-thumb, .rb-mid::-webkit-scrollbar-thumb, .rb-right::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .rb-profile-card {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; gap: 8px; padding-bottom: 14px;
+    border-bottom: 1px solid var(--c2f2f3a); margin-bottom: 14px;
+  }
+  .rb-big-avatar {
+    width: 64px; height: 64px; border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; color: var(--cfff); font-weight: 600;
+  }
+  .rb-nick { font-size: 15px; color: var(--ce0e0ea); }
+  .rb-acc { font-size: 12px; color: var(--c6a6a80); }
+  .rb-bio { font-size: 12px; color: var(--c8a8a9a); line-height: 1.5; }
+  .rb-post {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 12px; padding: 14px; margin-bottom: 12px;
+  }
+  .rb-post-head { display: flex; align-items: center; gap: 9px; margin-bottom: 9px; }
+  .rb-post-avatar {
+    width: 34px; height: 34px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; color: var(--cfff); font-weight: 600; flex-shrink: 0;
+  }
+  .rb-post-name { font-size: 13px; color: var(--cd8d8e2); }
+  .rb-post-time { font-size: 11px; color: var(--c6a6a80); margin-left: auto; }
+  .rb-post-text { font-size: 13.5px; color: var(--cc0c0cc); line-height: 1.6; margin-bottom: 8px; }
+  .post-img {
+    width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+    border-radius: 10px; display: block; margin-top: 8px;
+    background: var(--c2a2a36); cursor: pointer;
+  }
+  .rb-post-foot {
+    display: flex; align-items: center; gap: 6px;
+    margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--c2a2a36);
+  }
+  .like-btn {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 12.5px; color: var(--c8a8a9a); cursor: pointer;
+    padding: 4px 9px; border-radius: 7px; transition: 0.2s;
+  }
+  .like-btn:hover { background: var(--c2a2a36); color: var(--cd8d8e2); }
+  .like-btn.liked { color: var(--ce86a8a); }
+  .rb-recipe-btn {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--cfff);
+    background: var(--c4a5ce8);
+    padding: 5px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .rb-recipe-btn:hover { background: var(--c5a6cf8); }
+  .rb-recipe-btn.done { background: var(--c3a3a4a); color: var(--c7ec87e); cursor: default; }
+  .rb-friend {
+    display: flex; align-items: center; gap: 9px; padding: 8px;
+    border-radius: 9px; cursor: pointer; transition: 0.15s; margin-bottom: 4px;
+  }
+  .rb-friend:hover { background: var(--c2a2a36); }
+  .rb-friend .rb-f-avatar {
+    width: 32px; height: 32px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; color: var(--cfff); font-weight: 600; flex-shrink: 0;
+  }
+  .rb-friend .rb-f-name { font-size: 13px; color: var(--cc8c8d4); }
+  .rb-empty { font-size: 12.5px; color: var(--c6a6a80); line-height: 1.7; padding: 20px 4px; }
+  .pigpen-img {
+    width: 100%; aspect-ratio: 1 / 1; object-fit: contain;
+    border-radius: 10px; background: var(--c1e1e26); cursor: pointer;
+    border: 1px solid var(--c3a3a4a);
+  }
+
+  /* ============ 购物 ============ */
+  .shop-wrap { display: flex; flex-direction: column; height: 100%; }
+  .shop-head {
+    padding: 10px 14px; border-bottom: 1px solid var(--c2f2f3a);
+    font-size: 15px; color: var(--ce0e0ea); flex-shrink: 0;
+  }
+  .shop-list { flex: 1; overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+  .shop-list::-webkit-scrollbar { width: 5px; }
+  .shop-list::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .order-card {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 12px; padding: 14px; display: flex; gap: 12px;
+  }
+  .order-thumb {
+    width: 64px; height: 64px; border-radius: 10px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; font-size: 26px;
+  }
+  .order-info { flex: 1; }
+  .order-name { font-size: 14px; color: var(--ce0e0ea); margin-bottom: 4px; }
+  .order-desc { font-size: 12px; color: var(--c8a8a9a); line-height: 1.5; margin-bottom: 6px; }
+  .order-meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--c6a6a80); }
+  .order-price { color: var(--cffb25e); font-size: 13px; }
+
+  .order-detail-mask {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(5,5,10,0.7); backdrop-filter: blur(3px);
+    display: none; justify-content: center; align-items: center; z-index: 350;
+  }
+  .order-detail-mask.show { display: flex; }
+  .order-detail-card {
+    background: var(--c23232d); border: 1px solid var(--c3a3a4a); border-radius: 14px;
+    width: 380px; padding: 20px; position: relative;
+    box-shadow: 0 20px 60px var(--a07);
+  }
+  .order-detail-card .od-close {
+    position: absolute; top: 12px; right: 14px;
+    width: 26px; height: 26px; border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--c8a8a9a); font-size: 17px; cursor: pointer; transition: 0.2s;
+  }
+  .order-detail-card .od-close:hover { background: var(--c3a3a4a); color: var(--cfff); }
+  .order-detail-card .od-title { font-size: 15px; color: var(--ce0e0ea); margin-bottom: 14px; letter-spacing: 1px; }
+  .order-detail-card .od-row {
+    display: flex; justify-content: space-between;
+    font-size: 13px; color: var(--cb8b8c4); padding: 7px 0;
+    border-bottom: 1px solid var(--c2a2a36);
+  }
+  .order-detail-card .od-row:last-child { border-bottom: none; }
+  .order-detail-card .od-label { color: var(--c6a6a80); }
+  .order-detail-card .od-num { color: var(--cffb25e); letter-spacing: 2px; font-size: 14px; }
+
+  /* ============ 打卡程序 ============ */
+  .clockin-wrap {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; height: 100%; gap: 18px; padding: 30px;
+  }
+  .ci-card {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 16px; padding: 26px 40px;
+    display: flex; flex-direction: column; align-items: center; gap: 14px;
+    box-shadow: 0 10px 30px var(--a04);
+  }
+  .ci-clock {
+    width: 80px; height: 80px; border-radius: 50%;
+    border: 4px solid var(--c5fd66a); position: relative; transition: 0.4s;
+  }
+  .ci-clock.off { border-color: var(--cd94f4f); }
+  .ci-clock::before {
+    content: ''; width: 3px; height: 28px; background: var(--c5fd66a);
+    position: absolute; top: 12px; left: 50%;
+    transform: translateX(-50%); border-radius: 2px; transition: 0.4s;
+  }
+  .ci-clock.off::before { background: var(--cd94f4f); }
+  .ci-clock::after {
+    content: ''; width: 3px; height: 18px; background: var(--c5fd66a);
+    position: absolute; top: calc(50% - 14px); left: 50%;
+    transform-origin: bottom center; transform: translateX(-50%) rotate(60deg);
+    border-radius: 2px; transition: 0.4s;
+  }
+  .ci-clock.off::after { background: var(--cd94f4f); }
+  .ci-status { font-size: 15px; color: var(--c7ec87e); letter-spacing: 2px; }
+  .ci-status.off { color: var(--cd94f4f); }
+  .ci-btn {
+    padding: 10px 30px; border-radius: 9px; background: var(--c3f6d4a);
+    color: var(--ceaffe9); font-size: 14px; cursor: pointer; transition: 0.2s;
+  }
+  .ci-btn:hover { background: var(--c4a7f57); }
+  .ci-btn.disabled { background: var(--c3a3a4a); color: var(--c6a6a80); cursor: default; }
+  .ci-pwd { display: none; flex-direction: column; gap: 8px; width: 240px; margin-top: 4px; }
+  .ci-pwd.show { display: flex; }
+  .ci-pwd input {
+    width: 100%; padding: 10px 12px; border-radius: 9px;
+    border: 1px solid var(--c3a3a4a); background: var(--c1e1e26);
+    color: var(--ce0e0ea); font-size: 14px; outline: none;
+  }
+  .ci-pwd input:focus { border-color: var(--c5a5a72); }
+  .ci-pwd .ci-hint { font-size: 11px; color: var(--c6a6a80); line-height: 1.5; }
+  .ci-err { font-size: 12px; color: var(--cd94f4f); min-height: 16px; }
+  .ci-submit {
+    padding: 9px; border-radius: 9px; background: var(--c4a5ce8);
+    color: var(--cfff); font-size: 14px; text-align: center; cursor: pointer;
+  }
+  .ci-submit:hover { background: var(--c5a6cf8); }
+
+  /* ============ 兔兔驿站 ============ */
+  .yz-wrap { display: flex; flex-direction: column; height: 100%; }
+  .yz-head {
+    padding: 10px 14px; border-bottom: 1px solid var(--c2f2f3a);
+    font-size: 15px; color: var(--ce0e0ea); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .yz-get-btn {
+    font-size: 12px; color: var(--cfff); background: var(--c8a4ae8);
+    padding: 5px 12px; border-radius: 7px; cursor: pointer; transition: 0.2s;
+  }
+  .yz-get-btn:hover { background: var(--c9a5af8); }
+  .yz-get-btn.disabled { background: var(--c3a3a4a); color: var(--c6a6a80); cursor: default; }
+  .yz-body { flex: 1; overflow-y: auto; padding: 14px; }
+  .yz-body::-webkit-scrollbar { width: 5px; }
+  .yz-body::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .yz-pickup {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 12px; padding: 16px; margin-bottom: 14px;
+  }
+  .yz-pickup-title { font-size: 13px; color: var(--cc88aff); letter-spacing: 1px; margin-bottom: 10px; }
+  .yz-input-row { display: flex; gap: 8px; }
+  .yz-input-row input {
+    flex: 1; padding: 10px 12px; border-radius: 9px;
+    border: 1px solid var(--c3a3a4a); background: var(--c1e1e26);
+    color: var(--ce0e0ea); font-size: 14px; outline: none;
+  }
+  .yz-input-row input:focus { border-color: var(--c5a5a72); }
+  .yz-submit {
+    padding: 10px 18px; border-radius: 9px; background: var(--c8a4ae8);
+    color: var(--cfff); font-size: 14px; cursor: pointer;
+  }
+  .yz-submit:hover { background: var(--c9a5af8); }
+  .yz-err { font-size: 12px; color: var(--cd94f4f); min-height: 16px; margin-top: 6px; }
+  .yz-history-title { font-size: 12px; color: var(--c6a6a80); letter-spacing: 1px; margin-bottom: 10px; }
+  .yz-order {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 10px; padding: 11px 14px; margin-bottom: 8px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .yz-order .yo-name { font-size: 13px; color: var(--cc8c8d4); }
+  .yz-order .yo-status { font-size: 12px; color: var(--c7ec87e); }
+  .yz-order .yo-status.transit { color: var(--cffb25e); }
+  .yz-order .yo-time { font-size: 11px; color: var(--c6a6a80); margin-top: 3px; }
+
+  /* ============ 邮箱 ============ */
+  .mail-wrap { display: flex; flex-direction: column; height: 100%; }
+  .mail-head {
+    padding: 10px 14px; border-bottom: 1px solid var(--c2f2f3a);
+    font-size: 15px; color: var(--ce0e0ea); flex-shrink: 0;
+  }
+  .mail-list { flex: 1; overflow-y: auto; }
+  .mail-list::-webkit-scrollbar { width: 5px; }
+  .mail-list::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .mail-row {
+    padding: 13px 16px; border-bottom: 1px solid var(--c24242e);
+    cursor: pointer; transition: 0.15s;
+  }
+  .mail-row:hover { background: var(--c2c2c38); }
+  .mail-row-top { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .mail-from { font-size: 13px; color: var(--cd8d8e2); }
+  .mail-time { font-size: 11px; color: var(--c6a6a80); }
+  .mail-preview { font-size: 12px; color: var(--c6a6a80); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mail-detail { display: flex; flex-direction: column; height: 100%; }
+  .mail-detail-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px; border-bottom: 1px solid var(--c2f2f3a); flex-shrink: 0;
+  }
+  .mail-detail-title { font-size: 14px; color: var(--cd8d8e2); }
+  .mail-detail-body { flex: 1; overflow-y: auto; padding: 18px; font-size: 13.5px; color: var(--cc0c0cc); line-height: 1.8; }
+  .mail-detail-body::-webkit-scrollbar { width: 5px; }
+  .mail-detail-body::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .mail-link-btn {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 9px 18px;
+    border-radius: 8px;
+    background: var(--c4a5ce8);
+    color: var(--cfff);
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .mail-link-btn:hover { background: var(--c5a6cf8); }
+
+  .ad-box {
+    background: var(--c2a2222); border: 1px dashed var(--c8a4a4a);
+    border-radius: 10px; padding: 14px; margin: 14px 0;
+    position: relative; height: 220px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: block;
+  }
+  .ad-box::-webkit-scrollbar { width: 5px; }
+  .ad-box::-webkit-scrollbar-thumb { background: var(--c5a3a3a); border-radius: 4px; }
+  .ad-close {
+    position: absolute; top: 8px; right: 10px;
+    width: 22px; height: 22px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--cc88a8a); font-size: 16px; cursor: pointer; transition: 0.2s;
+  }
+  .ad-close:hover { background: var(--c4a2a2a); color: var(--cfff); }
+  .ad-text { font-size: 13px; color: var(--cc8a8a8); line-height: 1.7; }
+  .ad-puzzle { margin-top: 10px; }
+  .ad-puzzle .ap-row { font-size: 13px; color: var(--cc8c8d4); line-height: 1.9; letter-spacing: 1px; }
+  .ad-puzzle .ap-input-row { display: flex; gap: 8px; margin-top: 10px; }
+  .ad-puzzle input {
+    flex: 1; padding: 8px 11px; border-radius: 8px;
+    border: 1px solid var(--c4a3a3a); background: var(--c1e1a1a);
+    color: var(--ce0e0ea); font-size: 14px; outline: none;
+  }
+  .ad-puzzle .ap-btn {
+    padding: 8px 16px; border-radius: 8px; background: var(--c8a4a4a);
+    color: var(--cfff); font-size: 13px; cursor: pointer;
+  }
+  .ad-puzzle .ap-btn:hover { background: var(--c9a5a5a); }
+  .ad-err { font-size: 12px; color: var(--cd94f4f); margin-top: 6px; min-height: 16px; }
+
+  /* ============ 设置 ============ */
+  .st-wrap { display: flex; flex-direction: column; height: 100%; }
+  .st-head {
+    padding: 10px 14px; border-bottom: 1px solid var(--c2f2f3a);
+    font-size: 15px; color: var(--ce0e0ea); flex-shrink: 0;
+  }
+  .st-body { flex: 1; overflow-y: auto; padding: 14px; }
+  .st-body::-webkit-scrollbar { width: 5px; }
+  .st-body::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .st-section-title { font-size: 12px; color: var(--c6a6a80); letter-spacing: 1px; margin-bottom: 10px; }
+  .st-wifi-item {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .st-wifi-icon {
+    width: 22px; height: 16px; position: relative; flex-shrink: 0;
+  }
+  .st-wifi-icon::before {
+    content: ''; width: 20px; height: 20px;
+    border: 2px solid var(--c9aa4c8); border-radius: 50%;
+    border-bottom-color: transparent; border-left-color: transparent; border-right-color: transparent;
+    position: absolute; top: -8px; left: 0;
+  }
+  .st-wifi-icon::after {
+    content: ''; width: 8px; height: 8px; background: var(--c9aa4c8);
+    border-radius: 50%; position: absolute; bottom: 0; left: 6px;
+  }
+  .st-wifi-name { flex: 1; font-size: 14px; color: var(--cd8d8e2); }
+  .st-wifi-lock { font-size: 12px; color: var(--c6a6a80); }
+  .st-connect-btn {
+    font-size: 12px; color: var(--cfff); background: var(--c5a6488);
+    padding: 5px 12px; border-radius: 7px; cursor: pointer;
+  }
+  .st-connect-btn:hover { background: var(--c6a7498); }
+  .st-connect-btn.connected { background: var(--c3f6d4a); }
+  .st-pwd-box {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 10px; padding: 14px; margin-bottom: 10px;
+    display: none;
+  }
+  .st-pwd-box.show { display: block; }
+  .st-pwd-title { font-size: 13px; color: var(--cc8c8d4); margin-bottom: 10px; }
+  .st-pwd-row { display: flex; gap: 8px; }
+  .st-pwd-row input {
+    flex: 1; padding: 9px 12px; border-radius: 8px;
+    border: 1px solid var(--c3a3a4a); background: var(--c14141a);
+    color: var(--ce0e0ea); font-size: 14px; outline: none;
+  }
+  .st-pwd-row input:focus { border-color: var(--c5a5a72); }
+  .st-pwd-btn {
+    padding: 9px 18px; border-radius: 8px; background: var(--c5a6488);
+    color: var(--cfff); font-size: 13px; cursor: pointer;
+  }
+  .st-pwd-btn:hover { background: var(--c6a7498); }
+  .st-pwd-hint { font-size: 11px; color: var(--c6a6a80); line-height: 1.5; margin-top: 8px; }
+  .st-pwd-err { font-size: 12px; color: var(--cd94f4f); min-height: 16px; margin-top: 6px; }
+
+  /* ============ 电话 ============ */
+  .ph-wrap { display: flex; height: 100%; }
+  .ph-side {
+    width: 100px; background: var(--c1e1e26);
+    border-right: 1px solid var(--c2f2f3a);
+    display: flex; flex-direction: column;
+    flex-shrink: 0;
+  }
+  .ph-tab {
+    padding: 14px 10px; font-size: 13px; color: var(--c8a8a9a);
+    cursor: pointer; text-align: center; transition: 0.15s;
+    border-bottom: 1px solid var(--c24242e);
+  }
+  .ph-tab:hover { background: var(--c2a2a36); color: var(--cc8c8d4); }
+  .ph-tab.active { background: var(--c2a2a36); color: var(--c4ad0a0); border-left: 3px solid var(--c4ad0a0); }
+  .ph-main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+  .ph-dial { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; gap: 14px; }
+  .ph-dial-input {
+    width: 220px; height: 40px; background: var(--c1e1e26);
+    border: 1px solid var(--c3a3a4a); border-radius: 9px;
+    color: var(--ce0e0ea); font-size: 18px; text-align: center;
+    letter-spacing: 2px; line-height: 40px; overflow: hidden;
+  }
+  .ph-keypad {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 10px; width: 220px;
+  }
+  .ph-key {
+    height: 44px; background: var(--c2a2a36); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: var(--cd8d8e2); cursor: default;
+    transition: 0.1s;
+  }
+  .ph-key:active { background: var(--c3a3a4a); }
+
+  .ph-mine { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 30px; }
+  .ph-mine-avatar {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: var(--c4a5ce8); display: flex; align-items: center; justify-content: center;
+    font-size: 32px; color: var(--cfff); font-weight: 600;
+  }
+  .ph-mine-num { font-size: 18px; color: var(--ce0e0ea); letter-spacing: 3px; }
+  .ph-mine-label { font-size: 12px; color: var(--c6a6a80); }
+
+  .ph-contacts { flex: 1; overflow-y: auto; padding: 14px; }
+  .ph-contacts::-webkit-scrollbar { width: 5px; }
+  .ph-contacts::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .ph-contact {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 11px;
+  }
+  .ph-contact-avatar {
+    width: 38px; height: 38px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; color: var(--cfff); font-weight: 600; flex-shrink: 0;
+  }
+  .ph-contact-name { flex: 1; font-size: 14px; color: var(--cd8d8e2); }
+  .ph-call-btn {
+    padding: 6px 14px; border-radius: 8px;
+    background: var(--c1a9a6a); color: var(--cfff);
+    font-size: 13px; cursor: pointer; transition: 0.2s;
+  }
+  .ph-call-btn:hover { background: var(--c2aaa7a); }
+
+  .ph-call { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  .ph-call-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 12px; border-bottom: 1px solid var(--c2f2f3a); flex-shrink: 0;
+  }
+  .ph-call-name { font-size: 15px; color: var(--ce0e0ea); }
+  .ph-call-body {
+    flex: 1; overflow-y: auto; padding: 16px 14px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .ph-call-body::-webkit-scrollbar { width: 5px; }
+  .ph-call-body::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .ph-msg { display: flex; gap: 9px; max-width: 80%; }
+  .ph-msg.me { flex-direction: row-reverse; align-self: flex-end; }
+  .ph-msg .ph-m-avatar {
+    width: 32px; height: 32px; border-radius: 9px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; color: var(--cfff); font-weight: 600;
+  }
+  .ph-msg .ph-bubble {
+    background: var(--c2f2f3c); padding: 9px 12px;
+    border-radius: 4px 12px 12px 12px;
+    font-size: 13.5px; color: var(--cd8d8e2); line-height: 1.55; word-break: break-word;
+  }
+  .ph-msg.me .ph-bubble {
+    background: var(--c1a6a4a); border-radius: 12px 4px 12px 12px; color: var(--cdaffe9);
+  }
+  .ph-choices {
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 12px 14px; border-top: 1px solid var(--c2f2f3a);
+    flex-shrink: 0;
+  }
+  .ph-choice {
+    background: var(--c2a2a36); border: 1px solid var(--c3a3a4a);
+    border-radius: 10px; padding: 10px 14px;
+    font-size: 13.5px; color: var(--cd8d8e2); cursor: pointer;
+    transition: 0.15s; text-align: left;
+  }
+  .ph-choice:hover { background: var(--c3a3a4a); border-color: var(--c5a5a72); }
+  .ph-choice.disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+  .ph-ended { text-align: center; color: var(--c6a6a80); font-size: 12px; padding: 6px; }
+
+  /* ============ 家 ============ */
+  .home-lock {
+    display: flex; flex-direction: column; justify-content: flex-start;
+    align-items: center; min-height: 100%; gap: 14px; padding: 24px 30px;
+    overflow-y: auto;
+  }
+  .home-lock::-webkit-scrollbar { width: 5px; }
+  .home-lock::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .home-lock .hl-title { font-size: 17px; color: var(--cffb88a); letter-spacing: 3px; margin-bottom: 6px; }
+  .home-lock .hl-cipher {
+    font-size: 22px; color: var(--ce0e0ea); letter-spacing: 8px;
+    background: var(--c1e1e26); border: 1px solid var(--c3a3a4a);
+    border-radius: 10px; padding: 14px 24px;
+    font-weight: 600;
+  }
+  .home-lock .hl-hint {
+    font-size: 12px; color: var(--c6a6a80); line-height: 1.6; text-align: center;
+  }
+  .home-lock .hl-img {
+    width: 200px; aspect-ratio: 1/1; object-fit: contain;
+    border-radius: 10px; background: var(--c1e1e26); cursor: pointer;
+    border: 1px solid var(--c3a3a4a);
+  }
+  .home-lock input {
+    width: 100%; max-width: 280px; padding: 10px 12px;
+    border-radius: 9px; border: 1px solid var(--c3a3a4a);
+    background: var(--c1e1e26); color: var(--ce0e0ea);
+    font-size: 14px; outline: none;
+  }
+  .home-lock input:focus { border-color: var(--c5a5a72); }
+  .home-lock .hl-btn {
+    width: 100%; max-width: 280px; padding: 10px;
+    border-radius: 9px; background: var(--ce87a3a); color: var(--cfff);
+    font-size: 14px; text-align: center; cursor: pointer;
+    transition: 0.2s; margin-top: 4px;
+  }
+  .home-lock .hl-btn:hover { background: var(--cf88a4a); }
+  .home-lock .hl-err { font-size: 12px; color: var(--cd94f4f); min-height: 16px; }
+
+  /* 家里 */
+  .home-inside {
+    display: flex; flex-direction: column; height: 100%;
+    padding: 20px;
+  }
+  .home-inside .hi-title {
+    font-size: 15px; color: var(--cffb88a); letter-spacing: 2px;
+    margin-bottom: 14px; flex-shrink: 0;
+  }
+  .home-items {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    justify-content: center;
+    flex: 1;
+    align-content: flex-start;
+  }
+  .home-item {
+    background: var(--c1e1e26); border: 1px solid var(--c2a2a36);
+    border-radius: 12px; padding: 14px 16px;
+    width: 140px;
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    cursor: pointer; transition: 0.2s;
+    position: relative;
+  }
+  .home-item:hover { border-color: var(--c5a5a72); background: var(--c2c2c38); }
+  .home-item.used { opacity: 0.35; cursor: default; }
+  .home-item.used:hover { border-color: var(--c2a2a36); background: var(--c1e1e26); }
+  .home-item .hi-icon {
+    width: 44px; height: 44px; border-radius: 11px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .home-item .hi-name { font-size: 13px; color: var(--cd8d8e2); text-align: center; }
+
+  .home-cake-slot {
+    margin-top: 16px;
+    display: flex; justify-content: center;
+    flex-shrink: 0;
+  }
+  .home-cake-btn {
+    background: var(--c3f6d4a); color: var(--ceaffe9);
+    padding: 12px 28px; border-radius: 10px;
+    font-size: 14px; cursor: pointer; transition: 0.2s;
+  }
+  .home-cake-btn:hover { background: var(--c4a7f57); }
+  .home-cake-btn.disabled { background: var(--c3a3a4a); color: var(--c6a6a80); cursor: default; }
+
+  /* 合成月饼完成 */
+  .mooncake-final {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    height: 100%; gap: 12px;
+  }
+  .mooncake-final .mf-emoji {
+    font-size: 120px; line-height: 1;
+    cursor: pointer; transition: 0.3s;
+    filter: drop-shadow(0 10px 40px rgba(255,215,110,0.4));
+  }
+  .mooncake-final .mf-emoji:hover { transform: scale(1.08); }
+  .mooncake-final .mf-hint {
+    font-size: 13px; color: var(--c8a8a9a);
+  }
+
+  /* ============ 结局 ============ */
+  .ending-mask {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(5,5,10,0.85); backdrop-filter: blur(6px);
+    display: none; justify-content: center; align-items: center;
+    z-index: 480;
+  }
+  .ending-mask.show { display: flex; }
+  .ending-card {
+    background: var(--c1a1a22); border: 1px solid var(--c3a3a4a);
+    border-radius: 16px;
+    width: 600px; max-height: 80%;
+    padding: 32px 30px 24px;
+    display: flex; flex-direction: column;
+    box-shadow: 0 30px 100px var(--a08);
+    overflow: hidden;
+  }
+  .ending-text {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14px;
+    color: var(--cd8d8e2);
+    line-height: 2;
+    text-align: left;
+    padding: 8px 16px;
+  }
+  .ending-text::-webkit-scrollbar { width: 4px; }
+  .ending-text::-webkit-scrollbar-thumb { background: var(--c3a3a4a); border-radius: 4px; }
+  .ending-text p { margin-bottom: 14px; }
+  .ending-text .hl { color: var(--cffd76e); }
+  .ending-btn {
+    margin-top: 18px;
+    padding: 11px;
+    border-radius: 9px;
+    background: var(--c3f6d4a); color: var(--ceaffe9);
+    font-size: 14px; text-align: center;
+    cursor: pointer; transition: 0.2s;
+    flex-shrink: 0;
+  }
+  .ending-btn:hover { background: var(--c4a7f57); }
+  .ending-btn.disabled { background: var(--c3a3a4a); color: var(--c6a6a80); cursor: default; }
+
+  /* ============ 封面 ============ */
+    .cover {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--c0a0a10);
+    display: none; flex-direction: column;
+    justify-content: center; align-items: center;
+    z-index: 600;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  .cover.show { display: flex; opacity: 1; }
+  .cover.hide { opacity: 0; }
+  .cover .cv-title {
+    font-size: 38px;
+    color: var(--ce8e8f0);
+    letter-spacing: 12px;
+    font-weight: 300;
+    margin-bottom: 18px;
+  }
+  .cover .cv-sub {
+    font-size: 13px;
+    color: var(--c6a6a80);
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+  }
+  .cover .cv-btn {
+    padding: 13px 48px;
+    border-radius: 12px;
+    background: var(--c3f6d4a);
+    color: var(--ceaffe9);
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid var(--c4a7f57);
+  }
+  .cover .cv-btn:hover {
+    background: var(--c4a7f57);
+    box-shadow: 0 0 30px rgba(126,200,126,0.3);
+  }
+
+  /* ============ 收尾 ============ */
+  .outro {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--c0a0a10);
+    display: none;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    z-index: 550;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center;
+  }
+  .outro.show { display: flex; opacity: 1; }
+  .outro .ot-big {
+    font-size: 30px;
+    color: var(--ce8e8f0);
+    letter-spacing: 10px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .outro .ot-line {
+    font-size: 13px;
+    color: var(--c8a8a9a);
+    letter-spacing: 3px;
+    line-height: 2.2;
+  }
+
+
+  /* ==========================================================
+     质感增强层（依赖主题变量，只改视觉）
+     ========================================================== */
+  html, body { background: var(--bg1); }
+  .computer { background: var(--shell); box-shadow: 0 30px 100px var(--shadow), 0 0 0 8px var(--bezel); border-radius: 18px; }
+  .screen   { background: var(--screen); }
+
+  .topbar { background: var(--bar); color: var(--text3); border-bottom: 1px solid var(--line); letter-spacing: 2px; }
+  .topbar #topTitle { color: var(--text2); }
+
+  .desktop { border-right: 1px solid var(--line); }
+  .icon { border-radius: 12px; }
+  .icon:hover { background: var(--hover); }
+  .icon-img { border-radius: 13px; box-shadow: 0 4px 12px var(--shadow-sm); }
+  .icon-label { color: var(--text); }
+
+  .sidebar { background: var(--rail); border-left: 1px solid var(--line); }
+  .side-title { color: var(--text3); letter-spacing: 3px; }
+  .achieve-btn { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .achieve-btn:hover { background: var(--hover); border-color: var(--accent); }
+  .achieve-btn .left { color: var(--text); }
+  .achieve-btn .count { color: var(--text3); }
+  .divider { background: var(--line); }
+  .goal-item { color: var(--text); }
+  .goal-item .dot { border-color: var(--line2); }
+  .goal-item .dot.done { background: var(--ok); border-color: var(--ok); box-shadow: 0 0 10px var(--glow); }
+  .goal-item.done { color: var(--text3); }
+  .goal-item .sub { color: var(--text3); }
+  .clock { color: var(--text3); }
+
+  .win { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 26px 70px var(--shadow); }
+  .win-bar { background: var(--bar2); border-bottom: 1px solid var(--line); }
+  .win-title { color: var(--text); }
+  .win-body { color: var(--text2); }
+  .win-close { color: var(--text2); }
+  .win-close:hover { background: var(--bad); color: #fff; }
+  .panel-close-x, .wx-back, .rb-back, .order-detail-card .od-close { color: var(--text2); }
+
+  .panel-box { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; }
+  .panel-box h2 { color: var(--text); }
+  .panel-box .sub { color: var(--text3); }
+  .panel-close-x:hover { background: var(--hover); }
+  .ach-row { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .ach-row .badge { background: var(--line); }
+  .ach-row .name { color: var(--text); }
+  .ach-row .status { color: var(--text3); }
+  .ach-row.done .badge { background: linear-gradient(145deg, var(--gold), var(--gold2)); }
+  .ach-row.done .status { color: var(--gold); }
+
+  .toast { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 12px; box-shadow: 0 12px 34px var(--shadow); }
+  .toast .t-text { color: var(--text); }
+  .sys-popup { background: var(--panel); border: 1px solid var(--accent); border-left: 3px solid var(--accent); }
+
+  .rb-post, .order-card, .home-item, .yz-order, .yz-pickup, .ph-contact,
+  .st-wifi-item, .wx-file-card, .mail-row, .ci-card, .order-detail-card, .st-pwd-box { border-color: var(--line); }
+  .rb-post, .order-card, .home-item, .yz-order, .yz-pickup, .ph-contact, .st-wifi-item { background: var(--card); }
+  .rb-logo { color: var(--accent); }
+  .rb-empty, .rb-post-time, .mail-time, .yz-history-title, .st-section-title { color: var(--text3); }
+  .wx-row .wx-preview, .mail-row .mail-preview { color: var(--text3); }
+  .wx-msg.me .m-bubble { background: var(--bubble-me-bg); color: var(--bubble-me-fg); }
+  .ph-msg.me .ph-bubble { background: var(--bubble-me-bg); color: var(--bubble-me-fg); }
+
+  /* 浅色主题下需要白字的实心按钮 */
+  .login-btn, .ci-btn, .ci-submit, .yz-submit, .yz-get-btn, .st-connect-btn,
+  .st-pwd-btn, .home-lock .hl-btn, .home-cake-btn, .wx-send-btn, .ending-btn,
+  .rb-recipe-btn, .mail-link-btn, .ph-call-btn, .wx-logout { color: #fff; }
+  .login-btn.disabled, .ci-btn.disabled, .yz-get-btn.disabled,
+  .home-cake-btn.disabled, .ending-btn.disabled, .rb-recipe-btn.done { color: var(--text3); }
+
+  /* 滚动条 */
+  .sidebar::-webkit-scrollbar-thumb, .win-body::-webkit-scrollbar-thumb,
+  .wx-list::-webkit-scrollbar-thumb, .rb-mid::-webkit-scrollbar-thumb,
+  .mail-list::-webkit-scrollbar-thumb, .yz-body::-webkit-scrollbar-thumb,
+  .ach-list::-webkit-scrollbar-thumb, .ph-contacts::-webkit-scrollbar-thumb,
+  .login-page::-webkit-scrollbar-thumb, .shop-list::-webkit-scrollbar-thumb,
+  .st-body::-webkit-scrollbar-thumb, .ph-call-body::-webkit-scrollbar-thumb,
+  .home-lock::-webkit-scrollbar-thumb, .ending-text::-webkit-scrollbar-thumb,
+  .rb-left::-webkit-scrollbar-thumb, .rb-right::-webkit-scrollbar-thumb,
+  .mail-detail-body::-webkit-scrollbar-thumb, .ad-box::-webkit-scrollbar-thumb {
+    background: var(--line2) !important;
+  }
+
+  /* ==========================================================
+     章节过场：跟随主题深浅
+     ========================================================== */
+  .chapter-cover { background: var(--chapterbg); }
+  .chapter-cover .c-num { color: var(--chaptersub); }
+  .chapter-cover .c-name { color: var(--chaptertitle); text-shadow: var(--coverglow); }
+
+  .outro { background: var(--chapterbg); }
+  .outro .ot-big { color: var(--chaptertitle); text-shadow: var(--coverglow); }
+  .outro .ot-line { color: var(--chaptersub); }
+  .ending-card { background: var(--panel); border: 1px solid var(--line); }
+  .ending-text { color: var(--text2); }
+  .ending-text .hl { color: var(--gold); }
+
+  /* ==========================================================
+     封面：月亮下沉为底图，文字永远在最上层
+     ========================================================== */
+  .cover { background: var(--coverbg); }
+  .cover .cv-moon {
+    position: absolute; top: calc(50% - 190px); left: 50%;
+    transform: translateX(-50%);
+    width: 132px; height: 132px; border-radius: 50%;
+    background: var(--moon); box-shadow: 0 0 70px var(--moonglow);
+    z-index: 0; pointer-events: none;
+  }
+  .cover .cv-inner {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .cover .cv-title {
+    color: var(--covertitle); text-shadow: var(--coverglow);
+    font-weight: 400; font-size: 38px; letter-spacing: 12px;
+    margin-top: 46px; margin-bottom: 14px;
+  }
+  .cover .cv-sub { color: var(--coversub); letter-spacing: 4px; font-size: 13px; margin-bottom: 22px; }
+  .cover .cv-btns { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+  .cover .cv-btn {
+    background: var(--accent); color: var(--on-accent); border: none;
+    border-radius: 999px; padding: 13px 46px; font-size: 16px; letter-spacing: 4px;
+    box-shadow: 0 12px 32px var(--glow); transition: 0.3s; cursor: pointer;
+    width: 260px; text-align: center;
+  }
+  .cover .cv-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 40px var(--glow); }
+
+  .cover .cv-btn.special {
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    color: var(--on-accent); box-shadow: 0 12px 32px var(--glow);
+  }
+  .cover .cv-btn.disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+
+  .cover .cv-ach {
+    margin-top: 24px; display: flex; align-items: center; gap: 8px;
+    font-size: 13px; color: var(--coversub); letter-spacing: 1px;
+    background: var(--card); border: 1px solid var(--line);
+    padding: 8px 18px; border-radius: 999px;
+  }
+  .cover .cv-ach.full { color: var(--gold); border-color: var(--gold); }
+  .cover .cv-theme-btn {
+    position: absolute; right: 18px; bottom: 16px; z-index: 3;
+    font-size: 12px; letter-spacing: 1px; color: var(--coversub);
+    border: 1px solid var(--line2); border-radius: 999px;
+    padding: 6px 14px; cursor: pointer; transition: 0.2s;
+  }
+  .cover .cv-theme-btn:hover { color: var(--covertitle); background: var(--hover); }
+
+  /* 覆盖确认框 */
+  .confirm-mask {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,.55); backdrop-filter: blur(3px);
+    display: none; justify-content: center; align-items: center; z-index: 700;
+  }
+  .confirm-mask.show { display: flex; }
+  .confirm-box {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    width: 340px; padding: 22px 20px; box-shadow: 0 20px 60px var(--shadow);
+  }
+  .confirm-box .cf-title { font-size: 15px; color: var(--text); margin-bottom: 8px; }
+  .confirm-box .cf-text { font-size: 13px; color: var(--text3); line-height: 1.7; margin-bottom: 18px; }
+  .confirm-box .cf-row { display: flex; gap: 10px; }
+  .confirm-box .cf-btn {
+    flex: 1; padding: 10px; border-radius: 9px; text-align: center;
+    font-size: 13px; cursor: pointer; transition: 0.2s;
+  }
+  .confirm-box .cf-btn.cancel { background: var(--card); border: 1px solid var(--line); color: var(--text2); }
+  .confirm-box .cf-btn.cancel:hover { background: var(--hover); }
+  .confirm-box .cf-btn.ok { background: var(--bad); color: #fff; }
+  .confirm-box .cf-btn.ok:hover { opacity: 0.9; }
+
+  /* ==========================================================
+     侧栏菜单
+     ========================================================== */
+  .menu-btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 10px 14px; background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; cursor: pointer; transition: 0.2s;
+    font-size: 14px; color: var(--text); margin-top: auto;
+  }
+  .menu-btn:hover { background: var(--hover); border-color: var(--accent); }
+  .menu-mask {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,.5); backdrop-filter: blur(3px);
+    display: none; justify-content: center; align-items: center; z-index: 320;
+  }
+  .menu-mask.show { display: flex; }
+  .menu-box {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+    width: 330px; padding: 22px 20px; box-shadow: 0 20px 60px var(--shadow);
+  }
+  .menu-box .mb-title { font-size: 16px; color: var(--text); letter-spacing: 4px; margin-bottom: 4px; }
+  .menu-box .mb-sub { font-size: 12px; color: var(--text3); margin-bottom: 16px; }
+  .menu-item {
+    padding: 12px 14px; border-radius: 10px; background: var(--card);
+    border: 1px solid var(--line); margin-bottom: 9px;
+    font-size: 14px; color: var(--text); cursor: pointer; transition: 0.2s;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .menu-item:hover { background: var(--hover); border-color: var(--accent); }
+  .menu-item .mi-icon {
+    width: 18px; height: 18px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .menu-item .mi-icon svg { width: 18px; height: 18px; display: block; }
+  .menu-item .mi-desc { font-size: 11px; color: var(--text3); margin-top: 2px; }
+  .menu-item.danger { color: var(--bad); }
+  .menu-item.danger:hover { border-color: var(--bad); }
+  .menu-close {
+    margin-top: 6px; padding: 10px; border-radius: 10px; text-align: center;
+    font-size: 13px; color: var(--text3); background: var(--card);
+    border: 1px solid var(--line); cursor: pointer;
+  }
+  .menu-close:hover { background: var(--hover); }
+
+  /* 风格选择 */
+  .theme-mask {
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,.5); backdrop-filter: blur(3px);
+    display: none; justify-content: center; align-items: center; z-index: 700;
+  }
+  .theme-mask.show { display: flex; }
+  .theme-box {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+    width: 400px; padding: 22px 20px; box-shadow: 0 20px 60px var(--shadow);
+  }
+  .theme-box .tb-title { font-size: 16px; color: var(--text); letter-spacing: 4px; margin-bottom: 4px; }
+  .theme-box .tb-sub { font-size: 12px; color: var(--text3); margin-bottom: 16px; }
+  .theme-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .theme-card {
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px;
+    cursor: pointer; transition: 0.2s; background: var(--card);
+  }
+  .theme-card:hover { border-color: var(--accent); }
+  .theme-card.active { border-color: var(--accent); box-shadow: 0 0 0 2px var(--glow); }
+  .theme-card .tc-name { font-size: 13px; color: var(--text); margin-top: 8px; text-align: center; }
+  .theme-card .tc-swatch { height: 46px; border-radius: 8px; display: flex; overflow: hidden; }
+  .theme-card .tc-swatch i { flex: 1; }
+  .theme-close {
+    margin-top: 14px; padding: 10px; border-radius: 10px; text-align: center;
+    font-size: 13px; color: var(--text3); background: var(--card);
+    border: 1px solid var(--line); cursor: pointer;
+  }
+  .theme-close:hover { background: var(--hover); }
+  .menu-mask, .theme-mask, .confirm-mask { cursor: pointer; }
+  .menu-box, .theme-box, .confirm-box { cursor: default; }
+
+</style>
+</head>
+<body>
+
+<div class="scale-wrap" id="scaleWrap">
+<div class="computer" id="computer">
+  <div class="screen">
+
+    <div class="topbar">
+      <span id="topTitle">兔子先生回家记</span>
+      <span class="right"><span id="clock">--:--</span></span>
+    </div>
+
+    <div class="desktop" id="desktop"></div>
+
+    <div class="sidebar">
+      <div class="achieve-btn" id="achieveBtn">
+        <div class="left"><span class="trophy">🏆</span><span>成就</span></div>
+        <div class="count" id="achCount">0 / 11</div>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <div class="side-title">当 前 目 标</div>
+        <div class="goal-list" id="goalList"></div>
+      </div>
+      <div class="menu-btn" id="menuBtn"><span>☰</span><span>菜 单</span></div>
+      <div class="clock" id="clock2">--:--</div>
+    </div>
+
+  </div>
+
+  <!-- ===== 软件窗口 ===== -->
+
+  <div class="win" id="win-wechat" style="top:90px; left:220px; width:560px; height:460px;">
+    <div class="win-bar" data-drag="win-wechat">
+      <div class="win-title">微信</div>
+      <div class="win-close" data-close="win-wechat">×</div>
+    </div>
+    <div class="win-body" id="wechatBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-rabbitbook" style="top:70px; left:140px; width:720px; height:500px;">
+    <div class="win-bar" data-drag="win-rabbitbook">
+      <div class="win-title">Rabbit Book</div>
+      <div class="win-close" data-close="win-rabbitbook">×</div>
+    </div>
+    <div class="win-body" id="rabbitBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-shopping" style="top:110px; left:240px; width:520px; height:420px;">
+    <div class="win-bar" data-drag="win-shopping">
+      <div class="win-title">购物</div>
+      <div class="win-close" data-close="win-shopping">×</div>
+    </div>
+    <div class="win-body" id="shoppingBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-clockin" style="top:120px; left:290px; width:420px; height:400px;">
+    <div class="win-bar" data-drag="win-clockin">
+      <div class="win-title">打卡</div>
+      <div class="win-close" data-close="win-clockin">×</div>
+    </div>
+    <div class="win-body" id="clockinBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-yizhan" style="top:90px; left:240px; width:520px; height:460px;">
+    <div class="win-bar" data-drag="win-yizhan">
+      <div class="win-title">兔兔驿站</div>
+      <div class="win-close" data-close="win-yizhan">×</div>
+    </div>
+    <div class="win-body" id="yizhanBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-mail" style="top:85px; left:220px; width:560px; height:470px;">
+    <div class="win-bar" data-drag="win-mail">
+      <div class="win-title">邮箱</div>
+      <div class="win-close" data-close="win-mail">×</div>
+    </div>
+    <div class="win-body" id="mailBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-settings" style="top:100px; left:260px; width:480px; height:440px;">
+    <div class="win-bar" data-drag="win-settings">
+      <div class="win-title">设置</div>
+      <div class="win-close" data-close="win-settings">×</div>
+    </div>
+    <div class="win-body" id="settingsBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-phone" style="top:80px; left:200px; width:600px; height:480px;">
+    <div class="win-bar" data-drag="win-phone">
+      <div class="win-title">电话</div>
+      <div class="win-close" data-close="win-phone">×</div>
+    </div>
+    <div class="win-body" id="phoneBody" style="padding:0;"></div>
+  </div>
+
+  <div class="win" id="win-home" style="top:90px; left:220px; width:560px; height:460px;">
+    <div class="win-bar" data-drag="win-home">
+      <div class="win-title">家</div>
+      <div class="win-close" data-close="win-home">×</div>
+    </div>
+    <div class="win-body" id="homeBody" style="padding:0;"></div>
+  </div>
+
+  <!-- 成就面板 -->
+  <div class="achieve-panel" id="achievePanel">
+    <div class="panel-box">
+      <div class="panel-close-x" id="panelClose">×</div>
+      <h2>成 就</h2>
+      <div class="sub" id="achSub">已完成 0 / 11</div>
+      <div class="ach-list" id="achList"></div>
+    </div>
+  </div>
+
+  <!-- 系统弹窗 -->
+  <div class="sys-popup" id="sysPopup">
+    <div class="sp-title" id="sysPopupTitle"></div>
+    <div class="sp-text" id="sysPopupText"></div>
+  </div>
+
+  <!-- 图片放大 -->
+  <div class="img-zoom" id="imgZoom">
+    <div class="iz-close">×</div>
+    <img id="imgZoomSrc" src="" alt="">
+  </div>
+
+  <!-- 商品详情弹层 -->
+  <div class="order-detail-mask" id="orderDetailMask">
+    <div class="order-detail-card">
+      <div class="od-close" id="odClose">×</div>
+      <div class="od-title">商品详情</div>
+      <div id="odBody"></div>
+    </div>
+  </div>
+
+  <!-- 结局弹窗 -->
+  <div class="ending-mask" id="endingMask">
+    <div class="ending-card">
+      <div class="ending-text" id="endingText"></div>
+      <div class="ending-btn" id="endingBtn">确认</div>
+    </div>
+  </div>
+
+  <!-- toast -->
+  <div class="toast" id="toast">
+    <div class="t-title" id="toastTitle">新任务</div>
+    <div class="t-text" id="toastText"></div>
+  </div>
+
+  <!-- 章节动画 -->
+  <div class="chapter-cover" id="chapterCover">
+    <div class="c-num" id="coverNum"></div>
+    <div class="c-name" id="coverName"></div>
+  </div>
+
+  <!-- 收尾 -->
+  <div class="outro" id="outro">
+    <div class="ot-big">感 谢 游 玩</div>
+    <div class="ot-line">制作人员：017、Deepseek</div>
+    <div class="ot-line">特别感谢：Gemini、GPT、GLM</div>
+  </div>
+
+  <!-- 菜单面板 -->
+  <div class="menu-mask" id="menuMask">
+    <div class="menu-box">
+      <div class="mb-title">菜 单</div>
+      <div class="mb-sub" id="menuSub">当前章节：第一章</div>
+      <div class="menu-item" id="miHome">
+        <span class="mi-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
+          </svg>
+        </span>
+        <div><div>返回主页</div><div class="mi-desc">保存进度与成就，回到封面</div></div>
+      </div>
+      <div class="menu-item" id="miReplay">
+        <span class="mi-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+          </svg>
+        </span>
+        <div><div>重玩本章</div><div class="mi-desc">重置本章进度，成就保留</div></div>
+      </div>
+      <div class="menu-item" id="miTheme">
+        <span class="mi-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+          </svg>
+        </span>
+        <div><div>选择风格</div><div class="mi-desc">切换四种界面配色</div></div>
+      </div>
+      <div class="menu-item danger" id="miClearAch">
+        <span class="mi-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+          </svg>
+        </span>
+        <div><div>清空成就档案</div><div class="mi-desc">成就将全部归零</div></div>
+      </div>
+      <div class="menu-close" id="menuClose">关 闭</div>
+    </div>
+  </div>
+
+  <!-- 风格选择 -->
+  <div class="theme-mask" id="themeMask">
+    <div class="theme-box">
+      <div class="tb-title">选 择 风 格</div>
+      <div class="tb-sub">切换后立即生效并自动保存</div>
+      <div class="theme-grid" id="themeGrid"></div>
+      <div class="theme-close" id="themeClose">关 闭</div>
+    </div>
+  </div>
+
+  <!-- 封面 -->
+  <div class="cover" id="cover">
+    <div class="cv-moon"></div>
+    <div class="cv-inner">
+      <div class="cv-title">兔 子 先 生 回 家 记</div>
+      <div class="cv-sub">中 秋 团 圆</div>
+      <div class="cv-btns">
+        <div class="cv-btn" id="coverStartBtn">开 始 游 戏</div>
+        <div class="cv-btn" id="coverContinueBtn">继 续 游 戏</div>
+        <div class="cv-btn special" id="coverSpecialBtn" style="display:none;">特 别 番 外</div>
+      </div>
+      <div class="cv-ach" id="coverAch">🏆 0 / 11</div>
+    </div>
+    <div class="cv-theme-btn" id="coverThemeBtn">🎨 风格</div>
+  </div>
+
+  <!-- 通用确认框（封面与游戏内菜单共用） -->
+  <div class="confirm-mask" id="confirmMask">
+    <div class="confirm-box">
+      <div class="cf-title" id="cfTitle">已有存档</div>
+      <div class="cf-text" id="confirmText">检测到已有游戏进度，开始新游戏会覆盖它。确定继续吗？</div>
+      <div class="cf-row">
+        <div class="cf-btn cancel" id="cfCancel">取 消</div>
+        <div class="cf-btn ok" id="cfOk">覆盖并开始</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+
+/* ==========================================================
+   本地存档（localStorage）
+   进度与成就分开存：成就档案永久保留，不随覆盖存档清除
+   ========================================================== */
+const SAVE_KEY  = 'rabbit_save_v1';
+const ACH_KEY   = 'rabbit_ach_v1';
+const THEME_KEY = 'rabbit_theme_v1';
+const SAVE_VERSION = 1;
+
+const THEMES = [
+  { id: 'A', name: '暖秋桂花', swatch: ['#2e231b', '#e8a54c', '#f5e8d6', '#8a4a4a'] },
+  { id: 'B', name: '奶油纸感', swatch: ['#fbf5ea', '#c9763e', '#f8f1e5', '#a8705f'] },
+  { id: 'C', name: '霓虹夜行', swatch: ['#111736', '#00e5ff', '#1c2648', '#e11d48'] },
+  { id: 'D', name: '青瓷月白', swatch: ['#f7fafb', '#4a8a9c', '#f3f8f9', '#8a6a66'] }
+];
+const CHAPTER_NAMES = { 1: '第一章 加班', 2: '第二章 出门', 3: '第三章 回家', 4: '第四章 团圆' };
+
+// 安全读写：无痕模式 / 隐私模式下 localStorage 会抛错，静默降级为「无存档功能」
+function lsGet(k)    { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } }
+function lsDel(k)    { try { localStorage.removeItem(k); } catch (e) {} }
+
+/* ---------- 存档（进度） ---------- */
+const SAVE_FIELDS = ['goals', 'wx', 'rb', 'mail', 'yz', 'clockin', 'settings', 'phone',
+                     'home', 'hasFile', 'reportSent', 'adSolved', 'momAskSent', 'recipeGot', 'recipeSent'];
+
+function snapshotDyn() {
+  return {
+    c1t: clone(chapter1Data.tuziChats),    c1x: clone(chapter1Data.xiaobaiChats),
+    c3t: clone(chapter3Data.tuziChats),    c3x: clone(chapter3Data.xiaobaiChats),
+    c4t: clone(chapter4Data.tuziChats),    c4x: clone(chapter4Data.xiaobaiChats)
+  };
+}
+function restoreDyn(d) {
+  if (!d) return;
+  chapter1Data.tuziChats     = d.c1t || chapter1Data.tuziChats;
+  chapter1Data.xiaobaiChats  = d.c1x || chapter1Data.xiaobaiChats;
+  chapter3Data.tuziChats     = d.c3t || chapter3Data.tuziChats;
+  chapter3Data.xiaobaiChats  = d.c3x || chapter3Data.xiaobaiChats;
+  chapter4Data.tuziChats     = d.c4t || chapter4Data.tuziChats;
+  chapter4Data.xiaobaiChats  = d.c4x || chapter4Data.xiaobaiChats;
+}
+
+let _saveTimer = null;
+function saveGame() { clearTimeout(_saveTimer); _saveTimer = setTimeout(doSaveGame, 250); }
+function doSaveGame() {
+  if (!state.chapter) return;              // 封面状态不存
+  const s = { v: SAVE_VERSION, chapter: state.chapter, at: Date.now(), st: {}, dyn: snapshotDyn() };
+  SAVE_FIELDS.forEach(f => { s.st[f] = clone(state[f]); });
+  lsSet(SAVE_KEY, JSON.stringify(s));
+}
+function hasSave() {
+  const raw = lsGet(SAVE_KEY);
+  if (!raw) return false;
+  try { const o = JSON.parse(raw); return o.v === SAVE_VERSION && o.chapter >= 1 && o.chapter <= 4; }
+  catch (e) { return false; }
+}
+function getSaveInfo() {
+  const raw = lsGet(SAVE_KEY);
+  if (!raw) return null;
+  try { return JSON.parse(raw); } catch (e) { return null; }
+}
+function clearSave() { lsDel(SAVE_KEY); }
+
+/* ---------- 成就档案（永久保留） ---------- */
+function saveAch() {
+  lsSet(ACH_KEY, JSON.stringify({ v: SAVE_VERSION, done: state.achievements.filter(a => a.done).map(a => a.id) }));
+}
+function loadAch() {
+  const raw = lsGet(ACH_KEY);
+  if (!raw) return;
+  try {
+    const o = JSON.parse(raw);
+    if (o.v !== SAVE_VERSION || !Array.isArray(o.done)) return;
+    const set = new Set(o.done);
+    state.achievements.forEach(a => { a.done = set.has(a.id); });
+  } catch (e) {}
+}
+function clearAch() {
+  state.achievements.forEach(a => { a.done = false; });
+  lsDel(ACH_KEY);
+  renderAchievements();
+  refreshCover();
+}
+function achDoneCount() { return state.achievements.filter(a => a.done).length; }
+function achTotal()     { return state.achievements.length; }
+function allAchDone()   { return achDoneCount() === achTotal(); }
+
+/* ---------- 主题 ---------- */
+function applyTheme(id) {
+  document.documentElement.setAttribute('data-theme', id);
+  state.theme = id;
+  lsSet(THEME_KEY, id);
+}
+function loadTheme() {
+  const t = lsGet(THEME_KEY);
+  applyTheme(THEMES.some(x => x.id === t) ? t : 'A');   // 默认风格 A
+}
+
+/* ---------- 小工具 ---------- */
+function clone(o) { return (o === undefined || o === null) ? null : JSON.parse(JSON.stringify(o)); }
+function stripHtml(str) {                  // 预览用：去标签后再截断，避免截出半个 <b>
+  const d = document.createElement('div');
+  d.innerHTML = String(str == null ? '' : str);
+  return d.textContent || '';
+}
+
+/* ==========================================================
+   全局状态
+   ========================================================== */
+const state = {
+  theme: 'A',
+  chapter: 0,           // 0 = 封面
+  goals: [],
+  achievements: [
+    { id: 'angry',    name: '凶巴巴的兔子',   done: false },
+    { id: 'stupid',   name: '愚蠢的兔子',     done: false },
+    { id: 'lively',   name: '活泼的兔子',     done: false },
+    { id: 'homesick', name: '归心似箭的兔子', done: false },
+    { id: 'happy',    name: '幸福的兔子',     done: false },
+    { id: 'advice',   name: '不听劝的兔子',   done: false },
+    { id: 'backpack', name: '背包鼓鼓的兔子', done: false },
+    { id: 'anxious',  name: '着急的兔子',     done: false },
+    { id: 'careful',  name: '粗心的兔子',     done: false },
+    { id: 'insist',   name: '坚持的兔子',     done: false },
+    { id: 'family',   name: '爸爸妈妈的兔子', done: false }
+  ],
+  wx: { account: 'tuzi', unlocked: false, view: 'list', chatWith: null, noNetClicks: 0 },
+  rb: { logged: false, view: 'home', friendId: null, loginFails: 0, likedPosts: {}, forgotMode: false, forgotSent: false },
+  mail: { logged: false, view: 'list', openId: null, readPickup: false },
+  yz: { pickupDone: false, specialSent: false },
+  clockin: { off: false, pwdShown: false },
+  settings: { connected: false, pwdShown: false },
+  phone: { tab: 'dial', callWith: null, callMsgs: [], callDone: false, choiceShown: false },
+  home: { unlocked: false, collected: {}, cakeMade: false, cakeEaten: false },
+  hasFile: false,
+  reportSent: false,
+  adSolved: false,
+  momAskSent: false,
+  recipeGot: false,
+  recipeSent: false
+};
+
+/* ==========================================================
+   通用渲染
+   ========================================================== */
+const appMeta = {
+  wechat:{ label: '微信',cls: 'ic-wechat',win: 'win-wechat',svg: 
+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" /></svg>'
+  },
+  rabbitbook:{ label: 'Rabbit Book',cls: 'ic-rabbitbook',win: 'win-rabbitbook',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>'
+  },
+  shopping:   { label: '购物',cls: 'ic-shopping',win: 'win-shopping',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" /></svg>'
+  },
+  clockin:{ label: '打卡',cls: 'ic-clockin',win: 'win-clockin',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>' 
+  },
+  yizhan:{ label: '兔兔驿站',cls: 'ic-yizhan',win: 'win-yizhan',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>'
+  },
+  mail:{ label: '邮箱',cls: 'ic-mail',win: 'win-mail',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>'
+  },
+  settings:{ label: '设置',cls: 'ic-settings',win: 'win-settings',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>'
+  },
+  phone:{ label: '电话',cls: 'ic-phone',win: 'win-phone',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>'
+  },
+  home:{ label: '家',cls: 'ic-home',win: 'win-home',svg: 
+    '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#fff" width="30" height="30"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>'
+  },
+};
+
+let currentChapter = null;
+
+function isAppLocked(appId) {
+  if (state.chapter !== 3) return false;
+  if (appId === 'wechat' || appId === 'rabbitbook') {
+    return !state.settings.connected;
+  }
+  return false;
+}
+
+function renderDesktop() {
+  const el = document.getElementById('desktop');
+  el.innerHTML = '';
+  if (!currentChapter) return;
+  currentChapter.apps.forEach(id => {
+    const a = appMeta[id];
+    if (!a) return;
+    const locked = isAppLocked(id);
+    const d = document.createElement('div');
+    d.className = 'icon' + (locked ? ' disabled' : '');
+    d.innerHTML = `
+      <div class="icon-img ${a.cls}">${a.svg}</div>
+      <div class="icon-label">${a.label}</div>
+    `;
+    d.addEventListener('click', () => {
+      if (locked) { onLockedAppClick(id); return; }
+      openWindow(a.win);
+    });
+    el.appendChild(d);
+  });
+}
+
+function onLockedAppClick(appId) {
+  if (appId === 'wechat') {
+    state.wx.noNetClicks++;
+    if (state.wx.noNetClicks >= 10 && state.chapter === 3 && !state.settings.connected) {
+      unlockAchievement('anxious');
+    }
+  }
+  showSysPopup('无网络连接', '请先连接高铁 WiFi', 'var(--accent)');
+}
+
+function renderGoals() {
+  const el = document.getElementById('goalList');
+  el.innerHTML = '';
+  state.goals.filter(g => !g.hidden).forEach(g => {
+    const d = document.createElement('div');
+    d.className = 'goal-item' + (g.done ? ' done' : '');
+    d.innerHTML = `
+      <div class="dot ${g.done ? 'done' : ''}"></div>
+      <div class="text">${g.text}${g.sub ? `<span class="sub">${g.sub}</span>` : ''}</div>
+    `;
+    el.appendChild(d);
+  });
+}
+function addGoal(id) {
+  const g = state.goals.find(x => x.id === id);
+  if (g) { g.hidden = false; renderGoals(); saveGame(); }
+}
+function finishGoal(id) {
+  const g = state.goals.find(x => x.id === id);
+  if (g) { g.done = true; g.hidden = false; renderGoals(); saveGame(); }
+}
+
+function renderAchievements() {
+  const el = document.getElementById('achList');
+  el.innerHTML = '';
+  let done = 0;
+  state.achievements.forEach(a => {
+    if (a.done) done++;
+    const d = document.createElement('div');
+    d.className = 'ach-row' + (a.done ? ' done' : ' locked');
+    d.innerHTML = `
+      <div class="badge">${a.done ? '🏆' : '🔒'}</div>
+      <div class="name">${a.name}</div>
+      <div class="status">${a.done ? '已获得' : ''}</div>
+    `;
+    el.appendChild(d);
+  });
+  document.getElementById('achCount').textContent = `${done} / ${state.achievements.length}`;
+  document.getElementById('achSub').textContent = `已完成 ${done} / ${state.achievements.length}`;
+  refreshCover();
+}
+function unlockAchievement(id) {
+  const a = state.achievements.find(x => x.id === id);
+  if (!a || a.done) return;
+  a.done = true;
+  renderAchievements();
+  saveAch();                 // 成就写入永久档案
+  refreshCover();
+  showToast('成就达成', a.name);
+}
+
+function showToast(title, text) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastTitle').textContent = title;
+  document.getElementById('toastText').textContent = text;
+  t.classList.add('show');
+  clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => t.classList.remove('show'), 3200);
+}
+
+/* ==========================================================
+   系统弹窗
+   ========================================================== */
+let sysPopupTimer = null;
+function showSysPopup(title, text, color, stay) {
+  const p = document.getElementById('sysPopup');
+  const titleEl = document.getElementById('sysPopupTitle');
+  const textEl = document.getElementById('sysPopupText');
+  titleEl.textContent = title;
+  titleEl.style.color = color || 'var(--accent)';
+  textEl.textContent = text;
+  p.style.borderLeftColor = color || 'var(--accent)';
+  p.style.borderColor = color || 'var(--line2)';
+  p.classList.add('show');
+  clearTimeout(sysPopupTimer);
+  if (stay) return;
+  sysPopupTimer = setTimeout(() => p.classList.remove('show'), 1000);
+}
+function hideSysPopup() {
+  document.getElementById('sysPopup').classList.remove('show');
+}
+document.getElementById('sysPopup').addEventListener('click', () => {
+  hideSysPopup();
+  if (state.chapter === 2) {
+    openWindow('win-mail');
+  } else if (state.chapter === 3) {
+    if (state.settings.connected) openWindow('win-wechat');
+    else onLockedAppClick('wechat');
+  }
+});
+
+/* ==========================================================
+   窗口管理
+   ========================================================== */
+let zTop = 20;
+function openWindow(id) {
+  const w = document.getElementById(id);
+  if (!w) return;
+  if (state.chapter === 3) {
+    if (id === 'win-wechat' && !state.settings.connected) { onLockedAppClick('wechat'); return; }
+    if (id === 'win-rabbitbook' && !state.settings.connected) { onLockedAppClick('rabbitbook'); return; }
+  }
+  w.classList.add('show');
+  bringToFront(w);
+  if (id === 'win-wechat') renderWeChat();
+  if (id === 'win-rabbitbook') renderRabbit();
+  if (id === 'win-shopping') renderShopping();
+  if (id === 'win-clockin') renderClockIn();
+  if (id === 'win-yizhan') renderYizhan();
+  if (id === 'win-mail') renderMail();
+  if (id === 'win-settings') renderSettings();
+  if (id === 'win-phone') renderPhone();
+  if (id === 'win-home') renderHome();
+  if (state.chapter === 2 || state.chapter === 3) hideSysPopup();}
+
+function bringToFront(w) { zTop++; w.style.zIndex = zTop; }
+document.querySelectorAll('.win').forEach(w => {
+  w.addEventListener('mousedown', () => bringToFront(w));
+});
+document.querySelectorAll('[data-close]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.getElementById(btn.dataset.close).classList.remove('show');
+  });
+});
+
+/* ==========================================================
+   窗口拖动
+   ========================================================== */
+function getScale() {
+  const wrap = document.getElementById('scaleWrap');
+  const rect = wrap.getBoundingClientRect();
+  return rect.width / 1000;
+}
+function makeDraggable(bar) {
+  const winId = bar.dataset.drag;
+  const win = document.getElementById(winId);
+  let startX, startY, origX, origY;
+  bar.addEventListener('mousedown', (e) => {
+    if (e.target.classList.contains('win-close')) return;
+    const scale = getScale();
+    startX = e.clientX;
+    startY = e.clientY;
+    origX = win.offsetLeft;
+    origY = win.offsetTop;
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', stopDrag);
+    function drag(ev) {
+      let nx = origX + (ev.clientX - startX) / scale;
+      let ny = origY + (ev.clientY - startY) / scale;
+      if (ny < 40) ny = 40;
+      const maxX = 1000 - win.offsetWidth;
+      const maxY = 640 - win.offsetHeight;
+      if (nx < 0) nx = 0;
+      if (nx > maxX) nx = maxX;
+      if (ny > maxY) ny = maxY;
+      win.style.left = nx + 'px';
+      win.style.top = ny + 'px';
+    }
+    function stopDrag() {
+      document.removeEventListener('mousemove', drag);
+      document.removeEventListener('mouseup', stopDrag);
+    }
+  });
+}
+document.querySelectorAll('[data-drag]').forEach(makeDraggable);
+
+/* ==========================================================
+   缩放
+   ========================================================== */
+function updateScale() {
+  const wrap = document.getElementById('scaleWrap');
+  const s = Math.min(window.innerWidth / 1000, window.innerHeight / 640);
+  wrap.style.transform = `scale(${s})`;
+}
+window.addEventListener('resize', updateScale);
+updateScale();
+
+/* ==========================================================
+   图片放大
+   ========================================================== */
+function openImgZoom(src, onOpen) {
+  const z = document.getElementById('imgZoom');
+  document.getElementById('imgZoomSrc').src = src || '';
+  z.classList.add('show');
+  if (onOpen) onOpen();
+}
+document.getElementById('imgZoom').addEventListener('click', () => {
+  document.getElementById('imgZoom').classList.remove('show');
+});
+
+/* ==========================================================
+   时钟
+   ========================================================== */
+function updateClock() {
+  const d = new Date();
+  const s = String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
+  document.getElementById('clock').textContent = s;
+  document.getElementById('clock2').textContent = s;
+}
+setInterval(updateClock, 10000);
+
+/* ==========================================================
+   章节动画
+   ========================================================== */
+function playChapterEnd(num, name, cb) {
+  const cover = document.getElementById('chapterCover');
+  const numEl = document.getElementById('coverNum');
+  const nameEl = document.getElementById('coverName');
+  numEl.textContent = num;
+  nameEl.textContent = name;
+  numEl.style.opacity = '1';
+  nameEl.style.opacity = '1';
+  cover.style.opacity = '1';
+  cover.classList.add('show');
+  setTimeout(() => {
+    numEl.style.transition = 'opacity 0.5s ease';
+    nameEl.style.transition = 'opacity 0.5s ease';
+    numEl.style.opacity = '0';
+    nameEl.style.opacity = '0';
+    setTimeout(() => { if (cb) cb(); }, 1200);
+  }, 1800);
+}
+function playChapterStart(num, name, beforeFade, afterFade) {
+  const cover = document.getElementById('chapterCover');
+  const numEl = document.getElementById('coverNum');
+  const nameEl = document.getElementById('coverName');
+  numEl.textContent = num;
+  nameEl.textContent = name;
+  numEl.style.transition = '';
+  nameEl.style.transition = '';
+  numEl.style.opacity = '1';
+  nameEl.style.opacity = '1';
+  cover.style.opacity = '1';
+  cover.classList.add('show');
+  setTimeout(() => {
+    if (beforeFade) beforeFade();
+    cover.style.opacity = '0';
+    setTimeout(() => {
+      cover.classList.remove('show');
+      cover.style.opacity = '1';
+      numEl.style.opacity = '1';
+      nameEl.style.opacity = '1';
+      saveGame();                     // 新章节就绪后落一次存档
+      if (afterFade) afterFade();
+    }, 900);
+  }, 1800);
+}
+
+/* ==========================================================
+   成就面板
+   ========================================================== */
+document.getElementById('achieveBtn').addEventListener('click', () => {
+  document.getElementById('achievePanel').classList.add('show');
+});
+document.getElementById('panelClose').addEventListener('click', () => {
+  document.getElementById('achievePanel').classList.remove('show');
+});
+
+/* ==========================================================
+   ==================== 第一章数据 ====================
+   ========================================================== */
+const chapter1Data = {
+  id: 1, title: '加班',
+  apps: ['wechat', 'rabbitbook', 'shopping'],
+  goals: [
+    { id: 'g1', text: '完成工作，早点下班', sub: '', done: false, hidden: false },
+    { id: 'g2', text: '提交报告', sub: '', done: false, hidden: true },
+    { id: 'g3', text: '登录小白微信', sub: '生日……去看看小白的 Rabbit Book', done: false, hidden: true },
+    { id: 'g4', text: '退出登录，将文件提交给 CEO', sub: '', done: false, hidden: true }
+  ],
+  avatars: {
+    ceo:   { bg: 'var(--av-ceo)', ch: 'C' },
+    tuzi:  { bg: 'var(--av-tuzi)', ch: '兔' },
+    xiaobai:{ bg: 'var(--av-xiaobai)', ch: '白' },
+    a:     { bg: 'var(--av-a)', ch: 'A' },
+    b:     { bg: 'var(--av-b)', ch: 'B' },
+    c:     { bg: 'var(--av-c)', ch: 'C' },
+    mom:   { bg: 'var(--av-mom)', ch: '妈' }
+  },
+  tuziChats: [
+    {
+      id: 'ceo', name: '冷酷月饼集团CEO', avatar: 'ceo', badge: true,
+      msgs: [
+        { from: 'other', text: '报告呢' },
+        { from: 'me',    text: '在整理，今天一定交' },
+        { from: 'other', text: '别让我等到下班' }
+      ]
+    },
+    {
+      id: 'xiaobai', name: '小白', avatar: 'xiaobai', badge: true,
+      msgs: [
+        { from: 'other', text: '老大，我已经在回月球的高铁上了！季度报告放文件传输助手里了，密码是我最喜欢的月饼口味+我的生日，你登录我微信看吧。' },
+        { from: 'other', text: '上周你还给我买了那个口味的月饼，你没这么快忘记吧？' },
+        { from: 'other', text: '那个……老大不要偷看我的群聊（><）' }
+      ]
+    },
+    {
+      id: 'group', name: '月饼集团·核心项目组', avatar: 'a', badge: false,
+      msgs: [
+        { from: 'other', name: '下属A', av: 'a', text: '兔哥，季度报表我这边初稿好了，发您邮箱了' },
+        { from: 'me',    text: '收到。格式重排，下午三点前给我。' },
+        { from: 'other', name: '下属A', av: 'a', text: '好的兔哥' },
+        { from: 'other', name: '下属B', av: 'b', text: '兔哥，客户那边问能不能宽限两天' },
+        { from: 'me',    text: '不能。原计划。' },
+        { from: 'other', name: '下属B', av: 'b', text: '明白' },
+        { from: 'other', name: '下属C', av: 'c', text: '兔哥，那个……我明天想请半天假' },
+        { from: 'me',    text: '理由。' },
+        { from: 'other', name: '下属C', av: 'c', text: '家里有点事……' },
+        { from: 'me',    text: '批。别耽误进度。' },
+        { from: 'other', name: '下属C', av: 'c', text: '谢谢兔哥！' },
+        { from: 'other', name: '下属A', av: 'a', text: '兔哥今天走得早啊' },
+        { from: 'other', name: '下属B', av: 'b', text: '嘘' },
+        { from: 'other', name: '下属A', av: 'a', text: '……' },
+        { from: 'me',    text: '都干完了？' },
+        { from: 'other', name: '下属A', av: 'a', text: '没没没，我继续' }
+      ]
+    }
+  ],
+  xiaobaiChats: [
+    {
+      id: 'file', name: '文件传输助手', avatar: 'xiaobai', badge: false,
+      msgs: [{ from: 'sys', text: '以下是你收藏的文件' }],
+      isFile: true
+    },
+    {
+      id: 'tuzi', name: '兔哥', avatar: 'tuzi', badge: false,
+      msgs: [
+        { from: 'me', text: '老大，我已经在回月球的高铁上了！季度报告放文件传输助手里了，密码是我最喜欢的月饼口味+我的生日，你登录我微信看吧。' },
+        { from: 'me', text: '上周你还给我买了那个口味的月饼，你没这么快忘记吧？' },
+        { from: 'me', text: '那个……老大不要偷看我的群聊（><）' }
+      ]
+    },
+    {
+      id: 'group', name: '月饼集团·核心项目组', avatar: 'a', badge: false,
+      msgs: [
+        { from: 'other', name: '下属A', av: 'a', text: '兔哥，季度报表我这边初稿好了，发您邮箱了' },
+        { from: 'me',    name: '小白', av: 'xiaobai', text: '（窥屏ing……）' },
+        { from: 'other', name: '下属B', av: 'b', text: '兔哥，客户那边问能不能宽限两天' },
+        { from: 'other', name: '下属A', av: 'a', text: '兔哥今天走得早啊' },
+        { from: 'other', name: '下属B', av: 'b', text: '嘘' }
+      ]
+    },
+    {
+      id: 'mom', name: '妈妈', avatar: 'mom', badge: false,
+      msgs: [
+        { from: 'other', text: '到高铁上了吗？' },
+        { from: 'me',    text: '到了到了，妈' },
+        { from: 'other', text: '路上注意安全，到了记得吃饭' }
+      ]
+    },
+    {
+      id: 'lazy', name: '偷懒兔兔', avatar: 'c', badge: true,
+      msgs: [
+        { from: 'other', name: 'A', av: 'a', text: '兔哥今天稀奇啊' },
+        { from: 'other', name: 'A', av: 'a', text: '这么早就收拾东西了' },
+        { from: 'other', name: 'B', av: 'b', text: '你也注意到了？' },
+        { from: 'other', name: 'C', av: 'c', text: '谁不知道他是工作狂啊' },
+        { from: 'other', name: 'B', av: 'b', text: '不会是有什么约会吧嘿嘿嘿…' },
+        { from: 'me',    name: '小白', av: 'xiaobai', text: '月亮打西边出来了' },
+        { from: 'me',    name: '小白', av: 'xiaobai', text: '算了，只要别压迫我工作，老大干啥都行' },
+        { from: 'other', name: 'A', av: 'a', text: '叫兔哥多给你点萝卜啊' },
+        { from: 'other', name: 'C', av: 'c', text: '找骂' },
+        { from: 'other', name: 'C', av: 'c', text: '哈哈哈哈' }
+      ]
+    }
+  ],
+  rb: {
+    account: 'rabbit', password: 'huijia',
+    accountHint: '我是什么？', passwordHint: '484542（九宫格）',
+    self: {
+      id: 'tuzi', name: '兔子先生', account: 'rabbit', avatar: 'tuzi',
+      bio: '冷酷月饼集团 · 项目负责人',
+      posts: [
+        { id: 't1', time: '09-13 08:44', text: '新季度目标已下发，各组今天下班前交排期。', likes: 3, img: null },
+        { id: 't2', time: '08-18 22:15', text: '加班到这个点，楼下便利店的关东煮都卖完了。', likes: 12, img: null },
+        { id: 't3', time: '06-10 19:40', text: '团队今天效率不错，准时下班。继续保持。', likes: 8, img: null },
+        { id: 't4', time: '05-09 13:11', text: '爸做的桂花月饼，还是小时候的味道。', img: 'https://img2.tofaka.com/autoupload/f/f5gmj/20260927/XmSD/3000X3000/1790522770511541500.jpg', likes: 21 },
+        { id: 't5', time: '04-27 21:48', text: '五一前的最后一个项目节点，扛过去就好了。', likes: 6, img: null }
+      ]
+    },
+    friends: [
+      {
+        id: 'xiaobai', name: '小白', account: 'xiaobai', avatar: 'xiaobai',
+        bio: '爱摸鱼爱生活',
+        posts: [
+          { id: 'x1', time: '09-13 20:54', text: '又加班。兔哥是不是没有家啊，怎么天天待在公司。', likes: 9, img: null },
+          { id: 'x2', time: '09-08 18:26', text: '今天下午茶是奶茶！行政姐姐我爱你！！！', likes: 15, img: null },
+          { id: 'x3', time: '08-30 00:01', text: '08-30，又老了一岁。今年生日在高铁上过，惨。不过老大给我送了月饼，勉强原谅他^^。', likes: 22, img: null },
+          { id: 'x4', time: '08-12 12:37', text: '楼下的猫今天生小猫了，好可爱好可爱好可爱，蹲了半小时。', likes: 31, img: null },
+          { id: 'x5', time: '08-11 09:11', text: '谁懂啊，早高峰地铁挤到我怀疑人生。', likes: 7, img: null },
+          { id: 'x6', time: '07-25 20:22', text: '又吃上了心爱的月饼，好吃到泪目……(>v<)', likes: 18, img: null }
+        ]
+      },
+      { id: 'ceo', name: '冷酷月饼集团CEO', account: 'ceo_moon', avatar: 'ceo', locked: '对方设置了仅展示三天内的动态' },
+      { id: 'a', name: '同事A', account: 'colleague_a', avatar: 'a', locked: '对方设置了不让任何人查看主页' },
+      { id: 'b', name: '同事B', account: 'colleague_b', avatar: 'b', locked: '对方设置了仅好友可见，你们还不是好友' },
+      { id: 'c', name: '同事C', account: 'colleague_c', avatar: 'c', locked: '对方设置了仅展示三天内的动态' }
+    ]
+  },
+  orders: [
+    { id: 'o1', name: '冰皮月饼', desc: '小白最爱。软糯冰皮，冷藏更佳。中秋限定。', time: '08-27 17:05', price: '¥ 68.00', thumbBg: '#e8d8b0', thumbCh: '🥮' }
+  ]
+};
+const CH1_TUZI_BASE = JSON.parse(JSON.stringify(chapter1Data.tuziChats));
+
+/* ==========================================================
+   ==================== 第二章数据 ====================
+   ========================================================== */
+const chapter2Data = {
+  id: 2, title: '出门',
+  apps: ['clockin', 'rabbitbook', 'yizhan', 'shopping', 'mail'],
+  goals: [
+    { id: 'g5', text: '打卡后离开公司', sub: '', done: false, hidden: false },
+    { id: 'g6', text: '获得办公室防盗锁密码', sub: '记得 Rabbit Book 里有发过和爸爸妈妈的合照', done: false, hidden: true },
+    { id: 'g7', text: '登录邮箱，查看邮件', sub: '', done: false, hidden: true },
+    { id: 'g8', text: '获取订单号，拿到月饼大礼包', sub: '订单号 = 购买时间 + 特殊数字 + 商品号尾号', done: false, hidden: true }
+  ],
+  avatars: {
+    tuzi:  { bg: 'var(--av-tuzi)', ch: '兔' },
+    a:     { bg: 'var(--av-a)', ch: 'A' },
+    b:     { bg: 'var(--av-b)', ch: 'B' },
+    c:     { bg: 'var(--av-c)', ch: 'C' }
+  },
+  clockin: { password: '1207', hint: '非工作时段离开，需要办公室安全防盗锁密码' },
+  rb: {
+    account: 'xiaban', password: 'mooncake',
+    accountHint: 'zkcdcp，c→a', passwordHint: '（猪圈密码图）',
+    self: {
+      id: 'tuzi', name: '兔子先生', account: 'xiaban', avatar: 'tuzi',
+      bio: '冷酷月饼集团 · 项目负责人',
+      posts: [
+        { id: 'n1', time: '09-25 16:33', text: '提前提交了工作，今天可以早点回家过中秋了。', likes: 14, img: null },
+        { id: 't1', time: '09-13 08:44', text: '新季度目标已下发，各组今天下班前交排期。', likes: 3, img: null },
+        { id: 't2', time: '08-18 22:15', text: '加班到这个点，楼下便利店的关东煮都卖完了。', likes: 12, img: null },
+        { id: 't3', time: '06-10 19:40', text: '团队今天效率不错，准时下班。继续保持。', likes: 8, img: null },
+        { id: 't4', time: '05-09 13:11', text: '爸做的桂花月饼，还是小时候的味道。', img: 'https://img2.tofaka.com/autoupload/f/f5gmj/20260927/XmSD/3000X3000/1790522770511541500.jpg', likes: 21 },
+        { id: 'n2', time: '05-03 10:31', text: '找到以前和爸妈的合照。', img: 'https://img2.tofaka.com/autoupload/f/f5gmj/20260928/BVUw/3000X3000/retouch_2026092800120433.jpg', likes: 33 },
+        { id: 't5', time: '04-27 21:48', text: '五一前的最后一个项目节点，扛过去就好了。', likes: 6, img: null },
+        { id: 'n3', time: '03-28 19:23', text: '路过楼下花店，买了束桂花。', likes: 5, img: null },
+        { id: 'n4', time: '03-18 09:00', text: '商务合作请联系：MrRabbit@moon_box', likes: 2, img: null }
+      ]
+    },
+    friends: [
+      { id: 'a', name: '同事A', account: 'colleague_a', avatar: 'a', locked: '对方设置了不让任何人查看主页' },
+      { id: 'b', name: '同事B', account: 'colleague_b', avatar: 'b', locked: '对方设置了仅好友可见，你们还不是好友' },
+      { id: 'c', name: '同事C', account: 'colleague_c', avatar: 'c', locked: '对方设置了仅展示三天内的动态' }
+    ]
+  },
+  mail: {
+    account: 'MrRabbit@moon_box', password: '0925',
+    passwordArrows: ['①↓↓→↑↑←','②←↑→↓↓←','③→↓←↓→','④←↓→↓←']
+  },
+  orders: [
+    { id: 'o2', name: '中秋月饼大礼包', desc: '给爸妈的中秋礼物。双黄白莲蓉、五仁、豆沙。（点击查看详情）', time: '09-14 14:20', price: '¥ 288.00', thumbBg: '#d8b0e8', thumbCh: '🎁', tail: '8263' },
+    { id: 'o1', name: '冰皮月饼', desc: '小白最爱。软糯冰皮，冷藏更佳。中秋限定。', time: '08-27 17:05', price: '¥ 68.00', thumbBg: '#e8d8b0', thumbCh: '🥮' }
+  ],
+  yizhan: {
+    specialNumber: '5411', orderNumber: '091454118263',
+    history: [
+      { name: '桂花蜜', status: '运输中', time: '2026-09-01', transit: true },
+      { name: '胡萝卜快递', status: '已签收', time: '2026-08-20', transit: false },
+      { name: '月饼模具', status: '已签收', time: '2026-08-15', transit: false }
+    ]
+  },
+  ad: {
+    answer: '1548',
+    lines: ['2093，没有一个数字正确','8912，2个数字正确，位置都不对','5632，1个数字正确，位置都不对','1597，2个数字正确，位置也正确','9058，2个数字正确，其中1个位置正确']
+  }
+};
+
+/* ==========================================================
+   ==================== 第三章数据 ====================
+   ========================================================== */
+const chapter3Data = {
+  id: 3, title: '回家',
+  apps: ['wechat', 'settings', 'rabbitbook', 'phone', 'mail'],
+  goals: [
+    { id: 'g9', text: '乘坐高铁回家', sub: '', done: false, hidden: false },
+    { id: 'g10', text: '连接高铁 WiFi，回复妈妈的消息', sub: '', done: false, hidden: true },
+    { id: 'g11', text: '找到高铁票座次和购票手机尾号', sub: '纯数字，没有英文', done: false, hidden: true },
+    { id: 'g12', text: '找到祖传桂花月饼菜谱并发送给妈妈', sub: '', done: false, hidden: true }
+  ],
+  avatars: {
+    tuzi:  { bg: 'var(--av-tuzi)', ch: '兔' },
+    xiaobai:{ bg: 'var(--av-xiaobai)', ch: '白' },
+    mom:   { bg: 'var(--av-mom)', ch: '妈' },
+    ceo:   { bg: 'var(--av-ceo)', ch: 'C' },
+    a:     { bg: 'var(--av-a)', ch: 'A' },
+    b:     { bg: 'var(--av-b)', ch: 'B' },
+    c:     { bg: 'var(--av-c)', ch: 'C' },
+    waimai:{ bg: 'var(--av-waimai)', ch: '外' }
+  },
+  wechatMomMsg: '仔仔，你上高铁了吗，妈妈想问你……（详情请进入微信查看）',
+  settings: { wifiName: '高铁 WiFi · MoonRail', password: '06125009', wrongPwd: '06122088' },
+  phoneMine: { avatar: 'tuzi', number: '156****2088' },
+  contacts: [
+    { id: 'ceo', name: 'CEO', avatar: 'ceo', dialog: {
+        start: { from: 'other', text: '你好，兔子先生，有什么工作上的问题需要吗' },
+        choices: ['没什么', '问问电话号码'],
+        A: [ { from: 'me', text: '啊，抱歉，打错电话了。' }, { from: 'other', text: '那祝你中秋快乐，挂了。' } ],
+        B: [ { from: 'me', text: '姐，你知道我的电话号码吗？' }, { from: 'other', text: '是工作太久了吗？中秋三天好好休息一下吧。' } ]
+      } },
+    { id: 'mom', name: '妈妈', avatar: 'mom', dialog: {
+        start: { from: 'other', text: '仔仔？怎么这个时候打电话，到高铁上了吗？' },
+        choices: ['没什么', '问问电话号码'],
+        A: [ { from: 'me', text: '妈，我上车了。' }, { from: 'me', text: '没什么，就是想你了。' }, { from: 'other', text: '哎哟，这么大了还撒娇。妈给你留着桂花月饼呢，等你回来。' }, { from: 'other', text: '路上注意安全，到了给妈说一声。' } ],
+        B: [ { from: 'me', text: '妈，我电话号码你还记得吗？' }, { from: 'other', text: '你这孩子，妈怎么会不记得。就是你上大学那会儿那个号呀。' }, { from: 'other', text: '行了，别贫了，妈去忙了。' } ]
+      } },
+    { id: 'a', name: '同事A', avatar: 'a', dialog: {
+        start: { from: 'other', text: '兔哥，这么晚了有什么事吗？' },
+        choices: ['没什么', '问问电话号码'],
+        A: [ { from: 'me', text: '小A，中秋快乐。不好意思打扰你了。' }, { from: 'other', text: '兔哥中秋快乐！有需要的话可以随时来找我。' } ],
+        B: [ { from: 'me', text: '小A，我的电话号码是多少你记得吗？' }, { from: 'other', text: '哈哈哈兔哥在学习说冷笑话吗？' }, { from: 'other', text: '我家里还有事，先不聊了，拜拜。' } ]
+      } },
+    { id: 'waimai', name: '外卖员', avatar: 'waimai', dialog: {
+        start: { from: 'other', text: '喂，你好，你的餐号是多少？' },
+        choices: ['没什么', '问问电话号码'],
+        A: [ { from: 'me', text: '抱歉，打扰了。' }, { from: 'other', text: '没什么事不要打电话，我很忙。' } ],
+        B: [ { from: 'me', text: '你知道我电话号码吗？' }, { from: 'other', text: '啊？什么？' }, { from: 'other', text: '我为什么会知道你的电话号码？' }, { from: 'other', text: '莫名其妙。' } ]
+      } },
+    { id: 'xiaobai', name: '小白', avatar: 'xiaobai', dialog: {
+        start: { from: 'other', text: '喂？老大？你居然给我打电话了！' },
+        choices: ['没什么', '问问电话号码'],
+        A: [ { from: 'me', text: '抱歉小白，我拨错电话了。' }, { from: 'other', text: '没事没事哒，老大中秋快乐！' }, { from: 'other', text: '对了老大，你上次买高铁票用的是我的手机号吧？尾号 5009。' }, { from: 'other', text: '你自己的号你记不住，每次买东西都填我的，我也是服了。' }, { from: 'me', text: '……中秋快乐。' }, { from: 'other', text: '哈哈哈挂了挂了，拜拜老大。' } ],
+        B: [ { from: 'me', text: '小白，我电话号码是多少来着？' }, { from: 'other', text: '老大你失忆了？你自己的号你问我？哈哈哈。' }, { from: 'other', text: '对了老大，你上次买高铁票用的是我的手机号吧？尾号 5009。' }, { from: 'other', text: '你自己的号你记不住，每次买东西都填我的，我也是服了。' }, { from: 'me', text: '……中秋快乐。' }, { from: 'other', text: '哈哈哈挂了挂了，拜拜老大。' } ]
+      } }
+  ],
+  rb: {
+    account: 'zhongqiukuaile', accountHint: 'eliaukuiqgnohz←', password: '（无）',
+    self: {
+      id: 'tuzi', name: '兔子先生', account: 'zhongqiukuaile', avatar: 'tuzi',
+      bio: '冷酷月饼集团 · 项目负责人',
+      posts: [
+        { id: 'n1', time: '09-25 16:33', text: '提前提交了工作，今天可以早点回家过中秋了。', likes: 14, img: null },
+        { id: 't1', time: '09-13 08:44', text: '新季度目标已下发，各组今天下班前交排期。', likes: 3, img: null },
+        { id: 't2', time: '08-18 22:15', text: '加班到这个点，楼下便利店的关东煮都卖完了。', likes: 12, img: null },
+        { id: 't3', time: '06-10 19:40', text: '团队今天效率不错，准时下班。继续保持。', likes: 8, img: null },
+        { id: 'r1', time: '05-10 20:51',text: '好不容易拿到了爸的祖传桂花月饼配方，分享给大家。（大火蒸 15 分钟，焖 5 分钟）',img: 'https://img2.tofaka.com/autoupload/f/f5gmj/20260927/tP1p/1024X1024/retouch_2026092723325698.jpg', likes: 47},
+        { id: 't4', time: '05-09 13:11', text: '爸做的桂花月饼，还是小时候的味道。', img: 'https://img2.tofaka.com/autoupload/f/f5gmj/20260927/XmSD/3000X3000/1790522770511541500.jpg', likes: 21 },
+        { id: 'n2', time: '05-03 10:31', text: '和爸妈的合照。', img: 'https://img2.tofaka.com/autoupload/f/f5gmj/20260927/LpGF/2663X3000/1790522770415981600.jpg', likes: 33 },
+        { id: 't5', time: '04-27 21:48', text: '五一前的最后一个项目节点，扛过去就好了。', likes: 6, img: null },
+        { id: 'n3', time: '03-28 19:23', text: '路过楼下花店，买了束桂花。', likes: 5, img: null },
+        { id: 'n4', time: '03-18 09:00', text: '商务合作请联系：MrRabbit@moon_box', likes: 2, img: null }
+      ]
+    },
+    friends: [
+      { id: 'a', name: '同事A', account: 'colleague_a', avatar: 'a', locked: '对方设置了不让任何人查看主页' },
+      { id: 'b', name: '同事B', account: 'colleague_b', avatar: 'b', locked: '对方设置了仅好友可见，你们还不是好友' },
+      { id: 'c', name: '同事C', account: 'colleague_c', avatar: 'c', locked: '对方设置了仅展示三天内的动态' }
+    ]
+  },
+  mail: {
+    ticketMail: {
+      from: 'MoonRail 高铁', time: '09-11', title: '购票成功提醒',
+      body: '兔子先生，您于 2026 年 9 月 11 日购买的由地球前往月球的高铁即将出发，请带好行李及时上车。<br><br>您本次的座位为 <b style="color:var(--accent);">06车12D</b>。'
+    }
+  },
+  momEndDialog: [
+    { from: 'other', text: '知道了，谢谢仔仔！' },
+    { from: 'other', text: '我和你爸先去做月饼了，你注意安全。' }
+  ],
+  momAskDialog: [
+    { from: 'other', text: '仔仔，你上高铁了吗，妈妈想问你一件事。' },
+    { from: 'other', text: '我和你爸想做月饼，但是忘记家里祖传桂花月饼要蒸多久了，你还记得吗？' },
+    { from: 'me', text: '我好像在 Rabbit Book 里发过，等我找找。' }
+  ]
+};
+
+/* ==========================================================
+   ==================== 第四章数据 ====================
+   ========================================================== */
+const chapter4Data = {
+  id: 4, title: '团圆',
+  apps: ['wechat', 'home'],
+  goals: [
+    { id: 'g13', text: '回家吃月饼，和爸爸妈妈团聚', sub: '', done: false, hidden: false }
+  ],
+  avatars: {
+    tuzi:  { bg: 'var(--av-tuzi)', ch: '兔' },
+    mom:   { bg: 'var(--av-mom)', ch: '妈' },
+    dad:   { bg: 'var(--av-dad)', ch: '爸' }
+  },
+  // 微信留言
+  wechatMomMsg: '仔仔，我和你爸出去买点今晚要用的东西。门禁密码的密钥是 <b style="color:var(--accent);">we</b> ，相信仔仔很聪明能自己解开的。',
+  // 家：门禁
+  home: {
+    cipher: 'beimhc',
+    answer: 'family',
+    hint: '密文：beimhc 密钥：we 明文：family',
+    // 【图4】位置：家 门禁页，维吉尼亚密码对照表
+    // 一张维吉尼亚密码表，正方形，1:1
+    cipherImg: 'IMGPOST_VIGENERE'
+  },
+  // 家里的物品
+  items: [
+    { id: 'card',     name: '工作证',       icon: '🪪', bg: '#3a3f6a', ch: '证' },
+    { id: 'gift',     name: '月饼大礼包',   icon: '🎁', bg: '#d8b0e8', ch: '礼' },
+    { id: 'recipe',   name: '桂花月饼配方', icon: '📜', bg: '#e8d8b0', ch: '谱' },
+    { id: 'ticket',   name: '车票',         icon: '🎫', bg: '#7d8cff', ch: '票' }
+  ],
+  // 结局文案
+    endingText: [
+    '他把工作证、月饼大礼包、月饼配方和车票一样一样摆在了桌上。它们摊在那儿，静静地看着他：一年努力到头来带回家里的只有这点东西。',
+    '中秋看月，他今天已经看见了太多的月亮。离开公司的时候他抬起头，办公室的灯还亮着，迟迟不肯落下。灯在高铁窗外一闪一闪的，照着他跨过一整座城市的路。圆圆的月饼也是一轮月，很多年前的一个中秋，父亲把烤好的第一块月饼掰开，塞到他手里，说，尝尝，今年的桂花放少了。那时候他嫌甜，嫌烫，嫌父亲的手上有油。现在他想再看一眼月亮。',
+    '他忽然想起，自己在兔子先生这个称呼里活了太久。在公司里，他从不迟到、不掉链子、消息永远秒回。当回到这张桌子前，他就只是爸妈的那只小兔子，可以板着脸，也可以什么都不说。',
+    '他轻轻咬下一口月饼。甜味在嘴里散开，慢慢漫上来，一直漫到眼睛里。',
+    '月亮已经升起来了，就挂在那扇窗户的正对面。他端起那杯热茶，走到窗边站了一会儿。',
+    '外面的世界很大，路也很长。但不管他走出去多远，家里总有一盏灯，是给他留着的。',
+    '',
+    '中秋快乐。记得回家。'
+  ]
+};
+
+/* ==========================================================
+   当前章节数据引用
+   ========================================================== */
+function getCh() {
+  if (state.chapter === 1) return chapter1Data;
+  if (state.chapter === 2) return chapter2Data;
+  if (state.chapter === 3) return chapter3Data;
+  return chapter4Data;
+}
+
+/* ==========================================================
+   微信渲染
+   ========================================================== */
+function renderWeChat() {
+  const body = document.getElementById('wechatBody');
+  const wx = state.wx;
+  const ch = getCh();
+
+  if (wx.view === 'login') {
+    body.innerHTML = `
+      <div class="login-page">
+        <div class="lg-title">微信登录</div>
+        <div class="login-field">
+          <input id="lgAccount" placeholder="账号" value="xiaobai" readonly>
+          <div class="lg-hint">账号已由系统识别</div>
+        </div>
+        <div class="login-field">
+          <input id="lgPassword" placeholder="密码" type="password" style="padding-right:38px;">
+          <div class="pwd-eye" id="lgEye"><div class="eye-shape"></div><div class="eye-slash"></div></div>
+          <div class="lg-hint">密码 = 喜欢的月饼口味（拼音）+ 生日<br>生日……去看看小白的 Rabbit Book</div>
+        </div>
+        <div class="login-err" id="lgErr"></div>
+        <div class="login-btn" id="lgBtn">登 录</div>
+      </div>
+    `;
+    document.getElementById('lgBtn').addEventListener('click', tryLoginXiaobai);
+    document.getElementById('lgPassword').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryLoginXiaobai();
+    });
+    document.getElementById('lgEye').addEventListener('click', function() {
+      const inp = document.getElementById('lgPassword');
+      const showing = inp.type === 'text';
+      inp.type = showing ? 'password' : 'text';
+      this.classList.toggle('showing', !showing);
+    });
+    return;
+  }
+
+  if (wx.view === 'list') {
+    const chats = wx.account === 'tuzi' ? ch.tuziChats : ch.xiaobaiChats;
+    const accName = wx.account === 'tuzi' ? '兔子先生' : '小白';
+    let rows = '';
+    chats.forEach(c => {
+      const av = ch.avatars[c.avatar] || { bg: 'var(--av-a)', ch: '?' };
+      const last = c.msgs[c.msgs.length - 1];
+      let preview = '';
+      if (c.isFile) preview = '文件';
+      else if (last) {
+        const plain = stripHtml(last.text);          // 去标签后再截断，避免截出半个 <b>
+        preview = (last.name ? last.name + '：' : '') + plain.slice(0, 16) + (plain.length > 16 ? '…' : '');
+      }
+      rows += `
+        <div class="wx-row" data-chat="${c.id}">
+          <div class="wx-avatar" style="background:${av.bg};">${av.ch}</div>
+          <div class="wx-info">
+            <div class="wx-row-name">${c.name}</div>
+            <div class="wx-preview">${preview}</div>
+          </div>
+          ${c.badge ? '<div class="wx-badge"></div>' : ''}
+        </div>
+      `;
+    });
+    body.innerHTML = `
+      <div class="wx-wrap">
+        <div class="wx-head">
+          <div class="wx-name">${accName}的微信</div>
+          <div class="wx-logout" id="wxLogout">退出登录</div>
+        </div>
+        <div class="wx-list">${rows}</div>
+      </div>
+    `;
+    body.querySelectorAll('[data-chat]').forEach(r => {
+      r.addEventListener('click', () => {
+        wx.view = 'chat';
+        wx.chatWith = r.dataset.chat;
+        renderWeChat();
+        onOpenChat(r.dataset.chat);
+      });
+    });
+    document.getElementById('wxLogout').addEventListener('click', onLogout);
+    return;
+  }
+
+  if (wx.view === 'chat') {
+    const chats = wx.account === 'tuzi' ? ch.tuziChats : ch.xiaobaiChats;
+    const c = chats.find(x => x.id === wx.chatWith);
+    if (!c) { wx.view = 'list'; renderWeChat(); return; }
+
+    let msgs = '';
+    c.msgs.forEach(m => {
+      if (m.from === 'sys') {
+        msgs += `<div class="wx-msg sys"><div class="m-bubble">${m.text}</div></div>`;
+        return;
+      }
+      if (m.isFileMsg) {
+        const tav = ch.avatars[wx.account === 'tuzi' ? 'tuzi' : 'xiaobai'] || { bg:'var(--av-tuzi)', ch:'兔' };
+        msgs += `
+          <div class="wx-msg me">
+            <div class="m-avatar" style="background:${tav.bg};">${tav.ch}</div>
+            <div><div class="wx-file-card" style="cursor:default;">
+              <div class="wx-file-icon">📄</div>
+              <div><div class="wx-file-name">${m.text}</div><div class="wx-file-sub">已发送</div></div>
+            </div></div>
+          </div>
+        `;
+        return;
+      }
+      const isMe = m.from === 'me';
+      let avKey;
+      if (isMe) avKey = (wx.account === 'tuzi') ? 'tuzi' : 'xiaobai';
+      else avKey = m.av || c.avatar || 'a';
+      const av = ch.avatars[avKey] || { bg: 'var(--av-a)', ch: '?' };
+      const namePrefix = (!isMe && m.name) ? `<div style="font-size:11px;color:var(--text3);margin-bottom:3px;">${m.name}</div>` : '';
+      msgs += `
+        <div class="wx-msg ${isMe ? 'me' : ''}">
+          <div class="m-avatar" style="background:${av.bg};">${av.ch}</div>
+          <div>${namePrefix}<div class="m-bubble">${m.text}</div></div>
+        </div>
+      `;
+    });
+
+    if (c.isFile) {
+      const doneCls = state.hasFile ? 'done' : '';
+      const iconCh = state.hasFile ? '✓' : '📄';
+      msgs += `
+        <div class="wx-file-card ${doneCls}" id="fileCard">
+          <div class="wx-file-icon">${iconCh}</div>
+          <div>
+            <div class="wx-file-name">季度报告.docx</div>
+            <div class="wx-file-sub">${state.hasFile ? '已获取' : '点击获取文件'}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    let sendBtn = '';
+    if (state.chapter === 3 && wx.chatWith === 'mom' && state.momAskSent && state.recipeGot && !state.recipeSent) {
+      sendBtn = `<div class="wx-send-btn" id="sendRecipeBtn">发送配方</div>`;
+    }
+
+    body.innerHTML = `
+      <div class="wx-chat">
+        <div class="wx-chat-head">
+          <div class="wx-back" id="wxBack">‹</div>
+          <div class="wx-chat-name">${c.name}</div>
+        </div>
+        <div class="wx-msgs" id="wxMsgs">${msgs}${sendBtn}</div>
+      </div>
+    `;
+    document.getElementById('wxBack').addEventListener('click', () => {
+      wx.view = 'list'; wx.chatWith = null; renderWeChat();
+    });
+    const msgsEl = document.getElementById('wxMsgs');
+    if (msgsEl) msgsEl.scrollTop = msgsEl.scrollHeight;
+
+    const fc = document.getElementById('fileCard');
+    if (fc && !state.hasFile) {
+      fc.addEventListener('click', () => {
+        state.hasFile = true;
+        showToast('已获取', '季度报告.docx');
+        addGoal('g4');
+        renderWeChat();
+      });
+    }
+
+    if (wx.account === 'tuzi' && wx.chatWith === 'ceo' && state.hasFile && !state.reportSent) {
+      const sendWrap = document.createElement('div');
+      sendWrap.innerHTML = `
+        <div class="wx-file-card" id="sendFileCard" style="border-color:var(--ok);">
+          <div class="wx-file-icon" style="background:var(--ok-dim);">📄</div>
+          <div><div class="wx-file-name">季度报告.docx</div><div class="wx-file-sub">点击发送给 CEO</div></div>
+        </div>
+      `;
+      document.getElementById('wxMsgs').appendChild(sendWrap);
+      document.getElementById('wxMsgs').scrollTop = document.getElementById('wxMsgs').scrollHeight;
+      document.getElementById('sendFileCard').addEventListener('click', onSendReport);
+    }
+
+    const srBtn = document.getElementById('sendRecipeBtn');
+    if (srBtn) srBtn.addEventListener('click', onSendRecipe);
+    return;
+  }
+}
+
+function onOpenChat(chatId) {
+  const wx = state.wx;
+  if (state.chapter === 1) {
+    if (wx.account === 'tuzi') {
+      if (chatId === 'ceo') addGoal('g2');
+      if (chatId === 'xiaobai') addGoal('g3');
+      if (chatId === 'group') unlockAchievement('angry');
+    }
+    if (wx.account === 'xiaobai') {
+      if (chatId === 'lazy') unlockAchievement('homesick');
+    }
+  }
+  if (state.chapter === 3) {
+    if (chatId === 'mom') {
+      finishGoal('g10');
+      addGoal('g12');
+    }
+  }
+}
+
+function onLogout() {
+  // 第四章：没有可切换的账号，退出登录无反应
+  if (state.chapter === 3 || state.chapter === 4) return;
+  const wx = state.wx;
+  if (wx.account === 'tuzi') {
+    if (wx.unlocked) { wx.account = 'xiaobai'; wx.view = 'list'; wx.chatWith = null; renderWeChat(); }
+    else { wx.view = 'login'; renderWeChat(); }
+  } else {
+    wx.account = 'tuzi'; wx.view = 'list'; wx.chatWith = null; renderWeChat();
+  }
+}
+
+function tryLoginXiaobai() {
+  const pwd = document.getElementById('lgPassword').value.trim();
+  const err = document.getElementById('lgErr');
+  if (pwd === 'bingpi0830') {
+    state.wx.account = 'xiaobai';
+    state.wx.unlocked = true;
+    state.wx.view = 'list';
+    state.wx.chatWith = null;
+    finishGoal('g3');
+    renderWeChat();
+    showToast('登录成功', '欢迎，小白');
+  } else {
+    err.textContent = '密码错误，再想想';
+    document.getElementById('lgPassword').value = '';
+  }
+}
+
+function onSendReport() {
+  if (state.reportSent) return;
+  state.reportSent = true;
+  const ceo = chapter1Data.tuziChats.find(c => c.id === 'ceo');
+  ceo.msgs.push({ from: 'me', text: '季度报告.docx', isFileMsg: true });
+  ceo.msgs.push({ from: 'other', text: '收到，做的不错。' });
+  ceo.msgs.push({ from: 'other', text: '今天中秋早点回家吧。' });
+  finishGoal('g4'); finishGoal('g2'); finishGoal('g1');
+  showToast('已提交', 'CEO：今天中秋早点回家吧');
+  renderWeChat();
+  setTimeout(() => {
+    playChapterEnd('第 一 章', '完', () => { initChapter2(); });
+  }, 3000);
+}
+
+function onSendRecipe() {
+  if (state.recipeSent) return;
+  state.recipeSent = true;
+  const ch = chapter3Data;
+  const mom = ch.tuziChats.find(c => c.id === 'mom');
+  mom.msgs.push({ from: 'me', text: '找到了！大火蒸 15 分钟，焖 5 分钟。' });
+  finishGoal('g12'); finishGoal('g9');
+  renderWeChat();
+  showToast('已发送', '配方已发给妈妈');
+  let delay = 800;
+  ch.momEndDialog.forEach(m => {
+    setTimeout(() => {
+      mom.msgs.push(m);
+      if (document.getElementById('win-wechat').classList.contains('show') && state.wx.chatWith === 'mom') {
+        renderWeChat();
+      }
+    }, delay);
+    delay += 800;
+  });
+  setTimeout(() => {
+    playChapterEnd('第 三 章', '完', () => { initChapter4(); });
+  }, delay + 1500);
+}
+
+/* ==========================================================
+   Rabbit Book 渲染
+   ========================================================== */
+function renderRabbit() {
+  const body = document.getElementById('rabbitBody');
+  const rb = state.rb;
+  const ch = getCh();
+  const rbData = ch.rb;
+
+  if (!rb.logged) {
+    if (state.chapter === 3 && rb.forgotMode) {
+      const btnCls = rb.forgotSent ? 'disabled' : '';
+      const btnText = rb.forgotSent ? '已发送到邮箱' : '找回密码';
+      const btnStyle = rb.forgotSent ? 'background:var(--card);color:var(--ok);' : 'background:var(--brand-rb);color:#fff;';
+      body.innerHTML = `
+        <div class="login-page">
+          <div class="lg-title" style="color:var(--brand-rb-text);">找回密码</div>
+          <div class="login-field">
+            <input id="rbForgotAcc" placeholder="请输入账号">
+            <div class="lg-hint">提示：${rbData.accountHint}</div>
+          </div>
+          <div class="login-err" id="rbForgotErr"></div>
+          <div class="login-btn ${btnCls}" id="rbForgotBtn" style="${btnStyle}">${btnText}</div>
+          <div class="forget-link" id="rbBackLogin">返回登录</div>
+        </div>
+      `;
+      const btn = document.getElementById('rbForgotBtn');
+      if (btn && !rb.forgotSent) btn.addEventListener('click', tryForgotRabbit);
+      document.getElementById('rbBackLogin').addEventListener('click', () => {
+        rb.forgotMode = false; renderRabbit();
+      });
+      return;
+    }
+
+    const isCh2 = state.chapter === 2;
+    const isCh3 = state.chapter === 3;
+    body.innerHTML = `
+      <div class="login-page">
+        <div class="lg-title" style="color:var(--brand-rb-text);">Rabbit Book</div>
+        <div class="login-field">
+          <input id="rbAccount" placeholder="账号">
+          <div class="lg-hint">提示：${rbData.accountHint}</div>
+        </div>
+        <div class="login-field">
+          <input id="rbPassword" placeholder="密码" type="password" style="padding-right:38px;">
+          <div class="pwd-eye" id="rbEye"><div class="eye-shape"></div><div class="eye-slash"></div></div>
+          <div class="lg-hint">提示：${isCh3 ? '我没有设置密码' : rbData.passwordHint}</div>
+        </div>
+        ${isCh2 ? `
+        <div style="width:100%;max-width:280px;margin-top:6px;">
+          <img class="pigpen-img" id="pigpenImg" src="https://img2.tofaka.com/autoupload/f/f5gmj/20260927/dN9e/3000X3000/1790522770446924500.jpg" alt="猪圈密码图">
+          <div class="lg-hint" style="text-align:center;margin-top:4px;">点击图片放大</div>
+        </div>` : ''}
+        <div class="login-err" id="rbErr"></div>
+        <div class="login-btn" id="rbBtn" style="background:var(--brand-rb);">登 录</div>
+        ${(isCh3 || state.chapter === 1 || isCh2) ? `<div class="forget-link" id="rbForget">forget password</div>` : ''}
+      </div>
+    `;
+    if (isCh2) {
+      const pig = document.getElementById('pigpenImg');
+      if (pig) pig.addEventListener('click', () => openImgZoom(pig.src));
+    }
+    document.getElementById('rbBtn').addEventListener('click', tryLoginRabbit);
+    document.getElementById('rbPassword').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryLoginRabbit();
+    });
+    document.getElementById('rbEye').addEventListener('click', function() {
+      const inp = document.getElementById('rbPassword');
+      const showing = inp.type === 'text';
+      inp.type = showing ? 'password' : 'text';
+      this.classList.toggle('showing', !showing);
+    });
+    const forget = document.getElementById('rbForget');
+    if (forget) {
+      if (isCh3) {
+        forget.addEventListener('click', () => { rb.forgotMode = true; renderRabbit(); });
+      }
+      // 第一、二章：点击无反应
+    }
+    return;
+  }
+
+  const isFriend = rb.view === 'friend';
+  let profile, posts, backShow;
+  if (isFriend) {
+    profile = rbData.friends.find(f => f.id === rb.friendId);
+    posts = profile ? (profile.posts || []) : [];
+    backShow = 'show';
+  } else {
+    profile = rbData.self;
+    posts = profile.posts;
+    backShow = '';
+  }
+
+  const av = ch.avatars[profile.avatar] || { bg: 'var(--av-a)', ch: '?' };
+  let leftHTML = `
+    <div class="rb-profile-card">
+      <div class="rb-big-avatar" style="background:${av.bg};">${av.ch}</div>
+      <div class="rb-nick">${profile.name}</div>
+      <div class="rb-acc">@${profile.account}</div>
+      ${profile.bio ? `<div class="rb-bio">${profile.bio}</div>` : ''}
+    </div>
+  `;
+
+  let midHTML = '';
+  if (isFriend && profile && profile.locked) {
+    midHTML = `<div class="rb-empty">${profile.locked}</div>`;
+  } else if (posts.length === 0) {
+    midHTML = `<div class="rb-empty">还没有发布任何动态。</div>`;
+  } else {
+    posts.forEach(p => {
+      const liked = rb.likedPosts[p.id];
+      let imgHTML = '';
+      if (p.img) {
+        if (p.img.startsWith('IMGPOST_')) {
+          imgHTML = `<!-- 【图】位置：${p.img}，正方形 1:1 -->\n<img class="post-img" src="" alt="" data-imgzoom="${p.id}">`;
+        } else {
+          imgHTML = `<img class="post-img" src="${p.img}" alt="" data-imgzoom="${p.id}">`;
+        }
+      }
+      let recipeBtn = '';
+      if (state.chapter === 3 && p.id === 'r1' && !state.recipeGot) {
+        recipeBtn = `<div class="rb-recipe-btn" data-recipe="1">获取配方</div>`;
+      } else if (state.chapter === 3 && p.id === 'r1' && state.recipeGot) {
+        recipeBtn = `<div class="rb-recipe-btn done">配方已获取</div>`;
+      }
+      midHTML += `
+        <div class="rb-post">
+          <div class="rb-post-head">
+            <div class="rb-post-avatar" style="background:${av.bg};">${av.ch}</div>
+            <div class="rb-post-name">${profile.name}</div>
+            <div class="rb-post-time">${p.time}</div>
+          </div>
+          <div class="rb-post-text">${p.text}</div>
+          ${imgHTML}
+          <div class="rb-post-foot">
+            <div class="like-btn ${liked ? 'liked' : ''}" data-like="${p.id}">
+              <span>${liked ? '❤' : '♡'}</span><span>${p.likes + (liked ? 1 : 0)}</span>
+            </div>
+            ${recipeBtn}
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  let rightHTML = `<div class="side-title" style="margin-bottom:10px;">好 友</div>`;
+  rbData.friends.forEach(f => {
+    const fav = ch.avatars[f.avatar] || { bg: 'var(--av-a)', ch: '?' };
+    rightHTML += `
+      <div class="rb-friend" data-friend="${f.id}">
+        <div class="rb-f-avatar" style="background:${fav.bg};">${fav.ch}</div>
+        <div class="rb-f-name">${f.name}</div>
+      </div>
+    `;
+  });
+
+  body.innerHTML = `
+    <div class="rb-wrap">
+      <div class="rb-head">
+        <div class="rb-back ${backShow}" id="rbBack">‹</div>
+        <div class="rb-logo">Rabbit Book</div>
+      </div>
+      <div class="rb-cols">
+        <div class="rb-left">${leftHTML}</div>
+        <div class="rb-mid" id="rbMid">${midHTML}</div>
+        <div class="rb-right">${rightHTML}</div>
+      </div>
+    </div>
+  `;
+
+  const back = document.getElementById('rbBack');
+  if (back) back.addEventListener('click', () => {
+    rb.view = 'home'; rb.friendId = null; renderRabbit();
+  });
+  body.querySelectorAll('[data-friend]').forEach(el => {
+    el.addEventListener('click', () => {
+      rb.view = 'friend'; rb.friendId = el.dataset.friend; renderRabbit();
+    });
+  });
+  body.querySelectorAll('[data-like]').forEach(el => {
+    el.addEventListener('click', () => {
+      const pid = el.dataset.like;
+      if (rb.likedPosts[pid]) return;
+      rb.likedPosts[pid] = true;
+      let post = null;
+      if (rb.view === 'friend') {
+        const f = rbData.friends.find(x => x.id === rb.friendId);
+        if (f && f.posts) post = f.posts.find(p => p.id === pid);
+      } else {
+        post = rbData.self.posts.find(p => p.id === pid);
+      }
+      el.classList.add('liked');
+      el.innerHTML = `<span>❤</span><span>${post ? post.likes + 1 : ''}</span>`;
+      if (rb.friendId === 'xiaobai') unlockAchievement('lively');
+    });
+  });
+  body.querySelectorAll('[data-imgzoom]').forEach(el => {
+    el.addEventListener('click', () => {
+      const pid = el.dataset.imgzoom;
+      openImgZoom(el.src, () => {
+        if (state.chapter === 2 && pid === 'n2') unlockAchievement('happy');
+      });
+    });
+  });
+  body.querySelectorAll('[data-recipe]').forEach(el => {
+    el.addEventListener('click', () => {
+      if (state.recipeGot) return;
+      state.recipeGot = true;
+      el.classList.add('done');
+      el.textContent = '配方已获取';
+      el.removeAttribute('data-recipe');
+      showToast('已获取', '祖传桂花月饼配方');
+      if (document.getElementById('win-wechat').classList.contains('show')
+          && state.wx.view === 'chat'
+          && state.wx.chatWith === 'mom') {
+        renderWeChat();
+      }
+    });
+  });
+}
+
+function tryLoginRabbit() {
+  const acc = document.getElementById('rbAccount').value.trim();
+  const pwd = document.getElementById('rbPassword').value.trim();
+  const err = document.getElementById('rbErr');
+  const rbData = getCh().rb;
+
+  if (state.chapter === 3) {
+    state.rb.loginFails++;
+    err.textContent = '账号或密码错误';
+    if (state.rb.loginFails >= 3) unlockAchievement('insist');
+    document.getElementById('rbPassword').value = '';
+    return;
+  }
+
+  if (acc === rbData.account && pwd === rbData.password) {
+    state.rb.logged = true;
+    renderRabbit();
+    showToast('登录成功', '欢迎回来，兔子先生');
+  } else {
+    state.rb.loginFails++;
+    err.textContent = '账号或密码错误';
+    if (state.rb.loginFails >= 3) unlockAchievement('stupid');
+    document.getElementById('rbPassword').value = '';
+  }
+}
+
+function tryForgotRabbit() {
+  const acc = document.getElementById('rbForgotAcc').value.trim();
+  const err = document.getElementById('rbForgotErr');
+  if (acc === chapter3Data.rb.account) {
+    state.rb.forgotSent = true;
+    renderRabbit();
+    showToast('已发送', '重置密码的链接已发送到邮箱');
+    if (document.getElementById('win-mail').classList.contains('show')) renderMail();
+  } else {
+    err.textContent = '账号不存在';
+    document.getElementById('rbForgotAcc').value = '';
+  }
+}
+
+/* ==========================================================
+   购物渲染
+   ========================================================== */
+function renderShopping() {
+  const body = document.getElementById('shoppingBody');
+  const ch = getCh();
+  let list = '';
+  ch.orders.forEach(o => {
+    list += `
+      <div class="order-card" ${o.id === 'o2' ? `data-order="${o.id}"` : ''}>
+        <div class="order-thumb" style="background:${o.thumbBg};">${o.thumbCh}</div>
+        <div class="order-info">
+          <div class="order-name">${o.name}</div>
+          <div class="order-desc">${o.desc}</div>
+          <div class="order-meta">
+            <span>${o.time}</span>
+            <span class="order-price">${o.price}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  body.innerHTML = `
+    <div class="shop-wrap">
+      <div class="shop-head">我的订单</div>
+      <div class="shop-list">${list}</div>
+    </div>
+  `;
+  const target = body.querySelector('[data-order="o2"]');
+  if (target) {
+    target.style.cursor = 'pointer';
+    target.addEventListener('click', () => openOrderDetail(o2Detail()));
+  }
+}
+function o2Detail() {
+  return `
+    <div class="od-row"><span class="od-label">商品</span><span>中秋月饼大礼包</span></div>
+    <div class="od-row"><span class="od-label">购买时间</span><span>2026-09-14 14:20</span></div>
+    <div class="od-row"><span class="od-label">商品号编号</span><span class="od-num">*********8263</span></div>
+    <div class="od-row"><span class="od-label">收货地址</span><span>月球 · 广寒宫 · 桂花巷</span></div>
+  `;
+}
+function openOrderDetail(html) {
+  document.getElementById('odBody').innerHTML = html;
+  document.getElementById('orderDetailMask').classList.add('show');
+}
+document.getElementById('odClose').addEventListener('click', () => {
+  document.getElementById('orderDetailMask').classList.remove('show');
+});
+document.getElementById('orderDetailMask').addEventListener('click', (e) => {
+  if (e.target.id === 'orderDetailMask') document.getElementById('orderDetailMask').classList.remove('show');
+});
+
+/* ==========================================================
+   打卡程序渲染
+   ========================================================== */
+function renderClockIn() {
+  const body = document.getElementById('clockinBody');
+  const ci = state.clockin;
+  const data = chapter2Data.clockin;
+  const offCls = ci.off ? 'off' : '';
+  const statusText = ci.off ? '已下班' : '正在上班';
+  const btnCls = ci.off ? 'disabled' : '';
+  body.innerHTML = `
+    <div class="clockin-wrap">
+      <div class="ci-card">
+        <div class="ci-clock ${offCls}"></div>
+        <div class="ci-status ${offCls}">${statusText}</div>
+        <div class="ci-btn ${btnCls}" id="ciBtn">${ci.off ? '已打卡' : '下班打卡'}</div>
+        <div class="ci-pwd ${ci.pwdShown && !ci.off ? 'show' : ''}" id="ciPwd">
+          <input id="ciPwdInput" placeholder="和爸爸妈妈合照的日子" maxlength="8">
+          <div class="ci-hint">${data.hint}</div>
+          <div class="ci-err" id="ciErr"></div>
+          <div class="ci-submit" id="ciSubmit">确认</div>
+        </div>
+      </div>
+    </div>
+  `;
+  const btn = document.getElementById('ciBtn');
+  if (btn && !ci.off) {
+    btn.addEventListener('click', () => {
+      ci.pwdShown = true; renderClockIn(); addGoal('g6');
+    });
+  }
+  const submit = document.getElementById('ciSubmit');
+  if (submit) {
+    submit.addEventListener('click', tryClockOut);
+    document.getElementById('ciPwdInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryClockOut();
+    });
+  }
+}
+function tryClockOut() {
+  const val = document.getElementById('ciPwdInput').value.trim();
+  const err = document.getElementById('ciErr');
+  if (val === chapter2Data.clockin.password) {
+    state.clockin.off = true; state.clockin.pwdShown = false;
+    finishGoal('g5'); finishGoal('g6');
+    renderClockIn();
+    showToast('打卡成功', '已下班，离开公司');
+    setTimeout(() => {
+      showSysPopup('邮箱收到一条新邮件', '兔兔驿站：您购买的月饼大礼包到了，请凭取件码取件：****（详情请进入邮箱查看）', 'var(--brand-mail)', true);
+      addGoal('g7');
+    }, 2000);
+  } else {
+    err.textContent = '密码错误';
+    document.getElementById('ciPwdInput').value = '';
+  }
+}
+
+/* ==========================================================
+   兔兔驿站渲染
+   ========================================================== */
+function renderYizhan() {
+  const body = document.getElementById('yizhanBody');
+  const yz = state.yz;
+  const data = chapter2Data.yizhan;
+  const btnCls = yz.specialSent ? 'disabled' : '';
+  const btnText = yz.specialSent ? '已发送到邮箱' : '获取特殊数字';
+  let history = '';
+  data.history.forEach(h => {
+    history += `
+      <div class="yz-order">
+        <div><div class="yo-name">${h.name}</div><div class="yo-time">${h.time}</div></div>
+        <div class="yo-status ${h.transit ? 'transit' : ''}">${h.status}</div>
+      </div>
+    `;
+  });
+  let pickupHTML = '';
+  if (yz.pickupDone) {
+    pickupHTML = `<div class="yz-pickup" style="text-align:center;padding:26px 16px;"><div style="font-size:15px;color:var(--ok);letter-spacing:2px;">包裹已成功取出</div></div>`;
+  } else {
+    pickupHTML = `
+      <div class="yz-pickup">
+        <div class="yz-pickup-title">取 件</div>
+        <div class="yz-input-row" style="margin-bottom:8px;">
+          <input id="yzOrderInput" placeholder="输入订单号" maxlength="20">
+          <div class="yz-submit" id="yzOrderBtn">取件</div>
+        </div>
+        <div class="yz-input-row">
+          <input id="yzPickupInput" placeholder="输入取件码" maxlength="12">
+          <div class="yz-submit" id="yzPickupBtn">取件</div>
+        </div>
+        <div class="yz-err" id="yzErr"></div>
+      </div>
+    `;
+  }
+  body.innerHTML = `
+    <div class="yz-wrap">
+      <div class="yz-head">
+        <span>兔兔驿站</span>
+        <div class="yz-get-btn ${btnCls}" id="yzGetBtn">${btnText}</div>
+      </div>
+      <div class="yz-body">
+        ${pickupHTML}
+        <div class="yz-history-title">历 史 订 单</div>
+        ${history}
+      </div>
+    </div>
+  `;
+  const getBtn = document.getElementById('yzGetBtn');
+  if (getBtn && !yz.specialSent) {
+    getBtn.addEventListener('click', () => {
+      state.yz.specialSent = true;
+      renderYizhan();
+      showToast('已发送', '特殊数字已发送到邮箱');
+      if (document.getElementById('win-mail').classList.contains('show')) renderMail();
+    });
+  }
+  const orderBtn = document.getElementById('yzOrderBtn');
+  if (orderBtn) {
+    orderBtn.addEventListener('click', tryPickupByOrder);
+    document.getElementById('yzOrderInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryPickupByOrder();
+    });
+  }
+  const pbtn = document.getElementById('yzPickupBtn');
+  if (pbtn) {
+    pbtn.addEventListener('click', tryPickupByCode);
+    document.getElementById('yzPickupInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryPickupByCode();
+    });
+  }
+}
+function tryPickupByOrder() {
+  const val = document.getElementById('yzOrderInput').value.trim();
+  const err = document.getElementById('yzErr');
+  if (val === chapter2Data.yizhan.orderNumber) {
+    state.yz.pickupDone = true;
+    finishGoal('g8');
+    unlockAchievement('backpack');
+    showToast('取件成功', '月饼大礼包已到手');
+    renderYizhan();
+    setTimeout(() => {
+      playChapterEnd('第 二 章', '完', () => { initChapter3(); });
+    }, 3000);
+  } else {
+    err.textContent = '订单号错误';
+    document.getElementById('yzOrderInput').value = '';
+  }
+}
+function tryPickupByCode() {
+  const err = document.getElementById('yzErr');
+  err.textContent = '取件码错误';
+  document.getElementById('yzPickupInput').value = '';
+}
+
+/* ==========================================================
+   邮箱渲染
+   ========================================================== */
+function renderMail() {
+  const body = document.getElementById('mailBody');
+  const m = state.mail;
+
+  if (!m.logged) {
+    const data = state.chapter === 3 ? chapter3Data.mail : chapter2Data.mail;
+    body.innerHTML = `
+      <div class="login-page">
+        <div class="lg-title" style="color:var(--brand-mail-text);">邮箱登录</div>
+        <div class="login-field">
+          <input id="mailAccount" placeholder="邮箱账号">
+          <div class="lg-hint">注意大小写</div>
+        </div>
+        <div class="login-field">
+          <input id="mailPassword" placeholder="密码" type="password" style="padding-right:38px;">
+          <div class="pwd-eye" id="mailEye"><div class="eye-shape"></div><div class="eye-slash"></div></div>
+        </div>
+        <div class="arrow-puzzle" style="width:100%;max-width:280px;">
+          ${data.passwordArrows.join('<br>')}
+        </div>
+        <div class="login-err" id="mailErr"></div>
+        <div class="login-btn" id="mailBtn" style="background:var(--brand-mail);">登 录</div>
+      </div>
+    `;
+    document.getElementById('mailBtn').addEventListener('click', tryLoginMail);
+    document.getElementById('mailPassword').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryLoginMail();
+    });
+    document.getElementById('mailEye').addEventListener('click', function() {
+      const inp = document.getElementById('mailPassword');
+      const showing = inp.type === 'text';
+      inp.type = showing ? 'password' : 'text';
+      this.classList.toggle('showing', !showing);
+    });
+    return;
+  }
+
+  if (m.view === 'list') {
+    let rows = '';
+    if (state.chapter === 3 && state.rb.forgotSent) {
+      rows += `
+        <div class="mail-row" data-mail="rbreset">
+          <div class="mail-row-top"><div class="mail-from">Rabbit Book</div><div class="mail-time">刚刚</div></div>
+          <div class="mail-preview">密码重置链接已生成，点击进入 Rabbit Book</div>
+        </div>
+      `;
+    }
+    if (state.chapter === 3) {
+      rows += `
+        <div class="mail-row" data-mail="ticket">
+          <div class="mail-row-top"><div class="mail-from">${chapter3Data.mail.ticketMail.from}</div><div class="mail-time">${chapter3Data.mail.ticketMail.time}</div></div>
+          <div class="mail-preview">${chapter3Data.mail.ticketMail.title}</div>
+        </div>
+      `;
+    }
+    if (state.yz.specialSent && state.chapter === 2) {
+      rows += `
+        <div class="mail-row" data-mail="special">
+          <div class="mail-row-top"><div class="mail-from">兔兔驿站</div><div class="mail-time">今天</div></div>
+          <div class="mail-preview">您本次查询的特殊数字为：****</div>
+        </div>
+      `;
+    }
+    rows += `
+      <div class="mail-row" data-mail="pickup">
+        <div class="mail-row-top"><div class="mail-from">兔兔驿站</div><div class="mail-time">今天</div></div>
+        <div class="mail-preview">您购买的月饼大礼包已到达兔兔驿站，请凭取件码取件：****</div>
+      </div>
+    `;
+    body.innerHTML = `
+      <div class="mail-wrap">
+        <div class="mail-head">收件箱</div>
+        <div class="mail-list">${rows}</div>
+      </div>
+    `;
+    body.querySelectorAll('[data-mail]').forEach(r => {
+      r.addEventListener('click', () => {
+        m.view = 'detail'; m.openId = r.dataset.mail; renderMail();
+      });
+    });
+    return;
+  }
+
+  if (m.view === 'detail') {
+    if (m.openId === 'special') {
+      body.innerHTML = `
+        <div class="mail-detail">
+          <div class="mail-detail-head"><div class="wx-back" id="mailBack">‹</div><div class="mail-detail-title">兔兔驿站 · 特殊数字</div></div>
+          <div class="mail-detail-body">您本次查询的特殊数字为：<b style="color:var(--brand-yz);">5411</b>。<br>请勿泄露给他人。</div>
+        </div>
+      `;
+    } else if (m.openId === 'ticket') {
+      body.innerHTML = `
+        <div class="mail-detail">
+          <div class="mail-detail-head"><div class="wx-back" id="mailBack">‹</div><div class="mail-detail-title">${chapter3Data.mail.ticketMail.from} · 购票提醒</div></div>
+          <div class="mail-detail-body">${chapter3Data.mail.ticketMail.body}</div>
+        </div>
+      `;
+    } else if (m.openId === 'rbreset') {
+      body.innerHTML = `
+        <div class="mail-detail">
+          <div class="mail-detail-head"><div class="wx-back" id="mailBack">‹</div><div class="mail-detail-title">Rabbit Book · 密码重置</div></div>
+          <div class="mail-detail-body">
+            您好，我们收到了您的密码重置请求。<br>点击下方链接直接登录 Rabbit Book。
+            <div class="mail-link-btn" id="rbResetLink">进入 Rabbit Book</div>
+          </div>
+        </div>
+      `;
+      document.getElementById('rbResetLink').addEventListener('click', () => {
+        state.rb.logged = true;
+        state.rb.view = 'home';
+        state.rb.forgotMode = false;
+        openWindow('win-rabbitbook');
+      });
+    } else {
+      body.innerHTML = `
+        <div class="mail-detail">
+          <div class="mail-detail-head"><div class="wx-back" id="mailBack">‹</div><div class="mail-detail-title">兔兔驿站 · 取件通知</div></div>
+          <div class="mail-detail-body">
+            您购买的月饼大礼包已到达兔兔驿站，请凭取件码取件：<br>
+            （糟糕！您的取件码被广告挡住了！）
+            <div class="ad-box" id="adBox">
+              <div class="ad-close" id="adClose">×</div>
+                <div id="adContent"><div class="ad-text">我是关不掉的广告</div>
+              </div>
+            </div>
+            若您在使用取件码或取件过程中遇到任何问题，可前往兔兔驿站输入订单号完成取件。<br>
+            订单号由购买时间、特殊数字、商品号尾号组成。
+          </div>
+        </div>
+      `;
+    }
+    const back = document.getElementById('mailBack');
+    if (back) back.addEventListener('click', () => {
+      m.view = 'list'; m.openId = null; renderMail();
+    });
+    if (m.openId === 'pickup' && state.chapter === 2) {
+      if (!state.mail.readPickup) {
+        state.mail.readPickup = true;
+        addGoal('g8');
+      }
+      setupAd();
+    }
+    return;
+  }
+}
+
+function tryLoginMail() {
+  const acc = document.getElementById('mailAccount').value.trim();
+  const pwd = document.getElementById('mailPassword').value.trim();
+  const err = document.getElementById('mailErr');
+  if (acc === chapter2Data.mail.account && pwd === chapter2Data.mail.password) {
+    state.mail.logged = true;
+    state.mail.view = 'list';
+    renderMail();
+    finishGoal('g7');
+    showToast('登录成功', '欢迎回来');
+  } else {
+    err.textContent = '账号或密码错误';
+    document.getElementById('mailPassword').value = '';
+  }
+}
+
+/* ==========================================================
+   广告谜题
+   ========================================================== */
+function setupAd() {
+  const adBox = document.getElementById('adBox');
+  const adClose = document.getElementById('adClose');
+  const adContent = document.getElementById('adContent');
+  if (!adBox) return;
+  adClose.addEventListener('click', () => {
+    if (state.adSolved) return;
+    adContent.innerHTML = `
+      <div class="ad-text" style="color:var(--brand-yz);margin-bottom:6px;">解出密码：</div>
+      <div class="ad-puzzle">
+        ${chapter2Data.ad.lines.map(l => `<div class="ap-row">${l}</div>`).join('')}
+        <div class="ap-input-row">
+          <input id="adInput" placeholder="输入答案" maxlength="4">
+          <div class="ap-btn" id="adBtn">提交</div>
+        </div>
+        <div class="ad-err" id="adErr"></div>
+      </div>
+    `;
+    document.getElementById('adBtn').addEventListener('click', tryAd);
+    document.getElementById('adInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryAd();
+    });
+  }, { once: true });
+}
+function tryAd() {
+  const val = document.getElementById('adInput').value.trim();
+  const err = document.getElementById('adErr');
+  if (val === chapter2Data.ad.answer) {
+    state.adSolved = true;
+    document.getElementById('adContent').innerHTML = `<div class="ad-text">恭喜你解开了<br>但广告还是关不掉</div>`;
+    unlockAchievement('advice');
+  } else {
+    err.textContent = '答案不对';
+    document.getElementById('adInput').value = '';
+  }
+}
+
+/* ==========================================================
+   设置渲染
+   ========================================================== */
+function renderSettings() {
+  const body = document.getElementById('settingsBody');
+  const st = state.settings;
+  const data = chapter3Data.settings;
+  const connCls = st.connected ? 'connected' : '';
+  const connText = st.connected ? '已连接' : '连接';
+  body.innerHTML = `
+    <div class="st-wrap">
+      <div class="st-head">设置</div>
+      <div class="st-body">
+        <div class="st-section-title">W I F I</div>
+        <div class="st-wifi-item">
+          <div class="st-wifi-icon"></div>
+          <div class="st-wifi-name">${data.wifiName}</div>
+          <div class="st-wifi-lock">🔒</div>
+          <div class="st-connect-btn ${connCls}" id="stConnBtn">${connText}</div>
+        </div>
+        <div class="st-pwd-box ${st.pwdShown && !st.connected ? 'show' : ''}" id="stPwdBox">
+          <div class="st-pwd-title">输入 WiFi 密码</div>
+          <div class="st-pwd-row">
+            <input id="stPwdInput" placeholder="密码" maxlength="12">
+            <div class="st-pwd-btn" id="stPwdBtn">连接</div>
+          </div>
+          <div class="st-pwd-hint">密码 = 高铁车票座位号 + 购票手机尾号后四位<br>纯数字，没有英文</div>
+          <div class="st-pwd-err" id="stPwdErr"></div>
+        </div>
+      </div>
+    </div>
+  `;
+  const connBtn = document.getElementById('stConnBtn');
+  if (connBtn && !st.connected) {
+    connBtn.addEventListener('click', () => {
+      st.pwdShown = true; renderSettings(); addGoal('g11');
+    });
+  }
+  const pwdBtn = document.getElementById('stPwdBtn');
+  if (pwdBtn) {
+    pwdBtn.addEventListener('click', tryConnectWifi);
+    document.getElementById('stPwdInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryConnectWifi();
+    });
+  }
+}
+function tryConnectWifi() {
+  const val = document.getElementById('stPwdInput').value.trim();
+  const err = document.getElementById('stPwdErr');
+  const data = chapter3Data.settings;
+  if (val === data.password) {
+    state.settings.connected = true;
+    state.settings.pwdShown = false;
+    finishGoal('g11');
+    renderSettings();
+    renderDesktop();
+    showToast('连接成功', '已连接高铁 WiFi');
+    setTimeout(() => {
+      const mom = chapter3Data.tuziChats.find(c => c.id === 'mom');
+      chapter3Data.momAskDialog.forEach((m, i) => {
+        setTimeout(() => {
+          mom.msgs.push(m);
+          if (state.wx.view === 'chat' && state.wx.chatWith === 'mom') renderWeChat();
+        }, i * 800);
+      });
+      state.momAskSent = true;
+    }, 800);
+  } else {
+    if (val === data.wrongPwd) unlockAchievement('careful');
+    err.textContent = '密码错误';
+    document.getElementById('stPwdInput').value = '';
+  }
+}
+
+/* ==========================================================
+   电话渲染
+   ========================================================== */
+function renderPhone() {
+  const body = document.getElementById('phoneBody');
+  const ph = state.phone;
+  let mainHTML = '';
+
+  if (ph.tab === 'dial') {
+    mainHTML = `
+      <div class="ph-dial">
+        <div class="ph-dial-input" id="phDialInput"></div>
+        <div class="ph-keypad">
+          ${['1','2','3','4','5','6','7','8','9','*','0','#'].map(k => `<div class="ph-key">${k}</div>`).join('')}
+        </div>
+      </div>
+    `;
+  } else if (ph.tab === 'mine') {
+    const av = chapter3Data.avatars[chapter3Data.phoneMine.avatar] || { bg:'var(--av-tuzi)', ch:'兔' };
+    mainHTML = `
+      <div class="ph-mine">
+        <div class="ph-mine-avatar" style="background:${av.bg};">${av.ch}</div>
+        <div class="ph-mine-num">${chapter3Data.phoneMine.number}</div>
+        <div class="ph-mine-label">我的号码</div>
+      </div>
+    `;
+  } else if (ph.tab === 'contacts') {
+    if (ph.callWith) {
+      let msgs = '';
+      ph.callMsgs.forEach(m => {
+        const isMe = m.from === 'me';
+        const avKey = isMe ? 'tuzi' : (chapter3Data.contacts.find(c => c.id === ph.callWith) || {}).avatar || 'a';
+        const av = chapter3Data.avatars[avKey] || { bg:'var(--av-a)', ch:'?' };
+        msgs += `
+          <div class="ph-msg ${isMe ? 'me' : ''}">
+            <div class="ph-m-avatar" style="background:${av.bg};">${av.ch}</div>
+            <div class="ph-bubble">${m.text}</div>
+          </div>
+        `;
+      });
+      if (ph.callDone) msgs += `<div class="ph-ended">— 通话结束 —</div>`;
+      let choicesHTML = '';
+      if (ph.choiceShown && !ph.callDone) {
+        choicesHTML = `
+          <div class="ph-choices">
+            <div class="ph-choice" data-choice="A">没什么</div>
+            <div class="ph-choice" data-choice="B">问问电话号码</div>
+          </div>
+        `;
+      }
+      mainHTML = `
+        <div class="ph-call">
+          <div class="ph-call-head">
+            <div class="wx-back" id="phCallBack">‹</div>
+            <div class="ph-call-name">${chapter3Data.contacts.find(c => c.id === ph.callWith).name}</div>
+          </div>
+          <div class="ph-call-body" id="phCallBody">${msgs}</div>
+          ${choicesHTML}
+        </div>
+      `;
+    } else {
+      let list = '';
+      chapter3Data.contacts.forEach(c => {
+        const av = chapter3Data.avatars[c.avatar] || { bg:'var(--av-a)', ch:'?' };
+        list += `
+          <div class="ph-contact">
+            <div class="ph-contact-avatar" style="background:${av.bg};">${av.ch}</div>
+            <div class="ph-contact-name">${c.name}</div>
+            <div class="ph-call-btn" data-call="${c.id}">拨号</div>
+          </div>
+        `;
+      });
+      mainHTML = `<div class="ph-contacts">${list}</div>`;
+    }
+  }
+
+  body.innerHTML = `
+    <div class="ph-wrap">
+      <div class="ph-side">
+        <div class="ph-tab ${ph.tab==='dial'?'active':''}" data-tab="dial">拨号</div>
+        <div class="ph-tab ${ph.tab==='mine'?'active':''}" data-tab="mine">我的</div>
+        <div class="ph-tab ${ph.tab==='contacts'?'active':''}" data-tab="contacts">联系人</div>
+      </div>
+      <div class="ph-main">${mainHTML}</div>
+    </div>
+  `;
+  body.querySelectorAll('[data-tab]').forEach(t => {
+    t.addEventListener('click', () => {
+      ph.tab = t.dataset.tab;
+      ph.callWith = null; ph.callMsgs = []; ph.callDone = false; ph.choiceShown = false;
+      renderPhone();
+    });
+  });
+  body.querySelectorAll('[data-call]').forEach(b => {
+    b.addEventListener('click', () => startCall(b.dataset.call));
+  });
+  const back = document.getElementById('phCallBack');
+  if (back) back.addEventListener('click', () => {
+    ph.callWith = null; ph.callMsgs = []; ph.callDone = false; ph.choiceShown = false;
+    renderPhone();
+  });
+  body.querySelectorAll('[data-choice]').forEach(c => {
+    c.addEventListener('click', () => chooseCall(c.dataset.choice));
+  });
+  const cb = document.getElementById('phCallBody');
+  if (cb) cb.scrollTop = cb.scrollHeight;
+}
+function startCall(contactId) {
+  const ph = state.phone;
+  const c = chapter3Data.contacts.find(x => x.id === contactId);
+  if (!c) return;
+  ph.callWith = contactId;
+  ph.callMsgs = [{ from: 'other', text: c.dialog.start.text }];
+  ph.callDone = false; ph.choiceShown = false;
+  renderPhone();
+  setTimeout(() => { ph.choiceShown = true; renderPhone(); }, 800);
+}
+function chooseCall(choice) {
+  const ph = state.phone;
+  const c = chapter3Data.contacts.find(x => x.id === ph.callWith);
+  if (!c) return;
+  ph.choiceShown = false;
+  const lines = c.dialog[choice];
+  let delay = 0;
+  lines.forEach(m => {
+    setTimeout(() => { ph.callMsgs.push(m); renderPhone(); }, delay);
+    delay += 800;
+  });
+  setTimeout(() => { ph.callDone = true; renderPhone(); }, delay + 300);
+}
+
+/* ==========================================================
+   家 渲染
+   ========================================================== */
+function renderHome() {
+  const body = document.getElementById('homeBody');
+  const h = state.home;
+  const data = chapter4Data.home;
+
+  // 门禁
+  if (!h.unlocked) {
+    body.innerHTML = `
+      <div class="home-lock">
+        <div class="hl-title">门 禁</div>
+        <div class="hl-cipher">${data.cipher}</div>
+        <div class="hl-hint">解出明文，输入门禁密码</div>
+        <img class="hl-img" id="cipherImg" src="https://img2.tofaka.com/autoupload/f/f5gmj/20260927/iUQb/1028X1002/image_1790495329836.png" alt="维吉尼亚密码对照表">
+        <div class="hl-hint" style="margin-top:-6px;">点击图片放大</div>
+        <input id="homePwdInput" placeholder="输入门禁密码" maxlength="12">
+        <div class="hl-err" id="homeErr"></div>
+        <div class="hl-btn" id="homeUnlockBtn">解 锁</div>
+      </div>
+    `;
+    const img = document.getElementById('cipherImg');
+    if (img) img.addEventListener('click', () => openImgZoom(img.src));
+    document.getElementById('homeUnlockBtn').addEventListener('click', tryUnlockHome);
+    document.getElementById('homePwdInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') tryUnlockHome();
+    });
+    return;
+  }
+
+  // 已合成月饼
+  if (h.cakeMade) {
+    body.innerHTML = `
+      <div class="mooncake-final">
+        <div class="mf-emoji" id="mfEmoji">🥮</div>
+        <div class="mf-hint">（点击吃掉月饼）</div>
+      </div>
+    `;
+    const emoji = document.getElementById('mfEmoji');
+    if (emoji && !h.cakeEaten) {
+      emoji.addEventListener('click', onEatCake);
+    }
+    return;
+  }
+
+  // 家里：四样东西
+  let itemsHTML = '';
+  chapter4Data.items.forEach(it => {
+    const used = h.collected[it.id];
+    itemsHTML += `
+      <div class="home-item ${used ? 'used' : ''}" data-item="${it.id}">
+        <div class="hi-icon" style="background:${it.bg};">${it.icon}</div>
+        <div class="hi-name">${it.name}</div>
+      </div>
+    `;
+  });
+  const allCollected = chapter4Data.items.every(it => h.collected[it.id]);
+
+  body.innerHTML = `
+    <div class="home-inside">
+      <div class="hi-title">爸爸妈妈做到最后一步的月饼，就摆在桌上。</div>
+      <div class="home-items">${itemsHTML}</div>
+      <div class="home-cake-slot">
+        <div class="home-cake-btn ${allCollected ? '' : 'disabled'}" id="makeCakeBtn">
+          ${allCollected ? '合成月饼' : '把东西都摆上桌（' + Object.keys(h.collected).length + '/' + chapter4Data.items.length + '）'}
+        </div>
+      </div>
+    </div>
+  `;
+  body.querySelectorAll('[data-item]').forEach(el => {
+    el.addEventListener('click', () => {
+      const id = el.dataset.item;
+      if (h.collected[id]) return;
+      h.collected[id] = true;
+      renderHome();
+      showToast('已放到桌上', chapter4Data.items.find(x => x.id === id).name);
+    });
+  });
+  const makeBtn = document.getElementById('makeCakeBtn');
+  if (makeBtn && allCollected) {
+    makeBtn.addEventListener('click', () => {
+      h.cakeMade = true;
+      renderHome();
+      showToast('月饼完成', '一块圆圆的中秋月饼');
+      // 延迟触发成就，避免两个 toast 重叠
+      setTimeout(() => {
+        unlockAchievement('family');
+      }, 1200);
+    });
+  }
+}
+
+function tryUnlockHome() {
+  const val = document.getElementById('homePwdInput').value.trim();
+  const err = document.getElementById('homeErr');
+  if (val === chapter4Data.home.answer) {
+    state.home.unlocked = true;
+    renderHome();
+    showToast('门开了', '欢迎回家');
+  } else {
+    err.textContent = '密码错误';
+    document.getElementById('homePwdInput').value = '';
+  }
+}
+
+function onEatCake() {
+  const h = state.home;
+  if (h.cakeEaten) return;
+  h.cakeEaten = true;
+  // 显示结局
+  const mask = document.getElementById('endingMask');
+  const textEl = document.getElementById('endingText');
+  let html = '';
+  chapter4Data.endingText.forEach(line => {
+    if (line === '') html += `<p>&nbsp;</p>`;
+    else if (line.indexOf('在外') >= 0 || line.indexOf('在家') >= 0 || line.indexOf('中秋快乐') >= 0) {
+      html += `<p class="hl">${line}</p>`;
+    } else {
+      html += `<p>${line}</p>`;
+    }
+  });
+  textEl.innerHTML = html;
+  mask.classList.add('show');
+  const btn = document.getElementById('endingBtn');
+  btn.classList.remove('disabled');
+  btn.textContent = '确认';
+  btn.onclick = () => {
+    if (btn.classList.contains('disabled')) return;
+    btn.classList.add('disabled');
+    btn.textContent = '已确认';
+    finishGoal('g13');
+    // 第四章完
+    setTimeout(() => {
+      mask.classList.remove('show');
+      playChapterEnd('第 四 章', '完', () => {
+        // 黑屏保持，出现收尾
+        setTimeout(() => {
+          document.getElementById('outro').classList.add('show');
+          setTimeout(() => {
+            // 收尾停留后回封面
+            document.getElementById('outro').classList.remove('show');
+            backToCover();
+          }, 4500);
+        }, 800);
+      });
+    }, 600);
+  };
+}
+
+/* ==========================================================
+   回封面 + 重置
+   ========================================================== */
+function backToCover(keepSave) {
+  // 回封面：成就永久保留，只清进度存档
+  state.chapter = 0;
+  currentChapter = null;
+  if (!keepSave) clearSave();
+  state.wx = { account: 'tuzi', unlocked: false, view: 'list', chatWith: null, noNetClicks: 0 };
+  state.rb = { logged: false, view: 'home', friendId: null, loginFails: 0, likedPosts: {}, forgotMode: false, forgotSent: false };
+  state.mail = { logged: false, view: 'list', openId: null, readPickup: false };
+  state.yz = { pickupDone: false, specialSent: false };
+  state.clockin = { off: false, pwdShown: false };
+  state.settings = { connected: false, pwdShown: false };
+  state.phone = { tab: 'dial', callWith: null, callMsgs: [], callDone: false, choiceShown: false };
+  state.home = { unlocked: false, collected: {}, cakeMade: false, cakeEaten: false };
+  state.goals = [];
+  state.hasFile = false;
+  state.reportSent = false;
+  state.adSolved = false;
+  state.momAskSent = false;
+  state.recipeGot = false;
+  state.recipeSent = false;
+
+  resetStateForChapter();
+  // 清空任务栏、桌面
+  document.getElementById('goalList').innerHTML = '';
+  document.getElementById('desktop').innerHTML = '';
+  renderAchievements();
+  updateClock();
+
+  // 显示封面
+  const cover = document.getElementById('cover');
+  cover.classList.add('show');
+  cover.classList.remove('hide');
+  refreshCover();
+}
+
+/* ---------- 菜单：返回主页（保存进度后回封面） ---------- */
+function returnToHome() {
+  doSaveGame();
+  backToCover(true);
+  showToast('已保存', '进度与成就已保存到本地');
+}
+
+/* ---------- 菜单：重玩本章（只重置本章进度，成就保留） ---------- */
+function replayChapter() {
+  const n = state.chapter;
+  if (n === 1) initChapter1();
+  else if (n === 2) initChapter2();
+  else if (n === 3) initChapter3();
+  else if (n === 4) initChapter4();
+  showToast('已重置', '本章进度已重来');
+}
+
+/* ---------- 继续游戏：恢复存档，不重播开场动画 ---------- */
+function continueGame() {
+  const data = getSaveInfo();
+  if (!data) { startFresh(); return; }
+  const cover = document.getElementById('cover');
+  cover.classList.remove('show');
+  cover.classList.remove('hide');
+
+  restoreDyn(data.dyn);
+  state.chapter = data.chapter;
+  currentChapter = data.chapter === 1 ? chapter1Data
+                 : data.chapter === 2 ? chapter2Data
+                 : data.chapter === 3 ? chapter3Data : chapter4Data;
+  if (data.st) SAVE_FIELDS.forEach(f => {
+    if (data.st[f] !== undefined) state[f] = clone(data.st[f]);
+  });
+
+  resetStateForChapter();
+  renderDesktop();
+  renderGoals();
+  renderAchievements();
+  updateClock();
+  showToast('继续游戏', CHAPTER_NAMES[state.chapter] || '');
+}
+
+/* ---------- 开始游戏：有存档则先确认覆盖 ---------- */
+function startGame() {
+  if (hasSave()) {
+    const info = getSaveInfo();
+    document.getElementById('confirmText').textContent =
+      '检测到已有存档（' + (CHAPTER_NAMES[info.chapter] || '') + '）。开始新游戏会覆盖它，成就档案不受影响。确定继续吗？';
+    document.getElementById('confirmMask').classList.add('show');
+    return;
+  }
+  startFresh();
+}
+function startFresh() {
+  const cover = document.getElementById('cover');
+  cover.classList.remove('show');
+  cover.classList.remove('hide');
+  clearSave();
+  initChapter1();
+}
+
+/* ---------- 封面状态刷新：成就计数 / 继续按钮 / 特别番外 ---------- */
+function refreshCover() {
+  const n = achDoneCount(), total = achTotal();
+  const achEl = document.getElementById('coverAch');
+  if (!achEl) return;
+  achEl.textContent = '🏆 ' + n + ' / ' + total + (allAchDone() ? '　✦ 全成就达成' : '');
+  achEl.classList.toggle('full', allAchDone());
+  const cont = document.getElementById('coverContinueBtn');
+  if (cont) cont.classList.toggle('disabled', !hasSave());
+  const sp = document.getElementById('coverSpecialBtn');
+  if (sp) sp.style.display = allAchDone() ? 'block' : 'none';   // 第五章入口，内容待接入
+}
+
+function resetStateForChapter() {
+  document.querySelectorAll('.win').forEach(w => w.classList.remove('show'));
+  hideSysPopup();
+  document.getElementById('imgZoom').classList.remove('show');
+  document.getElementById('achievePanel').classList.remove('show');
+  document.getElementById('orderDetailMask').classList.remove('show');
+  document.getElementById('endingMask').classList.remove('show');
+  document.getElementById('outro').classList.remove('show');
+}
+
+/* ==========================================================
+   章节切换
+   ========================================================== */
+function initChapter1() {
+  state.chapter = 1;
+  currentChapter = chapter1Data;
+  state.goals = chapter1Data.goals.map(g => ({ ...g }));
+  state.wx = { account: 'tuzi', unlocked: false, view: 'list', chatWith: null, noNetClicks: 0 };
+  state.rb = { logged: false, view: 'home', friendId: null, loginFails: 0, likedPosts: {}, forgotMode: false, forgotSent: false };
+  state.mail = { logged: false, view: 'list', openId: null, readPickup: false };
+  state.yz = { pickupDone: false, specialSent: false };
+  state.clockin = { off: false, pwdShown: false };
+  state.settings = { connected: false, pwdShown: false };
+  state.phone = { tab: 'dial', callWith: null, callMsgs: [], callDone: false, choiceShown: false };
+  state.home = { unlocked: false, collected: {}, cakeMade: false, cakeEaten: false };
+  state.hasFile = false;
+  state.reportSent = false;
+  state.adSolved = false;
+  state.momAskSent = false;
+  state.recipeGot = false;
+  state.recipeSent = false;
+
+  resetStateForChapter();
+  chapter1Data.tuziChats = JSON.parse(JSON.stringify(CH1_TUZI_BASE));
+  renderDesktop();
+  renderGoals();
+  renderAchievements();
+  updateClock();
+
+  playChapterStart('第 一 章', '加 班', null, () => {});
+  saveGame();
+}
+
+function initChapter2() {
+  playChapterStart('第 二 章', '出 门',
+    () => {
+      state.chapter = 2;
+      currentChapter = chapter2Data;
+      state.goals = chapter2Data.goals.map(g => ({ ...g }));
+      state.wx = { account: 'tuzi', unlocked: false, view: 'list', chatWith: null, noNetClicks: 0 };
+      state.rb = { logged: false, view: 'home', friendId: null, loginFails: 0, likedPosts: {}, forgotMode: false, forgotSent: false };
+      state.mail = { logged: false, view: 'list', openId: null, readPickup: false };
+      state.yz = { pickupDone: false, specialSent: false };
+      state.clockin = { off: false, pwdShown: false };
+      state.settings = { connected: false, pwdShown: false };
+      state.phone = { tab: 'dial', callWith: null, callMsgs: [], callDone: false, choiceShown: false };
+      state.home = { unlocked: false, collected: {}, cakeMade: false, cakeEaten: false };
+      state.hasFile = false;
+      state.reportSent = false;
+      state.adSolved = false;
+      state.momAskSent = false;
+      state.recipeGot = false;
+      state.recipeSent = false;
+
+      resetStateForChapter();
+      renderDesktop();
+      renderGoals();
+      renderAchievements();
+      updateClock();
+    },
+    () => {}
+  );
+}
+
+function initChapter3() {
+  playChapterStart('第 三 章', '回 家',
+    () => {
+      state.chapter = 3;
+      currentChapter = chapter3Data;
+      state.goals = chapter3Data.goals.map(g => ({ ...g }));
+      state.wx = { account: 'tuzi', unlocked: false, view: 'list', chatWith: null, noNetClicks: 0 };
+      state.rb = { logged: false, view: 'home', friendId: null, loginFails: 0, likedPosts: {}, forgotMode: false, forgotSent: false };
+      state.mail = { logged: true, view: 'list', openId: null, readPickup: false };
+      state.yz = { pickupDone: true, specialSent: false };
+      state.clockin = { off: true, pwdShown: false };
+      state.settings = { connected: false, pwdShown: false };
+      state.phone = { tab: 'dial', callWith: null, callMsgs: [], callDone: false, choiceShown: false };
+      state.home = { unlocked: false, collected: {}, cakeMade: false, cakeEaten: false };
+      state.hasFile = false;
+      state.reportSent = true;
+      state.adSolved = false;
+      state.momAskSent = false;
+      state.recipeGot = false;
+      state.recipeSent = false;
+
+      chapter3Data.tuziChats = [
+        { id: 'mom', name: '妈妈', avatar: 'mom', badge: true, msgs: [] }
+      ];
+      chapter3Data.xiaobaiChats = [];
+
+      resetStateForChapter();
+      renderDesktop();
+      renderGoals();
+      renderAchievements();
+      updateClock();
+
+      setTimeout(() => {
+        addGoal('g10');
+        showSysPopup('微信收到一条新消息', '妈妈：' + chapter3Data.wechatMomMsg, 'var(--brand-wx)', true);
+      }, 1600);
+    },
+    () => {}
+  );
+}
+
+function initChapter4() {
+  playChapterStart('第 四 章', '团 圆',
+    () => {
+      state.chapter = 4;
+      currentChapter = chapter4Data;
+      state.goals = chapter4Data.goals.map(g => ({ ...g }));
+      state.wx = { account: 'tuzi', unlocked: false, view: 'list', chatWith: null, noNetClicks: 0 };
+      state.rb = { logged: false, view: 'home', friendId: null, loginFails: 0, likedPosts: {}, forgotMode: false, forgotSent: false };
+      state.mail = { logged: true, view: 'list', openId: null, readPickup: false };
+      state.yz = { pickupDone: true, specialSent: false };
+      state.clockin = { off: true, pwdShown: false };
+      state.settings = { connected: true, pwdShown: false };
+      state.phone = { tab: 'dial', callWith: null, callMsgs: [], callDone: false, choiceShown: false };
+      state.home = { unlocked: false, collected: {}, cakeMade: false, cakeEaten: false };
+      state.hasFile = false;
+      state.reportSent = true;
+      state.adSolved = false;
+      state.momAskSent = false;
+      state.recipeGot = false;
+      state.recipeSent = false;
+
+      // 微信：爸爸妈妈的留言
+      chapter4Data.tuziChats = [
+        {
+          id: 'mom', name: '妈妈', avatar: 'mom', badge: true,
+          msgs: [
+            { from: 'other', text: chapter4Data.wechatMomMsg }
+          ]
+        }
+      ];
+      chapter4Data.xiaobaiChats = [];
+
+      resetStateForChapter();
+      renderDesktop();
+      renderGoals();
+      renderAchievements();
+      updateClock();
+    },
+    () => {}
+  );
+}
+
+/* ==========================================================
+   封面启动
+   ========================================================== */
+document.getElementById('coverStartBtn').addEventListener('click', startGame);
+document.getElementById('coverContinueBtn').addEventListener('click', () => {
+  if (hasSave()) continueGame();
+});
+document.getElementById('coverSpecialBtn').addEventListener('click', () => {
+  showToast('特别番外', '敬请期待');                 // 第五章入口，内容待接入
+});
+document.getElementById('coverThemeBtn').addEventListener('click', openThemePanel);
+document.getElementById('cfCancel').addEventListener('click', () => {
+  document.getElementById('confirmMask').classList.remove('show');
+});
+document.getElementById('cfOk').addEventListener('click', () => {
+  document.getElementById('confirmMask').classList.remove('show');
+  startFresh();
+});
+document.getElementById('confirmMask').addEventListener('click', e => {
+  if (e.target.id === 'confirmMask') e.currentTarget.classList.remove('show');
+});
+
+/* ==========================================================
+   侧栏菜单
+   ========================================================== */
+document.getElementById('menuBtn').addEventListener('click', () => {
+  document.getElementById('menuSub').textContent = '当前章节：' + (CHAPTER_NAMES[state.chapter] || '封面');
+  document.getElementById('menuMask').classList.add('show');
+});
+document.getElementById('menuClose').addEventListener('click', () => {
+  document.getElementById('menuMask').classList.remove('show');
+});
+document.getElementById('menuMask').addEventListener('click', e => {
+  if (e.target.id === 'menuMask') e.currentTarget.classList.remove('show');
+});
+document.getElementById('miHome').addEventListener('click', () => {
+  document.getElementById('menuMask').classList.remove('show');
+  returnToHome();
+});
+document.getElementById('miReplay').addEventListener('click', () => {
+  document.getElementById('menuMask').classList.remove('show');
+  const mask = document.getElementById('confirmMask');
+  const ok = document.getElementById('cfOk');
+  const cancel = document.getElementById('cfCancel');
+  document.getElementById('cfTitle').textContent = '重玩本章';
+  document.getElementById('confirmText').textContent =
+    '确定重置' + (CHAPTER_NAMES[state.chapter] || '本章') + '的进度吗？成就档案不受影响。';
+  ok.textContent = '重置本章';
+  mask.classList.add('show');
+  const restore = () => {
+    ok.textContent = '覆盖并开始';
+    document.getElementById('cfTitle').textContent = '已有存档';
+    ok.onclick = null; cancel.onclick = null;
+  };
+  ok.onclick = () => {
+    mask.classList.remove('show'); restore();
+    replayChapter();
+  };
+  cancel.onclick = () => { mask.classList.remove('show'); restore(); };
+});
+document.getElementById('miTheme').addEventListener('click', () => {
+  document.getElementById('menuMask').classList.remove('show');
+  openThemePanel();
+});
+document.getElementById('miClearAch').addEventListener('click', () => {
+  document.getElementById('menuMask').classList.remove('show');
+  const mask = document.getElementById('confirmMask');
+  const ok = document.getElementById('cfOk');
+  const cancel = document.getElementById('cfCancel');
+  document.getElementById('cfTitle').textContent = '清空成就';
+  document.getElementById('confirmText').textContent =
+    '确定清空全部成就吗？此操作不可撤销（游戏进度不受影响）。';
+  ok.textContent = '清空成就';
+  mask.classList.add('show');
+  const restore = () => {
+    ok.textContent = '覆盖并开始';
+    document.getElementById('cfTitle').textContent = '已有存档';
+    ok.onclick = null; cancel.onclick = null;
+  };
+  ok.onclick = () => {
+    mask.classList.remove('show'); restore();
+    clearAch(); showToast('已清空', '成就档案已归零');
+  };
+  cancel.onclick = () => { mask.classList.remove('show'); restore(); };
+});
+
+/* ==========================================================
+   风格选择面板
+   ========================================================== */
+function openThemePanel() {
+  const grid = document.getElementById('themeGrid');
+  grid.innerHTML = THEMES.map(t => `
+    <div class="theme-card ${t.id === state.theme ? 'active' : ''}" data-theme-id="${t.id}">
+      <div class="tc-swatch">${t.swatch.map(c => `<i style="background:${c};"></i>`).join('')}</div>
+      <div class="tc-name">${t.name}</div>
+    </div>
+  `).join('');
+  grid.querySelectorAll('[data-theme-id]').forEach(el => {
+    el.addEventListener('click', () => {
+      applyTheme(el.dataset.themeId);
+      grid.querySelectorAll('.theme-card').forEach(c => c.classList.remove('active'));
+      el.classList.add('active');
+    });
+  });
+  document.getElementById('themeMask').classList.add('show');
+}
+document.getElementById('themeClose').addEventListener('click', () => {
+  document.getElementById('themeMask').classList.remove('show');
+});
+document.getElementById('themeMask').addEventListener('click', e => {
+  if (e.target.id === 'themeMask') e.currentTarget.classList.remove('show');
+});
+
+/* ==========================================================
+   初始化
+   ========================================================== */
+loadTheme();                 // 先套主题（默认风格 A）
+loadAch();                   // 再读永久成就档案
+renderAchievements();
+updateClock();
+const coverEl = document.getElementById('cover');
+coverEl.classList.add('show');
+coverEl.classList.remove('hide');
+refreshCover();              // 显示封面（不再自动跳章节）
+
+</script>
+</body>
+</html>
